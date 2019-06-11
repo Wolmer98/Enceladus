@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19662f12aa3da3d4e8c9aedc6cd41b72, type: 3}
+  m_Name: Small_Chase
+  m_EditorClassIdentifier: 
+  transitions:
+  - transitionName: Is the player in Detection
+    condition: {fileID: 11400000, guid: dbae83dd6154a864397ed5fee7ce0dcb, type: 2}
+    trueState: {fileID: 11400000, guid: b0c1832a8134f8f488657fc06bbd4899, type: 2}
+    falseState: {fileID: 11400000, guid: c1efa0cc4db5ad0498e32506a5de6ea2, type: 2}
+  aI_Actions:
+  - {fileID: 11400000, guid: 91839ba52fb40bb48b9b5abd110b0c8d, type: 2}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{5b3ea18c-4e06-4213-83bb-d0a83c6cb5b5}">
+		<property name="assetPath">
+			<value>footstep_ice_4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.45477083333333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0bf30109-9abd-41e4-b1cf-425ef4750221}</destination>
+		</relationship>
+	</object>
+</objects>

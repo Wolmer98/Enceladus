@@ -1,0 +1,8 @@
+Idle - 			1-79
+Walk - 			100-159
+Loungeattack - 		180-225
+Jump - 			240-323 (start 240-269 , end 289-323)
+Jumpattack - 		340-423 (start 340-369 , end 389-423)
+Run - 			454-461
+Fall & Stand up	-	500-619 (fall 500-549 , stand up 550-619)
+Echo-locating -		640-776

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11f972c13a444324e9538f927b1459dd, type: 3}
+  m_Name: FB_Default
+  m_EditorClassIdentifier: 
+  fireMode: 0
+  specialFireType: 0
+  fireSound: event:/Weapons/Mechanic/Mech_SemiAuto
+  chargeSound: event:/Weapons/Mechanic/Mech_Charge
+  reloadSound: event:/Weapons/Reload/Reload_Temp
+  triggerSound: event:/Weapons/Weapon_Empty_Trigger
+  muzzleFlash: {fileID: 903353691713234265, guid: b6d7e989a9b35394283dcc15b228037d,
+    type: 3}
+  lineRenderer: {fileID: 5575950346846941138, guid: d5283a6694ba11c40a30b037fece6c65,
+    type: 3}
+  recoilAmplitude: 5
+  recoilSpeed: 3
+  recoilPermanentAmplitude: 0.5
+  cameraShakeAmplitude: 0.02
+  recoilXAmplitude: 0.005
+  recoilXReturnThreshold: 0.001
+  OnShoot:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  fireSoundRadius: 20
+  EnemyDetectionMask:
+    serializedVersion: 2
+    m_Bits: 32768
+  impactEffect: {fileID: 2462603728404087871, guid: 24ab76a8242a44943aa150b70b6e4d47,
+    type: 3}
+  bulletHole: {fileID: 5223327668571211394, guid: c21b4bd9256d1df40a924b659c46696e,
+    type: 3}
+  gizmosColor: {r: 1, g: 0, b: 0, a: 1}

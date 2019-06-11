@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Wall
+  - Ceiling
+  - Floor
+  - Button
+  - Door
+  - Passage
+  - Vent
+  - Corner
+  - DoorFrame
+  - Ragdoll
+  - Enemy
+  - FloorText
+  - Player_Container
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PostProcessing
+  - RoomBounds
+  - WeaponColliders
+  - Enemy
+  - Player
+  - Interaction
+  - Projectile
+  - EnemyDetection
+  - NavMeshInclude
+  - OcclusionExclusion
+  - LoadingCameraExclusion
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Top
+    uniqueID: 1124279635
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0

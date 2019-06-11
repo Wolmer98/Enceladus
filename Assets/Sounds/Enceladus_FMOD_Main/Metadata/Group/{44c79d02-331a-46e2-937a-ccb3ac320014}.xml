@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MixerGroup" id="{44c79d02-331a-46e2-937a-ccb3ac320014}">
+		<property name="name">
+			<value>SFX Enemy</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{c03682db-988c-45cd-81e8-f8c0392420fb}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{292c7ada-2ba9-41e3-b401-e7625f74d84b}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{cd4f7b5b-0450-45c6-8559-d3d89646fbdd}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{c03682db-988c-45cd-81e8-f8c0392420fb}">
+		<relationship name="effects">
+			<destination>{cf750692-620f-4f6c-b3a3-74418c246dba}</destination>
+			<destination>{95ecf7d9-b186-47e1-9eb4-69f0ed5b2a06}</destination>
+			<destination>{8d9a3999-da0a-4232-b8de-7ddb1ac38eaf}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{292c7ada-2ba9-41e3-b401-e7625f74d84b}" />
+	<object class="MixerBusFader" id="{cf750692-620f-4f6c-b3a3-74418c246dba}" />
+	<object class="MixerSend" id="{95ecf7d9-b186-47e1-9eb4-69f0ed5b2a06}">
+		<property name="level">
+			<value>-40</value>
+		</property>
+		<property name="inputFormat">
+			<value>2</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{3a651639-5113-4517-a992-e67a7817fc52}</destination>
+		</relationship>
+	</object>
+	<object class="CompressorEffect" id="{8d9a3999-da0a-4232-b8de-7ddb1ac38eaf}">
+		<property name="threshold">
+			<value>-18</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{16bf2de5-e4f8-43b5-b814-06bea7434432}</destination>
+		</relationship>
+	</object>
+</objects>

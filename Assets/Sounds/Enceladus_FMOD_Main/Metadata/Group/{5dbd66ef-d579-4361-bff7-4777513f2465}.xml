@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MixerGroup" id="{5dbd66ef-d579-4361-bff7-4777513f2465}">
+		<property name="name">
+			<value>VO Crab</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{f2bccfd9-0c98-44f3-99e6-a3a55bac70f0}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{893a79f1-dd6f-46d0-b39c-699d65110710}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{440a9c42-ec5c-4176-8094-c614c38e5fbc}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{f2bccfd9-0c98-44f3-99e6-a3a55bac70f0}">
+		<relationship name="effects">
+			<destination>{dc017e19-54b7-445c-9338-02e10ad5cbdc}</destination>
+			<destination>{70ef0136-951a-4301-be39-0df9f64b825a}</destination>
+			<destination>{d4b94d38-ccc2-4be6-bfbd-57d82c6e7348}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{893a79f1-dd6f-46d0-b39c-699d65110710}" />
+	<object class="MixerBusFader" id="{dc017e19-54b7-445c-9338-02e10ad5cbdc}" />
+	<object class="Sidechain" id="{70ef0136-951a-4301-be39-0df9f64b825a}" />
+	<object class="CompressorEffect" id="{d4b94d38-ccc2-4be6-bfbd-57d82c6e7348}">
+		<property name="threshold">
+			<value>-28</value>
+		</property>
+		<property name="releaseTime">
+			<value>70</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{562d27a5-dc45-42c3-a049-553318ccde3c}</destination>
+		</relationship>
+	</object>
+</objects>

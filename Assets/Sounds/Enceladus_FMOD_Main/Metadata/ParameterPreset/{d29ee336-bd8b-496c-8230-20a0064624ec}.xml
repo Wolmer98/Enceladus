@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{d29ee336-bd8b-496c-8230-20a0064624ec}">
+		<property name="name">
+			<value>Elevator Control</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c419daa6-e2e8-4970-99f9-628534804675}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{e6e4480e-fd6b-45ca-8bdf-3335274e00c6}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{e6e4480e-fd6b-45ca-8bdf-3335274e00c6}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

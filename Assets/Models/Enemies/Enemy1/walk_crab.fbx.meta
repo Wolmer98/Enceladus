@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: c64cb9dd33db27348a7809e643e7ce95
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: base_joint
+    100002: bottom_base
+    100004: bottom_connector
+    100006: Full_body_ctrl
+    100008: L_antenna_base
+    100010: L_antenna_inner
+    100012: L_antenna_middle
+    100014: L_antenna_outer
+    100016: L_back_leg_base
+    100018: L_back_leg_foot
+    100020: L_back_leg_innerKnee
+    100022: L_back_leg_outerKnee
+    100024: L_front_leg_base
+    100026: L_front_leg_foot
+    100028: L_front_leg_innerKnee
+    100030: L_front_leg_outer_knee
+    100032: polySurface84
+    100034: R_antenna_base
+    100036: R_antenna_inner
+    100038: R_antenna_middle
+    100040: R_antenna_outer
+    100042: R_back_leg_base
+    100044: R_back_leg_foot
+    100046: R_back_leg_innerKnee
+    100048: R_back_leg_outerKnee
+    100050: R_front_leg_base
+    100052: R_front_leg_foot
+    100054: R_front_leg_innerKnee
+    100056: R_front_leg_outer_knee
+    100058: Tongue_base
+    100060: Tongue_tip
+    100062: top_base
+    100064: top_connector
+    100066: //RootNode
+    400000: base_joint
+    400002: bottom_base
+    400004: bottom_connector
+    400006: Full_body_ctrl
+    400008: L_antenna_base
+    400010: L_antenna_inner
+    400012: L_antenna_middle
+    400014: L_antenna_outer
+    400016: L_back_leg_base
+    400018: L_back_leg_foot
+    400020: L_back_leg_innerKnee
+    400022: L_back_leg_outerKnee
+    400024: L_front_leg_base
+    400026: L_front_leg_foot
+    400028: L_front_leg_innerKnee
+    400030: L_front_leg_outer_knee
+    400032: polySurface84
+    400034: R_antenna_base
+    400036: R_antenna_inner
+    400038: R_antenna_middle
+    400040: R_antenna_outer
+    400042: R_back_leg_base
+    400044: R_back_leg_foot
+    400046: R_back_leg_innerKnee
+    400048: R_back_leg_outerKnee
+    400050: R_front_leg_base
+    400052: R_front_leg_foot
+    400054: R_front_leg_innerKnee
+    400056: R_front_leg_outer_knee
+    400058: Tongue_base
+    400060: Tongue_tip
+    400062: top_base
+    400064: top_connector
+    400066: //RootNode
+    2100000: Lower_Teeth1
+    4300000: polySurface84
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: polySurface84
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 30
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.29999998
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,387 @@
+fileFormatVersion: 2
+guid: 9c373404b56880d4ead05a67aa199db7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: all_animations:heavy_melee
+    100002: all_animations:joint2
+    100004: all_animations:melee_weapon_joint
+    100006: base_joint
+    100008: head
+    100010: heavy
+    100012: joint1
+    100014: joint1 1
+    100016: joint2
+    100018: joint2 1
+    100020: joint4
+    100022: L_arm_ctrls
+    100024: L_collar_joint
+    100026: L_elbow_joint
+    100028: L_forearm_joint
+    100030: L_hand_joint
+    100032: L_IndexFinger_01_joint
+    100034: L_littleFinger_01_joint
+    100036: L_middleFinger_01_joint
+    100038: L_ringFinger_01_joint
+    100040: L_shoulder_joint
+    100042: L_thumb_01_joint
+    100044: L_wrist_joint
+    100046: melee
+    100048: //RootNode
+    100050: R_arm_ctrls
+    100052: R_collar_joint
+    100054: R_elbow_joint
+    100056: R_forearm_joint
+    100058: R_hand_joint
+    100060: R_IndexFinger_01_joint
+    100062: R_littleFinger_01_joint
+    100064: R_middleFinger_01_joint
+    100066: R_ringFinger_01_joint
+    100068: R_shoulder_joint
+    100070: R_thumb_01_joint
+    100072: R_wrist_joint
+    100074: ranged
+    100076: ranged 1
+    100078: rig_sp2_17:joint2
+    100080: rig_sp2_17:L_indexFinger_02_joint
+    100082: rig_sp2_17:L_indexFinger_03_joint
+    100084: rig_sp2_17:L_littleFinger_02_joint
+    100086: rig_sp2_17:L_littleFinger_03_joint
+    100088: rig_sp2_17:L_littleFinger_04_joint
+    100090: rig_sp2_17:L_middleFinger_02_joint
+    100092: rig_sp2_17:L_middleFinger_03_joint
+    100094: rig_sp2_17:L_middleFinger_04_joint
+    100096: rig_sp2_17:L_ringFinger_02_joint
+    100098: rig_sp2_17:L_ringFinger_03_joint
+    100100: rig_sp2_17:L_ringFinger_04_joint
+    100102: rig_sp2_17:L_thumb_02_joint
+    100104: rig_sp2_17:L_thumb_03_joint
+    100106: rig_sp2_17:L_thumb_04_joint
+    100108: rig_sp2_17:R_indexFinger_02_joint
+    100110: rig_sp2_17:R_indexFinger_03_joint
+    100112: rig_sp2_17:R_littleFinger_02_joint
+    100114: rig_sp2_17:R_littleFinger_03_joint
+    100116: rig_sp2_17:R_littleFinger_04_joint
+    100118: rig_sp2_17:R_middleFinger_02_joint
+    100120: rig_sp2_17:R_middleFinger_03_joint
+    100122: rig_sp2_17:R_middleFinger_04_joint
+    100124: rig_sp2_17:R_ringFinger_02_joint
+    100126: rig_sp2_17:R_ringFinger_03_joint
+    100128: rig_sp2_17:R_ringFinger_04_joint
+    100130: rig_sp2_17:R_thumb_02_joint
+    100132: rig_sp2_17:R_thumb_03_joint
+    100134: rig_sp2_17:R_thumb_04_joint
+    100136: transform2
+    100138: transform3
+    100140: transform4
+    400000: all_animations:heavy_melee
+    400002: all_animations:joint2
+    400004: all_animations:melee_weapon_joint
+    400006: base_joint
+    400008: head
+    400010: heavy
+    400012: joint1
+    400014: joint1 1
+    400016: joint2
+    400018: joint2 1
+    400020: joint4
+    400022: L_arm_ctrls
+    400024: L_collar_joint
+    400026: L_elbow_joint
+    400028: L_forearm_joint
+    400030: L_hand_joint
+    400032: L_IndexFinger_01_joint
+    400034: L_littleFinger_01_joint
+    400036: L_middleFinger_01_joint
+    400038: L_ringFinger_01_joint
+    400040: L_shoulder_joint
+    400042: L_thumb_01_joint
+    400044: L_wrist_joint
+    400046: melee
+    400048: //RootNode
+    400050: R_arm_ctrls
+    400052: R_collar_joint
+    400054: R_elbow_joint
+    400056: R_forearm_joint
+    400058: R_hand_joint
+    400060: R_IndexFinger_01_joint
+    400062: R_littleFinger_01_joint
+    400064: R_middleFinger_01_joint
+    400066: R_ringFinger_01_joint
+    400068: R_shoulder_joint
+    400070: R_thumb_01_joint
+    400072: R_wrist_joint
+    400074: ranged
+    400076: ranged 1
+    400078: rig_sp2_17:joint2
+    400080: rig_sp2_17:L_indexFinger_02_joint
+    400082: rig_sp2_17:L_indexFinger_03_joint
+    400084: rig_sp2_17:L_littleFinger_02_joint
+    400086: rig_sp2_17:L_littleFinger_03_joint
+    400088: rig_sp2_17:L_littleFinger_04_joint
+    400090: rig_sp2_17:L_middleFinger_02_joint
+    400092: rig_sp2_17:L_middleFinger_03_joint
+    400094: rig_sp2_17:L_middleFinger_04_joint
+    400096: rig_sp2_17:L_ringFinger_02_joint
+    400098: rig_sp2_17:L_ringFinger_03_joint
+    400100: rig_sp2_17:L_ringFinger_04_joint
+    400102: rig_sp2_17:L_thumb_02_joint
+    400104: rig_sp2_17:L_thumb_03_joint
+    400106: rig_sp2_17:L_thumb_04_joint
+    400108: rig_sp2_17:R_indexFinger_02_joint
+    400110: rig_sp2_17:R_indexFinger_03_joint
+    400112: rig_sp2_17:R_littleFinger_02_joint
+    400114: rig_sp2_17:R_littleFinger_03_joint
+    400116: rig_sp2_17:R_littleFinger_04_joint
+    400118: rig_sp2_17:R_middleFinger_02_joint
+    400120: rig_sp2_17:R_middleFinger_03_joint
+    400122: rig_sp2_17:R_middleFinger_04_joint
+    400124: rig_sp2_17:R_ringFinger_02_joint
+    400126: rig_sp2_17:R_ringFinger_03_joint
+    400128: rig_sp2_17:R_ringFinger_04_joint
+    400130: rig_sp2_17:R_thumb_02_joint
+    400132: rig_sp2_17:R_thumb_03_joint
+    400134: rig_sp2_17:R_thumb_04_joint
+    400136: transform2
+    400138: transform3
+    400140: transform4
+    7400000: Idle_Range_TEST
+    7400002: Walk_Range_TEST
+    7400004: Run_Range_TEST
+    7400006: Reload_Range_TEST
+    7400008: Run_START_TEST
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle_Range_TEST
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 357
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk_Range_TEST
+      takeName: Take 001
+      firstFrame: 640
+      lastFrame: 832
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run_Range_TEST
+      takeName: Take 001
+      firstFrame: 1711
+      lastFrame: 1776
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Reload_Range_TEST
+      takeName: Take 001
+      firstFrame: 2103
+      lastFrame: 2231
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.98876405
+        functionName: EventCaller_CallEvent
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run_START_TEST
+      takeName: Take 001
+      firstFrame: 1702
+      lastFrame: 1711
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

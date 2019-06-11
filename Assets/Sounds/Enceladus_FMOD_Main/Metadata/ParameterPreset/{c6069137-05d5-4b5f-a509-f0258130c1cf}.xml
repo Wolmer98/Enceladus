@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{c6069137-05d5-4b5f-a509-f0258130c1cf}">
+		<property name="name">
+			<value>Mouth</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c419daa6-e2e8-4970-99f9-628534804675}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{161241f0-f7fd-4519-94ec-c00f35a4c18a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{161241f0-f7fd-4519-94ec-c00f35a4c18a}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

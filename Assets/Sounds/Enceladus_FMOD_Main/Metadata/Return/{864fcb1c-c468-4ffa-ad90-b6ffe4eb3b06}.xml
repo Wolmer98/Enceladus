@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MixerReturn" id="{864fcb1c-c468-4ffa-ad90-b6ffe4eb3b06}">
+		<property name="name">
+			<value>Suppression</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{5d0f8506-e420-4978-a27d-4cb105a992e2}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{2da2b845-9b2e-4647-b0d7-7e926a7b562e}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{44a55f1e-7366-46a0-9ac4-589659cd5c26}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{5d0f8506-e420-4978-a27d-4cb105a992e2}">
+		<relationship name="effects">
+			<destination>{59da62fb-5e52-44f6-a901-a9c4010d8a0a}</destination>
+			<destination>{cfc13f32-ec7d-4d00-973c-939a88c044f9}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{2da2b845-9b2e-4647-b0d7-7e926a7b562e}" />
+	<object class="MixerBusFader" id="{59da62fb-5e52-44f6-a901-a9c4010d8a0a}" />
+	<object class="MultibandEqEffect" id="{cfc13f32-ec7d-4d00-973c-939a88c044f9}">
+		<property name="filterTypeA">
+			<value>3</value>
+		</property>
+		<property name="filterTypeB">
+			<value>5</value>
+		</property>
+		<property name="frequencyA">
+			<value>21999.9902</value>
+		</property>
+		<property name="frequencyB">
+			<value>24.6043587</value>
+		</property>
+		<property name="qualityA">
+			<value>0.351172417</value>
+		</property>
+		<property name="qualityB">
+			<value>0.885344803</value>
+		</property>
+	</object>
+</objects>

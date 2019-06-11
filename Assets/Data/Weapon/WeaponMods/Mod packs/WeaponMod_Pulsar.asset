@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75d890c4ea415974eaec8d70f6554c64, type: 3}
+  m_Name: WeaponMod_Pulsar
+  m_EditorClassIdentifier: 
+  weaponModName: Pulsar
+  weaponPickupText: Default
+  weaponModDescription: Designed to nullify heavy armor. This setting has been experimented
+    with to penetrate even the thoughest of opponents.
+  emissionColor: {r: 0.41847038, g: 0, b: 1, a: 1}
+  screenBlurSize:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  screenBlurSizeIncrement: 0.0025
+  screenBlurCap: 0.01
+  screenBlurTime: 0.5
+  suppression:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.4245283
+      outSlope: 0.4245283
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.22083333
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  suppressionIncrement: 0.2
+  suppressionRecoveryDelay: 1
+  fireBehavior: {fileID: 11400000, guid: c1fd4ee229643c94ea9bb5ece1c69439, type: 2}
+  weaponStats:
+    damage: 30
+    accuracy: 0.9
+    penetration: 15
+    projectileAmount: 1
+    projectileSpeed: 430
+    fireRange: 25
+    areaOfEffect: 0
+    roundsPerMinute: 300
+    reloadSpeed: 3
+    fireDelay: 0.1
+    failureRate: 0.1
+    restartTime: 3
+    magSize: 20
+    chargeUp: 0
+    chargeUpTime: 0
+    minimumChargeUp: 0
+    hardCaps: {fileID: 0}
+  installationSound: event:/Objects/ModCenter/Laser/Pulsar

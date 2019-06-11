@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MixerGroup" id="{97374484-e586-4045-a30e-d6c62f6c7841}">
+		<property name="volume">
+			<value>-8</value>
+		</property>
+		<property name="color">
+			<value>Blue</value>
+		</property>
+		<property name="name">
+			<value>Ambiance</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{76dab430-9df1-4055-8700-a7b43729c1c6}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{1aca86d6-5826-4d0c-b418-11dd6b16f93e}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{44a55f1e-7366-46a0-9ac4-589659cd5c26}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{76dab430-9df1-4055-8700-a7b43729c1c6}">
+		<relationship name="effects">
+			<destination>{57871359-0bdb-4bc3-b640-0388eb0712a0}</destination>
+			<destination>{903994d9-7d74-4eb1-b011-5c8d4ac60ecb}</destination>
+			<destination>{6934db94-0e70-4e2f-9d67-2d3b44131bf2}</destination>
+			<destination>{662b548a-c18b-4035-b484-7a3dc9f4ed92}</destination>
+			<destination>{acb1499a-3e22-45af-8851-f01d15baa033}</destination>
+			<destination>{9b43bced-1359-4cd0-9293-1b39f4a11fc3}</destination>
+			<destination>{48798c1a-408c-4d27-a78a-ab0c72ff548f}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{1aca86d6-5826-4d0c-b418-11dd6b16f93e}" />
+	<object class="MixerSend" id="{57871359-0bdb-4bc3-b640-0388eb0712a0}">
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{864fcb1c-c468-4ffa-ad90-b6ffe4eb3b06}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusFader" id="{903994d9-7d74-4eb1-b011-5c8d4ac60ecb}" />
+	<object class="CompressorEffect" id="{6934db94-0e70-4e2f-9d67-2d3b44131bf2}">
+		<property name="threshold">
+			<value>-14.5</value>
+		</property>
+		<property name="ratio">
+			<value>1.8499999</value>
+		</property>
+		<property name="releaseTime">
+			<value>920</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{16bf2de5-e4f8-43b5-b814-06bea7434432}</destination>
+		</relationship>
+	</object>
+	<object class="CompressorEffect" id="{662b548a-c18b-4035-b484-7a3dc9f4ed92}">
+		<property name="threshold">
+			<value>-31.5</value>
+		</property>
+		<property name="releaseTime">
+			<value>10</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{562d27a5-dc45-42c3-a049-553318ccde3c}</destination>
+		</relationship>
+	</object>
+	<object class="CompressorEffect" id="{acb1499a-3e22-45af-8851-f01d15baa033}">
+		<property name="threshold">
+			<value>-11</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{70ef0136-951a-4301-be39-0df9f64b825a}</destination>
+		</relationship>
+	</object>
+	<object class="CompressorEffect" id="{9b43bced-1359-4cd0-9293-1b39f4a11fc3}">
+		<property name="threshold">
+			<value>-33.5</value>
+		</property>
+		<property name="releaseTime">
+			<value>74</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{a805f865-03ae-4011-acfd-a389560dcf61}</destination>
+		</relationship>
+	</object>
+	<object class="MultibandEqEffect" id="{48798c1a-408c-4d27-a78a-ab0c72ff548f}">
+		<property name="filterTypeA">
+			<value>3</value>
+		</property>
+		<property name="filterTypeB">
+			<value>6</value>
+		</property>
+		<property name="frequencyA">
+			<value>21999.9902</value>
+		</property>
+		<property name="frequencyB">
+			<value>63.8159714</value>
+		</property>
+		<property name="qualityA">
+			<value>0.288379312</value>
+		</property>
+		<property name="qualityB">
+			<value>0.267448276</value>
+		</property>
+	</object>
+</objects>

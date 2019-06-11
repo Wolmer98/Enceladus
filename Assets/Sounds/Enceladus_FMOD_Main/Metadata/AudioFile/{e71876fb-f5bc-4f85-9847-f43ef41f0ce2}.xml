@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{e71876fb-f5bc-4f85-9847-f43ef41f0ce2}">
+		<property name="assetPath">
+			<value>SFX_Guns_Shutdown_Leak_Start_01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0bf30109-9abd-41e4-b1cf-425ef4750221}</destination>
+		</relationship>
+	</object>
+</objects>

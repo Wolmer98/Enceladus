@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{bd0ee046-11f8-40c9-a05b-9975745e8615}">
+		<property name="assetPath">
+			<value>VO_Johan_TakeDamage_01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.51370833333333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0bf30109-9abd-41e4-b1cf-425ef4750221}</destination>
+		</relationship>
+	</object>
+</objects>

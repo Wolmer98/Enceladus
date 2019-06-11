@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MixerGroup" id="{0f3de15e-8c57-47be-945d-7ef99a02cb6a}">
+		<property name="volume">
+			<value>-7.5</value>
+		</property>
+		<property name="name">
+			<value>VO Player</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{595c11c9-10ef-42cd-bb9b-888fdd852879}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{858a5425-5142-456f-8976-36c01aa04501}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{f7fe544a-2bbe-426e-9de3-088509b101f7}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{595c11c9-10ef-42cd-bb9b-888fdd852879}">
+		<relationship name="effects">
+			<destination>{b9a23d82-35d6-4572-9261-832034f22418}</destination>
+			<destination>{0c96efab-2c49-4dfb-89da-3a0f27a5a95d}</destination>
+			<destination>{8824c1c0-5664-4408-aa69-fc535f156dda}</destination>
+			<destination>{4db477a2-331c-4133-a108-9f4bec089bbc}</destination>
+			<destination>{d2270d1f-b32e-492d-9442-5deebd145743}</destination>
+			<destination>{7a0c951f-a8d2-4e3a-847b-11c9dd573ca5}</destination>
+			<destination>{562d27a5-dc45-42c3-a049-553318ccde3c}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{858a5425-5142-456f-8976-36c01aa04501}" />
+	<object class="MixerSend" id="{b9a23d82-35d6-4572-9261-832034f22418}">
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{52cd9836-6ab0-49dd-8185-931b05b28a52}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusFader" id="{0c96efab-2c49-4dfb-89da-3a0f27a5a95d}" />
+	<object class="SFXReverbEffect" id="{8824c1c0-5664-4408-aa69-fc535f156dda}">
+		<property name="decayTime">
+			<value>350</value>
+		</property>
+		<property name="earlyDelay">
+			<value>0</value>
+		</property>
+		<property name="lateDelay">
+			<value>0</value>
+		</property>
+		<property name="highCut">
+			<value>2300</value>
+		</property>
+		<property name="earlyLateMix">
+			<value>0</value>
+		</property>
+		<property name="wetLevel">
+			<value>-22.5</value>
+		</property>
+		<property name="dryLevel">
+			<value>-6.5</value>
+		</property>
+	</object>
+	<object class="ChannelMixEffect" id="{4db477a2-331c-4133-a108-9f4bec089bbc}" />
+	<object class="LimiterEffect" id="{d2270d1f-b32e-492d-9442-5deebd145743}">
+		<property name="ceiling">
+			<value>-0.699999928</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{7a0c951f-a8d2-4e3a-847b-11c9dd573ca5}">
+		<property name="frequencyA">
+			<value>17556.0352</value>
+		</property>
+		<property name="qualityA">
+			<value>0.56048274</value>
+		</property>
+	</object>
+	<object class="Sidechain" id="{562d27a5-dc45-42c3-a049-553318ccde3c}" />
+</objects>

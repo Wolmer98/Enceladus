@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{dae6b99a-b78b-4f04-9700-a5be46b31aac}">
+		<property name="name">
+			<value>Mental State</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c419daa6-e2e8-4970-99f9-628534804675}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{544b02fb-79e5-4485-b9fb-3e4a5c42f19b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{544b02fb-79e5-4485-b9fb-3e4a5c42f19b}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.14000001549720764</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

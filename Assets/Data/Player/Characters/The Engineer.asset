@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99068b8bdc9e8a149b334558a855415b, type: 3}
+  m_Name: The Engineer
+  m_EditorClassIdentifier: 
+  characterName: THE ENGINEER / OMAR HAMID
+  characterNameOnly: OMAR HAMID
+  characterClassOnly: THE ENGINEER
+  characterColor: {r: 0.8773585, g: 0.7166886, b: 0.27727836, a: 1}
+  portrait: {fileID: 21300000, guid: 4b0d95ceeb274a94f8a553aa58581185, type: 3}
+  description: 
+  startWeaponMod: {fileID: 11400000, guid: f2141161896d7ee4887a9049c75255aa, type: 2}
+  ammunition: 40
+  maxStorageAmmo: 40
+  startMeleeWeapon: {fileID: 0}
+  suitMods:
+  - {fileID: 4349723090368424127, guid: e7ff9ca5fa24cb547b3d8de215c6003f, type: 3}
+  - {fileID: 4349723090368424127, guid: 3aad9e7f48354734781b8b26f44f4586, type: 3}
+  - {fileID: 4349723090368424127, guid: c1ce6641a827c674d9ea2a8983ff5423, type: 3}
+  - {fileID: 4349723090368424127, guid: ee93942cab10ee146a39363adc1995c1, type: 3}
+  health: 100
+  maxHealth: 100
+  regeneration: 0
+  resistance: 10
+  speed: 10
+  randomStats: 0
+  RNG_startWeaponMod: []
+  RNG_ammunition: {x: 0, y: 0}
+  RNG_maxStorageAmmo: {x: 0, y: 0}
+  RNG_startMeleeWeapon: []
+  RNG_amountOfSuitMods: {x: 0, y: 0}
+  RNG_suitMods: []
+  RNG_health: {x: 0, y: 0}
+  RNG_maxHealth: {x: 0, y: 0}
+  RNG_regeneration: {x: 0, y: 0}
+  RNG_resistance: {x: 0, y: 0}
+  RNG_speed: {x: 0, y: 0}
+  hurtSound: event:/Player/Characters/Male/Male_Hurt
+  deathSound: event:/Player/Characters/Male/Male_Death
+  sprintSound: event:/Player/Characters/Male/Male_Breathing
+  walkSound: event:/Player/Player_Footsteps

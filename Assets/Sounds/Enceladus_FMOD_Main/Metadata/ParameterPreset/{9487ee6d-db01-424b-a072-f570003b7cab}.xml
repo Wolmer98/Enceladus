@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{9487ee6d-db01-424b-a072-f570003b7cab}">
+		<property name="name">
+			<value>Ecolocate</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c419daa6-e2e8-4970-99f9-628534804675}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{da4f6533-3c9a-426f-a51e-b9057b6becea}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{da4f6533-3c9a-426f-a51e-b9057b6becea}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

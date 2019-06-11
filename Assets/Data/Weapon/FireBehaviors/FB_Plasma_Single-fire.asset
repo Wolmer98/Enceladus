@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a677af9dd3d38874db403599691dc1b5, type: 3}
+  m_Name: FB_Plasma_Single-fire
+  m_EditorClassIdentifier: 
+  fireMode: 0
+  specialFireType: 0
+  fireSound: event:/Weapons/Plasma/Plasma_Release
+  chargeSound: event:/Weapons/Plasma/Plasma_Charge
+  reloadSound: event:/Weapons/Reload/Reload_Temp
+  triggerSound: event:/Weapons/Weapon_Empty_Trigger
+  muzzleFlash: {fileID: 3073301278125712093, guid: d99c34a699cc8de4abfba3933fd60623,
+    type: 3}
+  lineRenderer: {fileID: 0}
+  chargeUp: {fileID: 7392272715367377443, guid: 221637968824ea04fabd934512a98a05,
+    type: 3}
+  recoilAmplitude: 14
+  recoilSpeed: 3
+  recoilPermanentAmplitude: 3
+  cameraShakeAmplitude: 0.035
+  recoilXAmplitude: 0.001
+  recoilXReturnThreshold: 0.0001
+  OnShoot:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  fireSoundRadius: 20
+  EnemyDetectionMask:
+    serializedVersion: 2
+    m_Bits: 32768
+  projectile: {fileID: 6905137820543769035, guid: 4012a3dd61bfd8c4797f83739e137b75,
+    type: 3}
+  projectileSpeed: 30

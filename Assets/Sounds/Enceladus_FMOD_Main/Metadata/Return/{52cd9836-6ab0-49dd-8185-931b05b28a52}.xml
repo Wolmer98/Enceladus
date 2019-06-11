@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MixerReturn" id="{52cd9836-6ab0-49dd-8185-931b05b28a52}">
+		<property name="volume">
+			<value>-25.5</value>
+		</property>
+		<property name="name">
+			<value>Player Mask</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{f0b1f191-a934-4ca2-8bf6-9af4ef9ee4c5}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{a247fedd-e7db-4929-ae91-22c3a120c6d5}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{44a55f1e-7366-46a0-9ac4-589659cd5c26}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{f0b1f191-a934-4ca2-8bf6-9af4ef9ee4c5}">
+		<relationship name="effects">
+			<destination>{8bf70a08-c8d4-4fc2-8c89-d21ecae76e74}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{a247fedd-e7db-4929-ae91-22c3a120c6d5}" />
+	<object class="MixerBusFader" id="{8bf70a08-c8d4-4fc2-8c89-d21ecae76e74}" />
+</objects>

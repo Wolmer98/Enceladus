@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75d890c4ea415974eaec8d70f6554c64, type: 3}
+  m_Name: WeaponMod_Restart_Down
+  m_EditorClassIdentifier: 
+  weaponModName: Decreased Restart Time
+  weaponModDescription: Updates the gun with decreased time to restart the weapon.
+  emissionColor: {r: 1, g: 1, b: 1, a: 1}
+  fireBehavior: {fileID: 0}
+  weaponStats:
+    damage: 0
+    accuracy: 0
+    penetration: 0
+    projectileAmount: 0
+    projectileSpeed: 0
+    fireRange: 0
+    areaOfEffect: 0
+    roundsPerMinute: 0
+    reloadSpeed: 0
+    fireDelay: 0
+    failureRate: 0
+    restartTime: -0.5
+    magSize: 0
+    chargeUp: 0
+    chargeUpTime: 0
+    minimumChargeUp: 0
+    hardCaps: {fileID: 0}
+  installationSound: event:/Objects/Pick Ups/Consumables/MiniMod_down

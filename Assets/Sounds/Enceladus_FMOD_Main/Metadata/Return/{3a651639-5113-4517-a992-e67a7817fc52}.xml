@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MixerReturn" id="{3a651639-5113-4517-a992-e67a7817fc52}">
+		<property name="overridingInputFormat">
+			<value>2</value>
+		</property>
+		<property name="inputFormatOverridden">
+			<value>true</value>
+		</property>
+		<property name="name">
+			<value>Room Reverb</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{179183df-5376-4a89-b15d-4d12e7c0a6ea}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{d466b54a-da37-4a21-92e9-245ca2979c4c}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{44a55f1e-7366-46a0-9ac4-589659cd5c26}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{179183df-5376-4a89-b15d-4d12e7c0a6ea}">
+		<relationship name="effects">
+			<destination>{59b26f62-25cf-4531-9a3b-f75ff811f564}</destination>
+			<destination>{463b4d66-7779-4d93-816a-9fb114dabd07}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{d466b54a-da37-4a21-92e9-245ca2979c4c}">
+		<property name="overridingOutputFormat">
+			<value>1</value>
+		</property>
+		<property name="outputFormatOverridden">
+			<value>true</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{59b26f62-25cf-4531-9a3b-f75ff811f564}" />
+	<object class="SFXReverbEffect" id="{463b4d66-7779-4d93-816a-9fb114dabd07}">
+		<property name="decayTime">
+			<value>850</value>
+		</property>
+		<property name="earlyDelay">
+			<value>0</value>
+		</property>
+		<property name="lowShelfGain">
+			<value>-5.5</value>
+		</property>
+		<property name="highCut">
+			<value>1550</value>
+		</property>
+		<property name="wetLevel">
+			<value>0</value>
+		</property>
+		<property name="dryLevel">
+			<value>-80</value>
+		</property>
+	</object>
+</objects>

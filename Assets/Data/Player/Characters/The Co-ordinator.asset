@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99068b8bdc9e8a149b334558a855415b, type: 3}
+  m_Name: The Co-ordinator
+  m_EditorClassIdentifier: 
+  characterName: THE COORDINATOR / PRIYA PRASHAD
+  characterNameOnly: PRIYA PRASHAD
+  characterClassOnly: THE COORDINATOR
+  characterColor: {r: 0.50907797, g: 0.6147596, b: 0.754717, a: 1}
+  portrait: {fileID: 21300000, guid: 93d3c380f2ee12c4a81443c4088d5cf8, type: 3}
+  description: 
+  startWeaponMod: {fileID: 11400000, guid: f2141161896d7ee4887a9049c75255aa, type: 2}
+  ammunition: 60
+  maxStorageAmmo: 60
+  startMeleeWeapon: {fileID: 5535022068161692519, guid: 0673d477f02b41d44b3bd0b3c76dbee0,
+    type: 3}
+  suitMods: []
+  health: 100
+  maxHealth: 100
+  regeneration: 0
+  resistance: 10
+  speed: 10
+  randomStats: 0
+  RNG_startWeaponMod: []
+  RNG_ammunition: {x: 0, y: 0}
+  RNG_maxStorageAmmo: {x: 0, y: 0}
+  RNG_startMeleeWeapon: []
+  RNG_amountOfSuitMods: {x: 0, y: 0}
+  RNG_suitMods: []
+  RNG_health: {x: 0, y: 0}
+  RNG_maxHealth: {x: 0, y: 0}
+  RNG_regeneration: {x: 0, y: 0}
+  RNG_resistance: {x: 0, y: 0}
+  RNG_speed: {x: 0, y: 0}
+  hurtSound: event:/Player/Characters/Female/Female_Hurt
+  deathSound: event:/Player/Characters/Female/Female_Death
+  sprintSound: event:/Player/Characters/Female/Female_Breathing
+  walkSound: event:/Player/Player_Footsteps

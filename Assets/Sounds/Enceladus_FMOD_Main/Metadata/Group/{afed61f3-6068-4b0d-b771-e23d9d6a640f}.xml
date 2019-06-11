@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MixerGroup" id="{afed61f3-6068-4b0d-b771-e23d9d6a640f}">
+		<property name="name">
+			<value>Semi Auto</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{d2d4462a-6d45-4939-a3d3-6632fdf96162}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{7b6d7c4a-a1a5-4cfe-ab27-7f0a3e143951}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{6d364d15-025d-47cf-812c-6486c720d7da}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{d2d4462a-6d45-4939-a3d3-6632fdf96162}">
+		<relationship name="effects">
+			<destination>{8add7d3c-d255-4c67-be3a-4cd1abe4d7d2}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{7b6d7c4a-a1a5-4cfe-ab27-7f0a3e143951}" />
+	<object class="MixerBusFader" id="{8add7d3c-d255-4c67-be3a-4cd1abe4d7d2}" />
+</objects>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{1a17fd74-e7e7-4172-804f-e60dc16b0b11}">
+		<property name="name">
+			<value>Geyser Distance</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c419daa6-e2e8-4970-99f9-628534804675}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{e508b60d-955f-4c53-847a-62050bebeaf4}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{e508b60d-955f-4c53-847a-62050bebeaf4}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.15000000596046448</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{0c71cedd-1dd4-49a2-921c-cf9ea066d754}</destination>
+		</relationship>
+	</object>
+	<object class="RandomizerModulator" id="{0c71cedd-1dd4-49a2-921c-cf9ea066d754}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>cursorPosition</value>
+		</property>
+		<property name="amount">
+			<value>100</value>
+		</property>
+	</object>
+</objects>

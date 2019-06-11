@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<LogData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <logName>SYSTEM REPORT</logName>
+  <header>SYSTEM</header>
+  <id>0</id>
+  <text>TEMPERATURE: 2°C
+OXYGEN: 20.1%
+POWER GENERATORS: Stable
+GRAVITY GENERATORS: Online
+GRAVITY: 0.401 g
+MAINTENANCE REQUIRED: Refer to maintenance protocols</text>
+</LogData>

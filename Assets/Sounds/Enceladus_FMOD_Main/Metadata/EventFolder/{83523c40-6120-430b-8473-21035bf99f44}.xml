@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EventFolder" id="{83523c40-6120-430b-8473-21035bf99f44}">
+		<property name="name">
+			<value>MonsterFish_SFX</value>
+		</property>
+		<relationship name="folder">
+			<destination>{4aa89c77-4fd7-4364-a997-8ee8667fccee}</destination>
+		</relationship>
+	</object>
+</objects>

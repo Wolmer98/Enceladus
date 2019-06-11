@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SciFiEffect
+  m_Shader: {fileID: 4800000, guid: 528ea7bd2920f3e42bb536919f1db267, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CircleTex:
+        m_Texture: {fileID: 2800000, guid: 0a8394e744e1bd446b671e12a79ef411, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HoleGradient:
+        m_Texture: {fileID: 2800000, guid: dcbca158f5d40414f875c53d15a76543, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer0:
+        m_Texture: {fileID: 2800000, guid: 0a8394e744e1bd446b671e12a79ef411, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer1:
+        m_Texture: {fileID: 2800000, guid: 2ea13a696ba573349a23056c71d2b60b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer2:
+        m_Texture: {fileID: 2800000, guid: 0cb7537a3c15efd48962ed320bc46526, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer3:
+        m_Texture: {fileID: 2800000, guid: cd28d8e73eeff8245b1458a2ae0d635b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer4:
+        m_Texture: {fileID: 2800000, guid: 5c63d4f98a8f2be4f85ea3bb58b83449, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer5:
+        m_Texture: {fileID: 2800000, guid: 2a88e356bbd459741b01dceeccac14de, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer6:
+        m_Texture: {fileID: 2800000, guid: 4f7fdca5a88d05749820a0838a5b6af7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer7:
+        m_Texture: {fileID: 2800000, guid: 5f61553347d9aec40aac5218a55936dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RadialGradient:
+        m_Texture: {fileID: 2800000, guid: 3a7e8afa02599e841bd643552212ceaa, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpScale: 1
+    - _CurrentTime: 0.55830383
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Progress: 1
+    - _Rotation: 300
+    - _Rotation0: 97
+    - _Rotation1: 0
+    - _Rotation2: 0
+    - _Rotation3: 281
+    - _Rotation4: 180
+    - _Rotation5: 90
+    - _Rotation6: 200
+    - _Rotation7: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _Speed0: 0.1
+    - _Speed1: 5
+    - _Speed2: 1
+    - _Speed3: 0.1
+    - _Speed4: 0.1
+    - _Speed5: 0.1
+    - _Speed6: 3
+    - _Speed7: -1
+    - _SrcBlend: 1
+    - _Start0: 0
+    - _Start1: 0.5
+    - _Start2: 0.5
+    - _Start3: 0
+    - _Start4: 0
+    - _Start5: 0
+    - _Start6: 0
+    - _Start7: 0.5
+    - _Stop0: 0.5
+    - _Stop1: 1
+    - _Stop2: 1
+    - _Stop3: 0.5
+    - _Stop4: 0.5
+    - _Stop5: 0.5
+    - _Stop6: 0.5
+    - _Stop7: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 0.5529412, g: 0.9725491, b: 0.94117653, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

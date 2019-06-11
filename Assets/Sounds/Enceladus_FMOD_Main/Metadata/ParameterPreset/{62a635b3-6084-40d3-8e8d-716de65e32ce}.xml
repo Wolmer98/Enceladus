@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{62a635b3-6084-40d3-8e8d-716de65e32ce}">
+		<property name="name">
+			<value>Skadad</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c419daa6-e2e8-4970-99f9-628534804675}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{25bb3c24-3c21-4d16-952d-cc17fadc790f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{25bb3c24-3c21-4d16-952d-cc17fadc790f}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.72000002861022949</value>
+		</property>
+	</object>
+</objects>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{0b28d8db-c072-4688-b0b8-c02cc727320c}">
+		<property name="name">
+			<value>Rädd</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c419daa6-e2e8-4970-99f9-628534804675}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{b871f824-4ffa-4aea-a525-4bcb6d67e5e9}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{b871f824-4ffa-4aea-a525-4bcb6d67e5e9}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.51000005006790161</value>
+		</property>
+	</object>
+</objects>

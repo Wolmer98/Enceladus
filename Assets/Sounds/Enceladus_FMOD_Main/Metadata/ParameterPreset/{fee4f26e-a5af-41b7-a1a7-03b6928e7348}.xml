@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{fee4f26e-a5af-41b7-a1a7-03b6928e7348}">
+		<property name="name">
+			<value>Geyser</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c419daa6-e2e8-4970-99f9-628534804675}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{32e3fe3c-5832-4977-ab3f-e314c6201f81}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{32e3fe3c-5832-4977-ab3f-e314c6201f81}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.1900000125169754</value>
+		</property>
+	</object>
+</objects>

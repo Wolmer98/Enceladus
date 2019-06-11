@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11f972c13a444324e9538f927b1459dd, type: 3}
+  m_Name: FB_Laser_Semi-automatic
+  m_EditorClassIdentifier: 
+  fireMode: 0
+  specialFireType: 0
+  fireSound: event:/Weapons/Laser/Laser_SemiAuto
+  chargeSound: event:/Weapons/Laser/Laser_Charge
+  reloadSound: event:/Weapons/Reload/Reload_Temp
+  triggerSound: event:/Weapons/Weapon_Empty_Trigger
+  muzzleFlash: {fileID: 1731172368965416610, guid: aa064db3449d91944b09af28e73dba53,
+    type: 3}
+  lineRenderer: {fileID: 5575950346846941138, guid: 658285b3ce6e20f49a043aa9bdc89363,
+    type: 3}
+  recoilAmplitude: 5
+  recoilSpeed: 3
+  recoilPermanentAmplitude: 0.6
+  cameraShakeAmplitude: 0.01
+  recoilXAmplitude: 0.001
+  recoilXReturnThreshold: 0.0001
+  OnShoot:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  fireSoundRadius: 20
+  EnemyDetectionMask:
+    serializedVersion: 2
+    m_Bits: 32768
+  impactEffect: {fileID: 2462603728404087871, guid: c2698916e2e93be41818987ea704128b,
+    type: 3}
+  gizmosColor: {r: 1, g: 0, b: 0, a: 1}

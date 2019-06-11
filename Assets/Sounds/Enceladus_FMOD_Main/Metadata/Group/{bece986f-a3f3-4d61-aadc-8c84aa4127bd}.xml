@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MixerGroup" id="{bece986f-a3f3-4d61-aadc-8c84aa4127bd}">
+		<property name="name">
+			<value>VO MonsterFish</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{03a34bc3-cc0b-47d5-a7a4-5f34e7c7636a}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{f21e0054-7f3e-4dea-ad99-e764e83c5ef3}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{440a9c42-ec5c-4176-8094-c614c38e5fbc}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{03a34bc3-cc0b-47d5-a7a4-5f34e7c7636a}">
+		<relationship name="effects">
+			<destination>{2e69ad7f-4479-4746-9ea1-f640ddf2f26e}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{f21e0054-7f3e-4dea-ad99-e764e83c5ef3}" />
+	<object class="MixerBusFader" id="{2e69ad7f-4479-4746-9ea1-f640ddf2f26e}" />
+</objects>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MixerGroup" id="{b8a90937-8b78-4498-8be9-eea4ce32207b}">
+		<property name="name">
+			<value>Mental</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{96f157cf-0089-4ddc-a739-6405600dc5fa}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{bd6b0d53-93cc-4062-8208-3d820af41c37}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{44a55f1e-7366-46a0-9ac4-589659cd5c26}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{96f157cf-0089-4ddc-a739-6405600dc5fa}">
+		<relationship name="effects">
+			<destination>{f3a69d35-cf1a-4fbe-bcf1-d91090a09eb7}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{bd6b0d53-93cc-4062-8208-3d820af41c37}" />
+	<object class="MixerBusFader" id="{f3a69d35-cf1a-4fbe-bcf1-d91090a09eb7}" />
+</objects>

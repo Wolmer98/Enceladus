@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19662f12aa3da3d4e8c9aedc6cd41b72, type: 3}
+  m_Name: Big_Search
+  m_EditorClassIdentifier: 
+  transitions:
+  - transitionName: Search for duration
+    condition: {fileID: 11400000, guid: cc04ec9f8d765554c94cc9e4e8e7dd16, type: 2}
+    trueState: {fileID: 11400000, guid: 3c35a77cb0d01904197ea17adf292c71, type: 2}
+    falseState: {fileID: 0}
+  - transitionName: Player inside radius
+    condition: {fileID: 11400000, guid: dbae83dd6154a864397ed5fee7ce0dcb, type: 2}
+    trueState: {fileID: 11400000, guid: b1c33bd8050e0694bbc4603bd5956041, type: 2}
+    falseState: {fileID: 0}
+  aI_Actions:
+  - {fileID: 11400000, guid: 7a4fe608feeec1d47ba69a2368dd54d1, type: 2}
+  - {fileID: 11400000, guid: f58d2876f2e10b44aaca0b86ca4ae286, type: 2}
+  - {fileID: 11400000, guid: 9a832e5f562f6b84e94c736e80dac3ee, type: 2}

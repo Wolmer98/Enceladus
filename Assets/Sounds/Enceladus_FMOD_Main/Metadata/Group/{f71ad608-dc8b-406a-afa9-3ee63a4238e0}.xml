@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MixerGroup" id="{f71ad608-dc8b-406a-afa9-3ee63a4238e0}">
+		<property name="name">
+			<value>Reload</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{6c336fb2-391a-413f-a3bd-b8aed1b87d70}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{9f02affb-3a8e-4bba-ba63-878cbf4a447a}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{8d549156-c5d4-4a6f-a459-bcdade969fa3}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{6c336fb2-391a-413f-a3bd-b8aed1b87d70}">
+		<relationship name="effects">
+			<destination>{8b4c4d44-a1ff-4398-a49f-88281f998140}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{9f02affb-3a8e-4bba-ba63-878cbf4a447a}" />
+	<object class="MixerBusFader" id="{8b4c4d44-a1ff-4398-a49f-88281f998140}" />
+</objects>

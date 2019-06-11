@@ -1,0 +1,1 @@
+For best visual results the Standard Image Effects are required(SSAO,Bloom,AA)

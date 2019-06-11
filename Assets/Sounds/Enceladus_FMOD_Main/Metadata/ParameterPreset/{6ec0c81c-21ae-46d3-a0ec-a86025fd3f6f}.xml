@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{6ec0c81c-21ae-46d3-a0ec-a86025fd3f6f}">
+		<property name="name">
+			<value>Damaged</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c419daa6-e2e8-4970-99f9-628534804675}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{216a2fb2-f52e-46bb-8bdc-ae8a89064016}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{216a2fb2-f52e-46bb-8bdc-ae8a89064016}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.52000004053115845</value>
+		</property>
+	</object>
+</objects>
