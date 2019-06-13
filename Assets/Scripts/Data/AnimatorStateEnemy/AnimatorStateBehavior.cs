@@ -31,22 +31,25 @@ public class AnimatorStateBehavior : StateMachineBehaviour
             animatorAction.UpdateAction(ai, animator);
         }
         // Test for conditions and if AI should transition to another state.
-        foreach(AnimatiorConditionTransition condition in conditionTransitions)
+        foreach (AnimatiorConditionTransition condition in conditionTransitions)
         {
-            if(condition.Condition.CheckCondition(ai))
+            if (condition.Condition != null)
             {
-                if(condition.TrueState != null || condition.TrueState != "")
+                if (condition.Condition.CheckCondition(ai))
                 {
-                    animator.SetTrigger(condition.TrueState);
-                    return;
+                    if (condition.TrueState != null && condition.TrueState != "")
+                    {
+                        animator.SetTrigger(condition.TrueState);
+                        return;
+                    }
                 }
-            }
-            else
-            {
-                if (condition.FalseState != null || condition.FalseState != "")
+                else
                 {
-                    animator.SetTrigger(condition.TrueState);
-                    return;
+                    if (condition.FalseState != null && condition.FalseState != "")
+                    {
+                        animator.SetTrigger(condition.FalseState);
+                        return;
+                    }
                 }
             }
         }

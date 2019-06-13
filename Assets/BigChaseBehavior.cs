@@ -18,7 +18,7 @@ public class BigChaseBehavior : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        ai.Agent.SetDestination(ai.PC.transform.position);
+        ai.Agent.SetDestination(ai.Player.transform.position);
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

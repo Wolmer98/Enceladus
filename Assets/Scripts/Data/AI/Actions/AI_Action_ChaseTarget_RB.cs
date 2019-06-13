@@ -20,7 +20,7 @@ public class AI_Action_ChaseTarget_RB : AI_Action
         ai.Agent.isStopped = false;
 
         //Rotation
-        if (ai.EnemyType == enemyType.small)
+        if (ai.EnemyType == enemyType.swarm)
         {
             Rotate(ai.Target.position, ai);
         }

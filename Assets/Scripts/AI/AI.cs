@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public enum enemyType { small, big }
+public enum enemyType { swarm, medium, big, hiveMother, carrier, reaper }
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class AI : MonoBehaviour
@@ -18,7 +18,6 @@ public class AI : MonoBehaviour
     [Header("GameObject Components")]
     [SerializeField] SphereCollider detectionSphere;
     [SerializeField] AI_Stats stats;
-    [SerializeField] Material chaseMaterial;
     [SerializeField] Animator animator;
     [SerializeField] GameObject underwaterEffects;
     [SerializeField] Transform topOfCrabForWaterLevel;
@@ -94,7 +93,7 @@ public class AI : MonoBehaviour
     public bool Paused { get; set; }
 
     // AI Components
-    public AI_Stats Stats { get { return stats; } }
+    public AI_Stats Stats { get { return stats; } }                             //Used by Animator
     public Rigidbody Rigidbody { get { return rigidbody; } }
     public enemyType EnemyType { get { return typeOfEnemy; } }
     public bool IsMoving { get; set; }
@@ -118,7 +117,7 @@ public class AI : MonoBehaviour
             }
             return agent;
         }
-    }
+    } //Used by Animator
     public float BaseStoppingDist { get { return baseStoppingDist; } }
 
     // Patrol Getters
@@ -139,8 +138,10 @@ public class AI : MonoBehaviour
     private bool isEcholocating;
     public bool IsEchoLocating { get { return isEcholocating; } set { echoTime = 0; isEcholocating = value; } }
     public float AggroSoundCountdown { get; set; }
-    public bool SetATimer { get; set; }
-    public float ActionTime { get { return actionTimer; } set { actionTimer = value; } }
+
+    public bool SetATimer { get; set; }                                                    //Used by Animator
+    public float ActionTime { get { return actionTimer; } set { actionTimer = value; } } //Used by Animator
+
     public bool SetCTimer { get; set; }
     public float ConditionTime { get { return conditionTimer; } set { conditionTimer = value; } }
 
@@ -179,7 +180,7 @@ public class AI : MonoBehaviour
 
     #region AnimatorBehaviourGetters
     private PlayerController pc;
-    public PlayerController PC { get
+    public PlayerController Player { get
         {
             if (pc == null)
             {
@@ -192,7 +193,6 @@ public class AI : MonoBehaviour
             pc = value;
         }
     }
-    public PlayerController Player { get; private set; }
     #endregion
 
     /// <summary>
@@ -227,10 +227,10 @@ public class AI : MonoBehaviour
         //Testing
         if(room == null)
             patrolWaypoints = FindObjectsOfType<PatrolWaypoint>();
-        if (baseState == null)
-        {
-            return;
-        }
+        //if (baseState == null)
+        //{
+        //    return;
+        //}
         // Get and find
         currentState = baseState;
         rigidbody = GetComponent<Rigidbody>();
@@ -242,7 +242,7 @@ public class AI : MonoBehaviour
         startPosition = new Vector3(transform.position.x, 0, transform.position.z);
         IDsRegisteredAt = new List<int>();
         AlliesAround = new List<AI>();
-        Player = FindObjectOfType<PlayerController>();
+        //pc = FindObjectOfType<PlayerController>();
 
         //Start values
         detectionSphere.radius = stats.detectionRadius;
@@ -397,7 +397,7 @@ public class AI : MonoBehaviour
     /// <summary>
     /// Used by actions to check if a certain time has passed.
     /// </summary>
-    public bool ActionTimeCheck(float duration)
+    public bool ActionTimeCheck(float duration)                         //Used by Animator
     {
         actionTimer += Time.deltaTime;
         return (actionTimer >= duration);
@@ -538,7 +538,7 @@ public class AI : MonoBehaviour
             agent.stoppingDistance = baseStoppingDist;
         }
         
-        if (typeOfEnemy == enemyType.small)
+        if (typeOfEnemy == enemyType.swarm)
         {
             animator.ResetTrigger("Jumping");
         }
@@ -596,11 +596,11 @@ public class AI : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, Vector3.down * rayCastRange);
 
-        // Test to visualize the attack sphere of enemy JumpAttack
-        if(typeOfEnemy == enemyType.small)
-            Gizmos.DrawWireSphere(transform.position + (transform.forward * damagePosition.z) + (transform.up * damagePosition.y), 0.3f);
-        else if (typeOfEnemy == enemyType.big)
-            Gizmos.DrawWireSphere(transform.position + (transform.forward *damagePosition.z) + (transform.up * damagePosition.y), 0.6f);
+        // Draw damage sphere
+        if (typeOfEnemy != enemyType.swarm)
+        {
+            Gizmos.DrawWireSphere(transform.position + (transform.forward * damagePosition.z) + (transform.up * damagePosition.y), radiusOfDamageSphere);
+        }
     }
 
     private void OnDisable()

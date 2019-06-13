@@ -26,7 +26,7 @@ public class AI_Condition_HPThresholdCheck : AI_Condition
                 }
             }
 
-            if (ai.EnemyType == enemyType.small)
+            if (ai.EnemyType == enemyType.swarm)
             {
                 if (ai.CalledForFriends == true)
                 {
