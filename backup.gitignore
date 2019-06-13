@@ -58,11 +58,3 @@ crashlytics-build.properties
 # FMOD files
 Assets/Plugins/FMOD/Resources/FMODStudioCache.asset
 Assets/StreamingAssets/*.bank
-
-#FMOD meta
-Assets/StreamingAssets/Master.strings.bank.meta
-
-Assets/StreamingAssets/Master.bank.meta
-
-Assets/Sounds/Enceladus_FMOD_Main/Build.meta
-Assets/Sounds/Build.meta
