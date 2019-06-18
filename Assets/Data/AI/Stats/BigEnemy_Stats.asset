@@ -20,7 +20,7 @@ MonoBehaviour:
   targetsLayerMask:
     serializedVersion: 2
     m_Bits: 4096
-  detectionRadius: 5
+  detectionRadius: 7
   timeBetweenAggroSound: 30
   distanceToMoveTowardsSound: 6
   moveSpeed: 2

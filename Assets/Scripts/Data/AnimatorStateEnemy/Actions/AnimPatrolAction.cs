@@ -26,6 +26,7 @@ public class AnimPatrolAction : AnimatorAction
         ai.Animator.SetBool("Walking", false);
         ai.Animator.ResetTrigger("EchoLocationOver");
         ai.SetATimer = false;
+        anim.ResetTrigger("Patrol");
     }
 
     public override void UpdateAction(AI ai, Animator anim)

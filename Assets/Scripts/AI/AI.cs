@@ -10,6 +10,7 @@ public class AI : MonoBehaviour
 {
     public enemyType typeOfEnemy;
     [Header("AI Components")]
+    [SerializeField] Animator AIStateMachine;
     [SerializeField] AI_State baseState;
     [SerializeField] AI_State detectedSoundState;
     [SerializeField] AI_State currentState;
@@ -104,6 +105,7 @@ public class AI : MonoBehaviour
     public AI_Transition[] OnHurtConditions { get { return onHurtConditions; } }
     public Vector3 StartPosition { get { return startPosition; } }
     public Vector3 StartRotation { get { return startRotation; } }
+    public Animator StateMachine { get { return AIStateMachine; } }
 
     // Visuals getters
 
@@ -165,7 +167,7 @@ public class AI : MonoBehaviour
     public bool HasCharged { get; set; }
 
 
-    public Vector3 DamagePosition { get { return transform.position + (transform.forward * damagePosition.z) + (transform.up * damagePosition.y); } }
+    public Vector3 DamagePosition { get { return transform.position + (transform.forward * damagePosition.z) + (transform.up * damagePosition.y); } } //Used by anim
     public float DamageRadius { get { return radiusOfDamageSphere; } }
 
     //Backup

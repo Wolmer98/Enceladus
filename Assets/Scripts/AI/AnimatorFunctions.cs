@@ -42,7 +42,6 @@ public class AnimatorFunctions : MonoBehaviour
         ai.IsStunned = false;
         ai.HasCharged = true;
         AttackOver();
-        Debug.Log("Stun Over");
     }
 
     public void AttackOver()

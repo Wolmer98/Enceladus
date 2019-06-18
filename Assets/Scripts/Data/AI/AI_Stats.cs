@@ -5,12 +5,16 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "AI_Stats", menuName = "AI/Stats")]
 public class AI_Stats : ScriptableObject
 {
-    [Header("Attack")]
+    [Header("Combat")]
     public float attackRange = 2.5f;
-    public float chargeCooldown = 6.0f;
-    public Vector2 chargeRangeInterval;
     public float damage = 20;
     public float attackSpeed = 2;
+    public float stunDuration = 2f;
+
+    [Header("Charge")]
+    public float chargeCooldown = 6.0f;
+    public Vector2 chargeRangeInterval;
+    public float chargeWindupTime = 0.5f;
 
     [Header("Detection")]
     public LayerMask targetsLayerMask;
