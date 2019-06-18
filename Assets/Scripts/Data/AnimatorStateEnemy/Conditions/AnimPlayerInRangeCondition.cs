@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "AnimConditionPlayerInRage", menuName = "AI/AnimCondition/PlayerInRange")]
+[CreateAssetMenu(fileName = "AnimConditionPlayerInRange", menuName = "AI/AnimCondition/PlayerInRange")]
 public class AnimPlayerInRangeCondition : AI_Condition
 {
     public override bool CheckCondition(AI ai)

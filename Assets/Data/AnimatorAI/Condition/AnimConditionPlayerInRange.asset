@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32e6ecb9b53bc5a4f943f4acbae08902, type: 3}
-  m_Name: AnimConditionPlayerInRage
+  m_Name: AnimConditionPlayerInRange
   m_EditorClassIdentifier: 
