@@ -75,7 +75,7 @@
 			o.Normal = UnpackNormal(tex2D(_BumpMap, IN.uv_BumpMap));
             // Metallic and smoothness come from slider variables
             o.Metallic = _Metallic * tex2D(_MetallicGlossMap, IN.uv_MetallicGlossMap);
-            o.Smoothness = _Glossiness * tex2D(_GlossinessTex, IN.uv_GlossinessTex);
+            o.Smoothness = _Glossiness * (1-tex2D(_GlossinessTex, IN.uv_GlossinessTex));
             o.Alpha = c.a;
 			o.Emission = _EmissionColor * tex2D(_EmissionMap, IN.uv_EmissionMap);
         }
