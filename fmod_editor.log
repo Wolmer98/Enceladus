@@ -9,7 +9,7 @@
 [LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000000051618038 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000000004D4AB298 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -17,101 +17,9 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 48967680
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 625312
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005EA1F62C
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCF3226550
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCF3226520
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCF3226620
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCF32266E0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000613B9318
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='MonsterFish_aggro_3', format=2, channels=2, frequency=48000, lengthbytes=20576, lengthpcm=95884, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.908875.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 48967680
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 625312
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005EA1F62C
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCF3226550
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCF3226520
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCF3226620
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCF32266E0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000613B9318
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='MonsterFish_aggro_4', format=2, channels=2, frequency=48000, lengthbytes=13696, lengthpcm=62652, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 48967680
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 625312
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005EA1F62C
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCF3226550
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCF3226520
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCF3226620
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCF32266E0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000613B9318
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='MonsterFish_aggro_1', format=2, channels=2, frequency=48000, lengthbytes=18304, lengthpcm=85089, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 48967680
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 625312
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005EA1F62C
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCF3226550
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCF3226520
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCF3226620
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCF32266E0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000613B9318
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='MonsterFish_aggro_5', format=2, channels=2, frequency=48000, lengthbytes=14688, lengthpcm=67610, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 48967680
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 625312
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005EA1F62C
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCF3226550
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCF3226520
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCF3226620
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCF32266E0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000613B9318
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='MonsterFish_aggro_2', format=2, channels=2, frequency=48000, lengthbytes=12480, lengthpcm=57397, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.989380.
-[LOG] SoundI::release                          :  (000000004AD49968)
-[LOG] SoundI::release                          :     MonsterFish_aggro_1 (0000000040C1F2D8)
-[LOG] SoundI::release                          :  (000000004AD4AC18)
-[LOG] SoundI::release                          :     MonsterFish_aggro_2 (0000000040C1D8D8)
-[LOG] SoundI::release                          :  (000000004AD4AD88)
-[LOG] SoundI::release                          :     MonsterFish_aggro_3 (0000000040C1E0F8)
-[LOG] SoundI::release                          :  (000000004AD4A208)
-[LOG] SoundI::release                          :     MonsterFish_aggro_4 (0000000040C1CBD8)
-[LOG] SoundI::release                          :  (000000004AD493A8)
-[LOG] SoundI::release                          :     MonsterFish_aggro_5 (0000000040C1CF18)
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
