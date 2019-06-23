@@ -1556,7 +1556,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -1606,7 +1606,7 @@ MonoBehaviour:
   wireThickness: 70
   wireSmoothness: 3
   wireColor: {r: 0.37673548, g: 0.83477557, b: 0.9622642, a: 0.08235294}
-  baseColor: {r: 0, g: 0, b: 0, a: 1}
+  baseColor: {r: 0, g: 0, b: 0, a: 0}
   maxTriSize: 25
 --- !u!1 &6505143170159986247
 GameObject:
@@ -3936,6 +3936,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4692740712660603889}
     m_Modifications:
+    - target: {fileID: 1296787207201429193, guid: 36cc9cb8c1bb7914387f1433d8d698f5,
+        type: 3}
+      propertyPath: m_Name
+      value: Visor
+      objectReference: {fileID: 0}
     - target: {fileID: 2877420998172577057, guid: 36cc9cb8c1bb7914387f1433d8d698f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3990,11 +3995,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296787207201429193, guid: 36cc9cb8c1bb7914387f1433d8d698f5,
-        type: 3}
-      propertyPath: m_Name
-      value: Visor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36cc9cb8c1bb7914387f1433d8d698f5, type: 3}
