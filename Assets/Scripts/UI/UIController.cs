@@ -36,6 +36,7 @@ public class UIController : MonoBehaviour
     [SerializeField] CanvasGroup hurtFadeScreen;
     [SerializeField] Image chargeUpImage;
     [SerializeField] Image minChargeUpImage;
+    [SerializeField] GameObject miniMap;
 
     [Header("Loading Screen")]
     [SerializeField] CanvasGroup loadingScreen;
@@ -63,7 +64,7 @@ public class UIController : MonoBehaviour
     //public float ScreenBlurPercentage { get { return currentScreenBlurSize / screenBlurCap; } }
 
     bool hasShownObjective;
-    
+
     private void Awake()
     {
         characterScreen = FindObjectOfType<CharacterScreen>();
@@ -83,6 +84,7 @@ public class UIController : MonoBehaviour
         {
             worldGenerator.OnWorldStart.AddListener(delegate { SetElevatorFloor(); });
             worldGenerator.OnWorldStart.AddListener(delegate { ShowObjective(); });
+            worldGenerator.OnWorldStart.AddListener(delegate { SetMinimap(); });
         }
 
         SetCursorLock(true);
@@ -90,7 +92,9 @@ public class UIController : MonoBehaviour
 
     private void Start()
     {
-        player.OnInteract.AddListener(delegate { ShowPickupNotification(); });   
+        player.OnInteract.AddListener(delegate { ShowPickupNotification(); });
+
+        SetMinimap(false);
     }
 
     public void ShowObjective()
@@ -138,7 +142,7 @@ public class UIController : MonoBehaviour
                 DisplayChargeUpValue(0);
             }
         }
-        
+
         // Pickup text.
         if (player != null && player.MainCamera != null && pickUpGroup != null)
         {
@@ -173,7 +177,7 @@ public class UIController : MonoBehaviour
                 notifyText.text = notificationText;
                 notifyGroup.alpha = Mathf.Lerp(notifyGroup.alpha, 1f, Time.deltaTime * 10);
                 notifyText.rectTransform.anchoredPosition = new Vector2(
-                    Mathf.Lerp(notifyText.rectTransform.anchoredPosition.x, 20f, Time.deltaTime * 10), 
+                    Mathf.Lerp(notifyText.rectTransform.anchoredPosition.x, 20f, Time.deltaTime * 10),
                     0f
                 );
             }
@@ -232,7 +236,7 @@ public class UIController : MonoBehaviour
             scifiEffectTimer = 0;
             characterScreenEnabled = !characterScreenEnabled;
 
-            if (showNotification && interactionNotification )
+            if (showNotification && interactionNotification)
             {
                 Debug.Log("OPENED: " + notificationCSPos.ToString());
                 SetCharacterScreen(characterScreenEnabled, notificationCSPos.x, notificationCSPos.y);
@@ -358,6 +362,14 @@ public class UIController : MonoBehaviour
         }
 
         return 0;
+    }
+
+    private void SetMinimap(bool active = true)
+    {
+        if (miniMap != null)
+        {
+            miniMap.SetActive(active);
+        }
     }
 
     private void SetCharacterScreen(bool value, int screenIndex = 1, int optionIndex = -1)
