@@ -37,7 +37,7 @@ TagManager:
   - NavMeshInclude
   - OcclusionExclusion
   - LoadingCameraExclusion
-  - 
+  - FogOfWarVisible
   - 
   - 
   - 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class OcclusionCulling : MonoBehaviour
 {
@@ -10,13 +11,21 @@ public class OcclusionCulling : MonoBehaviour
     List<GameObject> visibleRooms = new List<GameObject>();
 
     [SerializeField] LayerMask occlusionLayer;
-    [SerializeField] LayerMask occlusionExclusion;
+    [SerializeField] string fogOfWarLayerName = "FogOfWarVisible";
 
     bool canUpdate = true;
+    bool initialized = true;
+
+    WorldGenerator wg;
+
+    private void Start()
+    {
+        wg = FindObjectOfType<WorldGenerator>();
+        wg.OnWorldStart.AddListener(Init);
+    }
 
     public void Init()
     {
-        WorldGenerator wg = FindObjectOfType<WorldGenerator>();
         renderers.AddRange(wg.GetComponentsInChildren<Renderer>());
 
         foreach (Renderer r in renderers)
@@ -28,6 +37,8 @@ public class OcclusionCulling : MonoBehaviour
         }
 
         renderers.Clear();
+        initialized = true;
+
         UpdateCulling();
     }
 
@@ -56,15 +67,28 @@ public class OcclusionCulling : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        UpdateCulling();
+        if (other.gameObject.layer == LayerMask.NameToLayer("RoomBounds"))
+        {
+            UpdateCulling(true);
+        }
     }
 
-    private void UpdateCulling()
+    private void UpdateCulling(bool enteredRoom = false)
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, occlusionRange, occlusionLayer);
+        if (!initialized)
+        {
+            return;
+        }
+
+        Collider[] colliders = Physics.OverlapSphere(transform.position, enteredRoom ? 1 : occlusionRange, occlusionLayer);
 
         foreach (Collider room in colliders)
         {
+            if (enteredRoom && room.gameObject.layer != LayerMask.NameToLayer(fogOfWarLayerName) && room.name.Contains("Win") == false)
+            {
+                SetEnvironmentLayer(room.gameObject);
+            }
+
             if (!visibleRooms.Contains(room.gameObject))
             {
                 visibleRooms.Add(room.gameObject);
@@ -84,7 +108,7 @@ public class OcclusionCulling : MonoBehaviour
             {
                 RenderRoom(visibleRooms[i], true);
             }
-            else
+            else if (!enteredRoom)
             {
                 RenderRoom(visibleRooms[i], false);
                 roomsToBeRemoved.Add(visibleRooms[i]);
@@ -94,6 +118,21 @@ public class OcclusionCulling : MonoBehaviour
         foreach (GameObject room in roomsToBeRemoved)
         {
             visibleRooms.Remove(room);
+        }
+    }
+
+    private void SetEnvironmentLayer(GameObject room)
+    {
+        room.transform.Find("Environment").gameObject.layer = LayerMask.NameToLayer(fogOfWarLayerName);
+
+        renderers.Clear();
+        renderers.AddRange(room.GetComponentsInChildren<Renderer>());
+
+        foreach (Renderer r in renderers)
+        {
+            if (r.gameObject.layer != LayerMask.NameToLayer("Interaction")
+                && r.gameObject.layer != LayerMask.NameToLayer("Interaction"))
+                r.gameObject.layer = LayerMask.NameToLayer(fogOfWarLayerName);
         }
     }
 
@@ -109,6 +148,9 @@ public class OcclusionCulling : MonoBehaviour
 
         foreach (Renderer r in renderers)
         {
+            //if (LayerMask.NameToLayer(fogOfWarLayerName) == r.gameObject.layer && render == false)
+            //    continue;
+
             r.enabled = render;
         }
     }

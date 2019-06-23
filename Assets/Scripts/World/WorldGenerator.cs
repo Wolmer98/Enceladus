@@ -732,8 +732,6 @@ public class WorldGenerator : MonoBehaviour
         player.GetComponent<FPSController>().IsFrozen = false;
         player.InitPlayer();
 
-        player.GetComponent<OcclusionCulling>().Init();
-
         // World Generation Complete.
         Debug.Log("<b>WorldGenerator:</b> <color=green>World Complete.</color> <color=teal>[" + worldBuildTimer.ToString("0.0") + " sec]</color>" + " <b>TOTAL ROOMS:</b> " + allSpawnedRooms.Count);
         isBuildingWorld = false;
