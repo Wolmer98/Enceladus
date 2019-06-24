@@ -45,9 +45,7 @@ public class AnimSearchAction : AnimatorAction
                 ai.Animator.Play("EchoLocation");
 
                 ai.Animator.SetBool("Walking", false);
-                ai.IsMoving = false;
-                ai.Agent.isStopped = true;
-                ai.walkingSoundEmitter.Stop();
+                AIStoppedMoving(ai);
             }
         }
         else if (ai.SetATimer)
@@ -56,15 +54,12 @@ public class AnimSearchAction : AnimatorAction
             {
                 ai.SetATimer = false;
                 ai.Animator.SetTrigger("EchoLocationOver");
-                ai.Agent.isStopped = false;
+                AIStoppedMoving(ai);
             }
         }
         else
         {
-            if (!ai.walkingSoundEmitter.IsPlaying())
-            {
-                ai.walkingSoundEmitter.Play();
-            }
+            AIStartedMoving(ai);
             ai.Animator.SetBool("Walking", true);
         }
     }

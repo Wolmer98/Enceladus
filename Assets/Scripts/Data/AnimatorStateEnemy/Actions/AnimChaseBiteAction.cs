@@ -13,6 +13,7 @@ public class AnimChaseBiteAction : AnimatorAction
             ai.Animator.Play("Walking");
         }
         ai.Agent.speed = ai.Stats.chaseSpeed;
+        AIStartedMoving(ai);
     }
 
     public override void ExitAction(AI ai, Animator anim)
@@ -27,11 +28,9 @@ public class AnimChaseBiteAction : AnimatorAction
         // isAttacking is changed in the animation clip for the bite attack.
         if(ai.IsAttacking)
         {
-            ai.Agent.isStopped = true;
             return;
         }
 
-        ai.Agent.isStopped = false;
         ai.Agent.SetDestination(ai.Player.transform.position);
 
         float dist = Vector3.Distance(ai.transform.position, ai.Player.transform.position);
@@ -39,21 +38,19 @@ public class AnimChaseBiteAction : AnimatorAction
         if (dist > ai.Agent.stoppingDistance)
         {
             ai.Animator.SetBool("Walking", true);
-            if (!ai.walkingSoundEmitter.IsPlaying())
-            {
-                ai.walkingSoundEmitter.Play();
-            }
+            AIStartedMoving(ai);
         }
         else
         {
             ai.Animator.SetBool("Walking", false);
-            ai.walkingSoundEmitter.Stop();
+            AIStoppedMoving(ai);
             ai.transform.LookAt(new Vector3 (ai.Player.transform.position.x, ai.transform.position.y, ai.Player.transform.position.z));
         }
 
         if (ai.AttackTimer(ai.Stats.attackSpeed) && dist < ai.Stats.attackRange)
         {
             ai.IsAttacking = true;
+            AIStoppedMoving(ai);
             ai.AttackCooldown = 0;
             ai.Animator.Play("BiteAttack");
             FMODUnity.RuntimeManager.PlayOneShot(ai.attackSound, ai.transform.position);

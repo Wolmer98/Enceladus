@@ -76,12 +76,12 @@ public class AI_State : ScriptableObject
 
                 if (condition && ai.OnHurtConditions[i].TrueState != null)
                 {
-                    ai.ChangeState(ai.OnHurtConditions[i].TrueState);
+                    //ai.ChangeState(ai.OnHurtConditions[i].TrueState);
                     break;
                 }
                 else if (!condition && ai.OnHurtConditions[i].FalseState != null)
                 {
-                    ai.ChangeState(ai.OnHurtConditions[i].FalseState);
+                    //ai.ChangeState(ai.OnHurtConditions[i].FalseState);
                     break;
                 }
             }
@@ -98,11 +98,11 @@ public class AI_State : ScriptableObject
             bool condition = transitions[i].Condition.CheckCondition(ai);
             if (condition && transitions[i].TrueState != null)
             {
-                ai.ChangeState(transitions[i].TrueState);
+                //ai.ChangeState(transitions[i].TrueState);
             }
             else if (!condition && transitions[i].FalseState != null)
             {
-                ai.ChangeState(transitions[i].FalseState);
+                //ai.ChangeState(transitions[i].FalseState);
             }
         }
     }

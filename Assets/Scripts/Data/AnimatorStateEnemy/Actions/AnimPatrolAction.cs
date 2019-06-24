@@ -17,7 +17,9 @@ public class AnimPatrolAction : AnimatorAction
         //ai.Animator.Play("Walking");
         ai.PatrolWaypointIndex = Random.Range(0, ai.PatrolWaypoints.Length);
         ai.Agent.speed = ai.Stats.moveSpeed;
-
+        ai.Animator.Play("Walking");
+        ai.Animator.SetBool("Walking", true);
+        AIStartedMoving(ai);
         ai.Agent.SetDestination(ai.PatrolWaypoints[ai.PatrolWaypointIndex].transform.position);
     }
 
@@ -43,10 +45,7 @@ public class AnimPatrolAction : AnimatorAction
 
                 ai.PlayEcho(0.0f);
                 ai.Animator.SetBool("Walking", false);
-                ai.IsMoving = false;
-                ai.Agent.isStopped = true;
-                //ai.walkingSoundEmitter.Stop();
-                ai.walkingSoundEmitter.EventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                AIStoppedMoving(ai);
             }
         }
         else if (ai.SetATimer)
@@ -55,16 +54,9 @@ public class AnimPatrolAction : AnimatorAction
             {
                 ai.SetATimer = false;
                 ai.Animator.SetTrigger("EchoLocationOver");
-                ai.Agent.isStopped = false;
+                ai.Animator.SetBool("Walking", true);
+                AIStartedMoving(ai);
             }
-        }
-        else
-        {
-            if(!ai.walkingSoundEmitter.IsPlaying())
-            {
-                ai.walkingSoundEmitter.Play();
-            }
-            ai.Animator.SetBool("Walking", true);
         }
     }
 

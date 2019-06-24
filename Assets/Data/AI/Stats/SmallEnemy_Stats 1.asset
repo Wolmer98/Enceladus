@@ -10,11 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 864521336bd0fd74eb5b483a0c9645c5, type: 3}
-  m_Name: SmallEnemy2_Stats 1
+  m_Name: SmallEnemy_Stats 1
   m_EditorClassIdentifier: 
   attackRange: 2
   damage: 20
   attackSpeed: 4
+  stunDuration: 2
+  chargeCooldown: 6
+  chargeRangeInterval: {x: 0, y: 0}
+  chargeWindupTime: 0.5
   targetsLayerMask:
     serializedVersion: 2
     m_Bits: 4096
@@ -25,6 +29,7 @@ MonoBehaviour:
   chaseSpeed: 2
   rotationDuration: 2
   rotationSpeed: 5
+  chargeSpeed: 8
   searchRadius: 10
   searchTime: 20
   nbrSearchPos: 10
@@ -40,3 +45,4 @@ MonoBehaviour:
   healthThresholdForReaction: 0.5
   speedMultiplier: 1
   damageMultiplier: 1
+  chargeSpeedMultiplier: 1

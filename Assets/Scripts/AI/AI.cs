@@ -260,12 +260,10 @@ public class AI : MonoBehaviour
         //agent.updatePosition = false;
         //agent.updateRotation = false;
 
-        startSoundTimer = Random.Range(0f, 1.1f);
-
         //GetComponent<Animator>().Play("Idle");
     }
 
-    private void Update()
+    public void AnimUpdate()                //Used by animator
     {
         if (Paused)
         {
@@ -279,67 +277,40 @@ public class AI : MonoBehaviour
 
         AIMoving();
 
-        if(waterManager != null)
+        if (waterManager != null)
         {
             CheckIfUnderWater();
         }
     }
 
-    public void AnimUpdate()
+    private void AIMoving()                 //Used by animator
     {
+        if (IsMoving)
+        {
 
+            float snapshot;
+            playerBehindWallForSound = TestIfPlayerInSight(transform.position, 20.0f);
+            walkingSoundEmitter.EventInstance.getParameterByName("Snapshot", out snapshot);
+
+            if (!playerBehindWallForSound)
+            {
+                if (snapshot != 1.0f)
+                {
+                    walkingSoundEmitter.EventInstance.setParameterByName("Snapshot", 1.0f);
+                }
+            }
+            else
+            {
+                if (snapshot != 0.0f)
+                {
+                    walkingSoundEmitter.EventInstance.setParameterByName("Snapshot", 0.0f);
+                }
+            }
+
+        }
     }
 
-    private void AIMoving()
-    {
-        //if (IsMoving)
-        //{
-        //    // Start walking sound at random times.
-        //    if (!hasSoundStarted)
-        //    {
-        //        soundTimer += Time.deltaTime;
-        //        if (soundTimer > startSoundTimer)
-        //        {
-        //            walkingSoundEmitter.Play();
-        //            walkingSoundEmitter.EventInstance.release();
-        //            hasSoundStarted = true;
-        //        }
-        //    }
-
-        //    if (hasSoundStarted)
-        //    {
-        //        float snapshot;
-        //        playerBehindWallForSound = TestIfPlayerInSight(transform.position, 20.0f);
-        //        walkingSoundEmitter.EventInstance.getParameterByName("Snapshot", out snapshot);
-
-        //        if (!playerBehindWallForSound)
-        //        {
-        //            if (snapshot != 1.0f)
-        //            {
-        //                //Debug.Log(ID + " changed to snapshot 1");
-        //                walkingSoundEmitter.EventInstance.setParameterByName("Snapshot", 1.0f);
-        //            }
-        //        }
-        //        else
-        //        {
-        //            if (snapshot != 0.0f)
-        //            {
-        //                walkingSoundEmitter.EventInstance.setParameterByName("Snapshot", 0.0f);
-        //            }
-        //        }
-        //    }
-
-        //    // TEMP SOLUTION
-        //    if (transform.position.y < -50)
-        //    {
-        //        GetComponent<Destructible>().Hurt(10000);
-        //    }
-
-        //    AggroSoundCountdown -= Time.deltaTime;
-        //}
-    }
-
-    private void CheckIfUnderWater()
+    private void CheckIfUnderWater()                    //Used by animator   
     {
         if (topOfCrabForWaterLevel.position.y < waterManager.transform.position.y)
         {
@@ -356,19 +327,6 @@ public class AI : MonoBehaviour
                 skinnedMeshRenderer.materials[0].SetColor("_EmissionColor", Color.black);
                 underwaterEffects.SetActive(false);
             }
-        }
-    }
-
-    //If Rigidbody Movement
-    private void FixedUpdate()
-    {
-        if(Paused)
-        {
-            return;
-        }
-        if (currentState != null)
-        {
-            currentState.FixedUpdateState(this);
         }
     }
 
@@ -391,17 +349,6 @@ public class AI : MonoBehaviour
     }
 
     /// <summary>
-    /// Used to init the Ai with settings needed to preform actions
-    /// </summary>
-    public void ChangeState(AI_State newState)
-    {
-        //Debug.Log(gameObject + " changed state to: " + newState);
-        ExitState();
-        currentState = newState;
-        // Enter state?
-    }
-
-    /// <summary>
     /// Used by actions to check if a certain time has passed.
     /// </summary>
     public bool ActionTimeCheck(float duration)                         //Used by Animator
@@ -413,7 +360,7 @@ public class AI : MonoBehaviour
     /// <summary>
     /// Used by states to see if a certain amount of time has passed.
     /// </summary>
-    public bool ConditionTimeCheck(float duration)
+    public bool ConditionTimeCheck(float duration)                  //Used by Animator
     {
         conditionTimer += Time.deltaTime;
         return(conditionTimer >= duration);
@@ -475,14 +422,6 @@ public class AI : MonoBehaviour
                 PlayAggroSound();
             }
         }
-
-        //if (detectedSoundState == null)
-        //    return;
-        //if (currentState != detectedSoundState && !ChasingPlayer && !FleeingFromPlayer && !IsStunned)
-        //{
-        //    ChangeState(detectedSoundState);
-        //    PlayAggroSound();
-        //}
     }
 
     /// <summary>
@@ -492,6 +431,8 @@ public class AI : MonoBehaviour
     {
         walkingSoundEmitter.EventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         soundEmitter.EventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        walkingSoundEmitter.Stop();
+        soundEmitter.Stop();
     }
 
     /// <summary>
@@ -531,34 +472,6 @@ public class AI : MonoBehaviour
     {
         EnemySpawnManager enemySpawnManager = FindObjectOfType<EnemySpawnManager>();
         enemySpawnManager.RemoveEnemyFromList(this);
-    }
-
-
-    private void ExitState()
-    {
-        conditionTimer = 0;
-        FoundSearchPoints = false;
-        echoTime = 0;
-        IsScreaming = false;
-        IsEchoLocating = false;
-        IsAttacking = false;
-
-        IsStunned = false;
-        HasCharged = false;
-
-        SetATimer = false;
-        SetCTimer = false;
-
-        detectionSphere.radius = stats.detectionRadius;
-        if (agent != null)
-        {
-            agent.stoppingDistance = baseStoppingDist;
-        }
-        
-        if (typeOfEnemy == enemyType.swarm)
-        {
-            animator.ResetTrigger("Jumping");
-        }
     }
 
 

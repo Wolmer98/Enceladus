@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 864521336bd0fd74eb5b483a0c9645c5, type: 3}
-  m_Name: SmallEnemy_Stats
+  m_Name: MediumEnemy_Stats
   m_EditorClassIdentifier: 
   attackRange: 2
-  chargeCooldown: 6
-  chargeRangeInterval: {x: 0, y: 0}
   damage: 20
   attackSpeed: 4
+  stunDuration: 2
+  chargeCooldown: 6
+  chargeRangeInterval: {x: 0, y: 0}
+  chargeWindupTime: 0.5
   targetsLayerMask:
     serializedVersion: 2
     m_Bits: 4096
