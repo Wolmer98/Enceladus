@@ -10,13 +10,16 @@ public class AnimChargeAction : AnimatorAction
         ai.ChasingPlayer = true;
         ai.Agent.isStopped = true;
         FMODUnity.RuntimeManager.PlayOneShot(ai.aggroSound, ai.transform.position);
+        ai.Agent.updateRotation = false;
+        ai.HasCharged = true;
     }
 
     public override void ExitAction(AI ai, Animator anim)
     {
         ai.ChasingPlayer = false;
-        ai.Agent.isStopped = false;
         ai.SetATimer = false;
+        ai.Rigidbody.freezeRotation = false;
+        ai.Agent.updateRotation = true;
     }
 
     public override void UpdateAction(AI ai, Animator anim)
@@ -32,6 +35,8 @@ public class AnimChargeAction : AnimatorAction
 
         if (ai.ActionTimeCheck(ai.Stats.chargeWindupTime))
         {
+            ai.Rigidbody.freezeRotation = true;
+            ai.HasCharged = false;
             ai.ChargeCooldown = 0.0f;
             if (ai.Enrage)
             {
@@ -41,12 +46,12 @@ public class AnimChargeAction : AnimatorAction
             {
                 Charge(ai, ai.Stats.chargeSpeed);
             }
-            //Debug.Log("Enemy Charging");
-            ai.IsMoving = true;
         }
-
-        //ai.transform.Rotate(ai.ChargeDirection);
-        LookInDirection(ai);
+        else if (ai.HasCharged)
+        {
+            Debug.Log("Looking");
+            LookInDirection(ai);
+        }
     }
 
 

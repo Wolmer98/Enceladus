@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: BigEnemy_Stats
   m_EditorClassIdentifier: 
   attackRange: 3
-  chargeCooldown: 20
-  chargeRangeInterval: {x: 3, y: 7}
   damage: 20
   attackSpeed: 4
+  stunDuration: 2
+  chargeCooldown: 20
+  chargeRangeInterval: {x: 3, y: 7}
+  chargeWindupTime: 1
   targetsLayerMask:
     serializedVersion: 2
     m_Bits: 4096

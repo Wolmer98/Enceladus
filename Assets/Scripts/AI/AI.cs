@@ -129,7 +129,7 @@ public class AI : MonoBehaviour
 
     // Tracking getters
     public Vector3 TargetLastPosition { get { return targetLastPosition; } }
-    public Vector3 SoundLastPosition { get { return soundLastPosition; } }
+    public Vector3 SoundLastPosition { get { return soundLastPosition; } }              //Used by animator
     public Transform Target { get; set; }
 
     // Detection
@@ -165,6 +165,7 @@ public class AI : MonoBehaviour
     public Vector3 ChargeDirection { get; set; }
     public bool IsStunned { get; set; }
     public bool HasCharged { get; set; }
+    public bool HealthThresholdReaction { get; set; }
 
 
     public Vector3 DamagePosition { get { return transform.position + (transform.forward * damagePosition.z) + (transform.up * damagePosition.y); } } //Used by anim
@@ -172,7 +173,7 @@ public class AI : MonoBehaviour
 
     //Backup
     public EnemySpawnPoint SpawnPointForBackup { get; set; }
-    public bool CalledForFriends { get; set; }
+    public bool CalledForFriends { get; set; }                          // Used by Anim
 
     // Awareness
     public List<AI> AlliesAround { get; set; }
@@ -282,56 +283,60 @@ public class AI : MonoBehaviour
         {
             CheckIfUnderWater();
         }
+    }
+
+    public void AnimUpdate()
+    {
 
     }
 
     private void AIMoving()
     {
-        if (IsMoving)
-        {
-            // Start walking sound at random times.
-            if (!hasSoundStarted)
-            {
-                soundTimer += Time.deltaTime;
-                if (soundTimer > startSoundTimer)
-                {
-                    walkingSoundEmitter.Play();
-                    walkingSoundEmitter.EventInstance.release();
-                    hasSoundStarted = true;
-                }
-            }
+        //if (IsMoving)
+        //{
+        //    // Start walking sound at random times.
+        //    if (!hasSoundStarted)
+        //    {
+        //        soundTimer += Time.deltaTime;
+        //        if (soundTimer > startSoundTimer)
+        //        {
+        //            walkingSoundEmitter.Play();
+        //            walkingSoundEmitter.EventInstance.release();
+        //            hasSoundStarted = true;
+        //        }
+        //    }
 
-            if (hasSoundStarted)
-            {
-                float snapshot;
-                playerBehindWallForSound = TestIfPlayerInSight(transform.position, 20.0f);
-                walkingSoundEmitter.EventInstance.getParameterByName("Snapshot", out snapshot);
+        //    if (hasSoundStarted)
+        //    {
+        //        float snapshot;
+        //        playerBehindWallForSound = TestIfPlayerInSight(transform.position, 20.0f);
+        //        walkingSoundEmitter.EventInstance.getParameterByName("Snapshot", out snapshot);
 
-                if (!playerBehindWallForSound)
-                {
-                    if (snapshot != 1.0f)
-                    {
-                        //Debug.Log(ID + " changed to snapshot 1");
-                        walkingSoundEmitter.EventInstance.setParameterByName("Snapshot", 1.0f);
-                    }
-                }
-                else
-                {
-                    if (snapshot != 0.0f)
-                    {
-                        walkingSoundEmitter.EventInstance.setParameterByName("Snapshot", 0.0f);
-                    }
-                }
-            }
+        //        if (!playerBehindWallForSound)
+        //        {
+        //            if (snapshot != 1.0f)
+        //            {
+        //                //Debug.Log(ID + " changed to snapshot 1");
+        //                walkingSoundEmitter.EventInstance.setParameterByName("Snapshot", 1.0f);
+        //            }
+        //        }
+        //        else
+        //        {
+        //            if (snapshot != 0.0f)
+        //            {
+        //                walkingSoundEmitter.EventInstance.setParameterByName("Snapshot", 0.0f);
+        //            }
+        //        }
+        //    }
 
-            // TEMP SOLUTION
-            if (transform.position.y < -50)
-            {
-                GetComponent<Destructible>().Hurt(10000);
-            }
+        //    // TEMP SOLUTION
+        //    if (transform.position.y < -50)
+        //    {
+        //        GetComponent<Destructible>().Hurt(10000);
+        //    }
 
-            AggroSoundCountdown -= Time.deltaTime;
-        }
+        //    AggroSoundCountdown -= Time.deltaTime;
+        //}
     }
 
     private void CheckIfUnderWater()
@@ -441,7 +446,7 @@ public class AI : MonoBehaviour
     /// <summary>
     /// Used by sounds to tell the AI it has heard something.
     /// </summary>
-    public void DetectedSound(Vector3 soundPosition, bool knowExactLocation)
+    public void DetectedSound(Vector3 soundPosition, bool knowExactLocation)            //Used by animator
     {
         if(!gameObject.activeSelf)
         {
@@ -461,13 +466,23 @@ public class AI : MonoBehaviour
             }
         }
 
-        if (detectedSoundState == null)
-            return;
-        if(currentState != detectedSoundState && !ChasingPlayer && !FleeingFromPlayer && !IsStunned)
+        Debug.Log("AI heard sound");
+        if(!StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Chase"))
         {
-            ChangeState(detectedSoundState);
-            PlayAggroSound();
+            if(!ChasingPlayer && !FleeingFromPlayer && !IsStunned)
+            {
+                StateMachine.Play("Chase");
+                PlayAggroSound();
+            }
         }
+
+        //if (detectedSoundState == null)
+        //    return;
+        //if (currentState != detectedSoundState && !ChasingPlayer && !FleeingFromPlayer && !IsStunned)
+        //{
+        //    ChangeState(detectedSoundState);
+        //    PlayAggroSound();
+        //}
     }
 
     /// <summary>
@@ -591,6 +606,16 @@ public class AI : MonoBehaviour
     public void onHurt()
     {
         EnemyHurt = true;
+
+        if (Destructible.Health <= Stats.healthThresholdForReaction * Destructible.MaxHealth && !HealthThresholdReaction)
+        {
+            if (typeOfEnemy == enemyType.big)
+            {
+                Enrage = true;
+            }
+            StateMachine.Play("Stunned");
+            HealthThresholdReaction = true;
+        }
     }
 
     private void OnDrawGizmos()
@@ -614,4 +639,27 @@ public class AI : MonoBehaviour
     {
         StopSounds();
     }
+
+    public void PlayEcho(float ecolocationType)                             // Used by Animator
+    {
+        if (soundEmitter == null)
+        {
+            Debug.Log("SoundEmitter was null on AI");
+            return;
+        }
+
+        soundEmitter.Event = echoSound;
+        soundEmitter.Play();
+        soundEmitter.EventInstance.release();
+        soundEmitter.EventInstance.setParameterByName("Ecolocation", ecolocationType);
+        if (TestIfPlayerInSight(transform.position, 20.0f))
+        {
+            soundEmitter.EventInstance.setParameterByName("Snapshot", 1.0f);
+        }
+        else
+        {
+            soundEmitter.EventInstance.setParameterByName("Snapshot", 0.0f);
+        }
+    }
+
 }

@@ -11,7 +11,8 @@ public class AnimStunnedAction : AnimatorAction
         ai.Animator.Play("Stunned");
         ai.IsStunned = true;
         ai.ActionTime = 0.0f;
-        
+        ai.Rigidbody.isKinematic = true;
+        ai.walkingSoundEmitter.Stop();
     }
 
     public override void ExitAction(AI ai, Animator anim)
@@ -19,6 +20,7 @@ public class AnimStunnedAction : AnimatorAction
         ai.Agent.isStopped = false;
         ai.IsStunned = false;
         anim.ResetTrigger("Stunned");
+        ai.Rigidbody.isKinematic = false;
     }
 
     public override void UpdateAction(AI ai, Animator anim)

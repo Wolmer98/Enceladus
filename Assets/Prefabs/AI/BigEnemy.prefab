@@ -265,6 +265,11 @@ PrefabInstance:
       propertyPath: m_Height
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5320105365859915355, guid: bab8984ab4a35594088fa91ea51e833f,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5320105365859915344, guid: bab8984ab4a35594088fa91ea51e833f,
         type: 3}
       propertyPath: baseState
@@ -274,8 +279,7 @@ PrefabInstance:
         type: 3}
       propertyPath: detectedSoundState
       value: 
-      objectReference: {fileID: 11400000, guid: 0c7f6574b9f00fa45babcb930d885149,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 5320105365859915344, guid: bab8984ab4a35594088fa91ea51e833f,
         type: 3}
       propertyPath: isBig

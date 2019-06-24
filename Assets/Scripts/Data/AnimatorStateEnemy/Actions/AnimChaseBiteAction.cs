@@ -12,6 +12,7 @@ public class AnimChaseBiteAction : AnimatorAction
         {
             ai.Animator.Play("Walking");
         }
+        ai.Agent.speed = ai.Stats.chaseSpeed;
     }
 
     public override void ExitAction(AI ai, Animator anim)
@@ -38,14 +39,24 @@ public class AnimChaseBiteAction : AnimatorAction
         if (dist > ai.Agent.stoppingDistance)
         {
             ai.Animator.SetBool("Walking", true);
+            if (!ai.walkingSoundEmitter.IsPlaying())
+            {
+                ai.walkingSoundEmitter.Play();
+            }
+        }
+        else
+        {
+            ai.Animator.SetBool("Walking", false);
+            ai.walkingSoundEmitter.Stop();
+            ai.transform.LookAt(new Vector3 (ai.Player.transform.position.x, ai.transform.position.y, ai.Player.transform.position.z));
         }
 
         if (ai.AttackTimer(ai.Stats.attackSpeed) && dist < ai.Stats.attackRange)
         {
             ai.IsAttacking = true;
-            ai.Animator.SetBool("Walking", false);
             ai.AttackCooldown = 0;
             ai.Animator.Play("BiteAttack");
+            FMODUnity.RuntimeManager.PlayOneShot(ai.attackSound, ai.transform.position);
         }
     }
 }

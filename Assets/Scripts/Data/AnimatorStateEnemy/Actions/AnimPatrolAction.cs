@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "AnimActionPatrol", menuName = "AI/AnimAction/Patrol")]
+[CreateAssetMenu(fileName = "AnimPatrolAction", menuName = "AI/AnimAction/Patrol")]
 public class AnimPatrolAction : AnimatorAction
 {
     public override void EnterActions(AI ai, Animator anim)
@@ -14,7 +14,7 @@ public class AnimPatrolAction : AnimatorAction
         }
 
         ai.Agent.isStopped = false;
-
+        //ai.Animator.Play("Walking");
         ai.PatrolWaypointIndex = Random.Range(0, ai.PatrolWaypoints.Length);
         ai.Agent.speed = ai.Stats.moveSpeed;
 
@@ -23,7 +23,6 @@ public class AnimPatrolAction : AnimatorAction
 
     public override void ExitAction(AI ai, Animator anim)
     {
-        ai.Animator.SetBool("Walking", false);
         ai.Animator.ResetTrigger("EchoLocationOver");
         ai.SetATimer = false;
         anim.ResetTrigger("Patrol");
@@ -42,9 +41,12 @@ public class AnimPatrolAction : AnimatorAction
 
                 ai.Animator.Play("EchoLocation");
 
+                ai.PlayEcho(0.0f);
                 ai.Animator.SetBool("Walking", false);
                 ai.IsMoving = false;
                 ai.Agent.isStopped = true;
+                //ai.walkingSoundEmitter.Stop();
+                ai.walkingSoundEmitter.EventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             }
         }
         else if (ai.SetATimer)
@@ -58,7 +60,12 @@ public class AnimPatrolAction : AnimatorAction
         }
         else
         {
+            if(!ai.walkingSoundEmitter.IsPlaying())
+            {
+                ai.walkingSoundEmitter.Play();
+            }
             ai.Animator.SetBool("Walking", true);
         }
     }
+
 }

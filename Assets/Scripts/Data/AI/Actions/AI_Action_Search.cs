@@ -33,7 +33,7 @@ public class AI_Action_Search : AI_Action
 
                 ai.Animator.SetBool("Walking", false);
                 ai.IsMoving = false;
-
+                ai.walkingSoundEmitter.Stop();
             }
         }
 

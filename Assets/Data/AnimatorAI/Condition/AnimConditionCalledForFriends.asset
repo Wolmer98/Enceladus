@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c795759dbaf7ccd4592dccca4fbf1467, type: 3}
-  m_Name: AnimConditionWaitForSeconds
+  m_Script: {fileID: 11500000, guid: c0945ce85559ec045b30a278e3193341, type: 3}
+  m_Name: AnimConditionCalledForFriends
   m_EditorClassIdentifier: 
-  secondToWait: 4
