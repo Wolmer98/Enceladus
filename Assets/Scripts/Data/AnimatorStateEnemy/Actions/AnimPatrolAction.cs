@@ -25,7 +25,6 @@ public class AnimPatrolAction : AnimatorAction
 
     public override void ExitAction(AI ai, Animator anim)
     {
-        ai.Animator.ResetTrigger("EchoLocationOver");
         ai.SetATimer = false;
         anim.ResetTrigger("Patrol");
     }
@@ -53,8 +52,8 @@ public class AnimPatrolAction : AnimatorAction
             if (ai.ActionTimeCheck(ai.Stats.nearRadiusDuration))
             {
                 ai.SetATimer = false;
-                ai.Animator.SetTrigger("EchoLocationOver");
                 ai.Animator.SetBool("Walking", true);
+                ai.Animator.Play("Walking");
                 AIStartedMoving(ai);
             }
         }

@@ -7,15 +7,18 @@ public class AnimIdleAction : AnimatorAction
 {
     public override void EnterActions(AI ai, Animator anim)
     {
-        ai.Agent.isStopped = true;
+        AIStoppedMoving(ai);
         ai.Animator.SetBool("Walking", false);
         ai.Animator.Play("Idle");
+        ai.ConditionTime = 0f;
     }
 
     public override void ExitAction(AI ai, Animator anim)
     {
         anim.ResetTrigger("Patrol");
-        ai.ConditionTime = 0f;
+        anim.ResetTrigger("Chase");
+        anim.ResetTrigger("Search");
+        anim.ResetTrigger("Idle");
     }
 
     public override void UpdateAction(AI ai, Animator anim)

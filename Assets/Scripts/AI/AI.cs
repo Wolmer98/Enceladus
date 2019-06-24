@@ -287,10 +287,14 @@ public class AI : MonoBehaviour
     {
         if (IsMoving)
         {
-
             float snapshot;
             playerBehindWallForSound = TestIfPlayerInSight(transform.position, 20.0f);
             walkingSoundEmitter.EventInstance.getParameterByName("Snapshot", out snapshot);
+
+            if (!walkingSoundEmitter.IsPlaying())
+            {
+                walkingSoundEmitter.Play();
+            }
 
             if (!playerBehindWallForSound)
             {
@@ -306,11 +310,17 @@ public class AI : MonoBehaviour
                     walkingSoundEmitter.EventInstance.setParameterByName("Snapshot", 0.0f);
                 }
             }
-
+        }
+        else
+        {
+            if (walkingSoundEmitter.IsPlaying())
+            {
+                walkingSoundEmitter.Stop();
+            }
         }
     }
 
-    private void CheckIfUnderWater()                    //Used by animator   
+    private void CheckIfUnderWater()                                //Used by animator   
     {
         if (topOfCrabForWaterLevel.position.y < waterManager.transform.position.y)
         {
@@ -360,7 +370,7 @@ public class AI : MonoBehaviour
     /// <summary>
     /// Used by states to see if a certain amount of time has passed.
     /// </summary>
-    public bool ConditionTimeCheck(float duration)                  //Used by Animator
+    public bool ConditionTimeCheck(float duration)                    //Used by Animator
     {
         conditionTimer += Time.deltaTime;
         return(conditionTimer >= duration);
@@ -378,7 +388,7 @@ public class AI : MonoBehaviour
     /// <summary>
     /// Check if AI can attack yet.
     /// </summary>
-    public bool AttackTimer(float duration)
+    public bool AttackTimer(float duration)                         //Used by animator
     {
         AttackCooldown += Time.deltaTime;
         return (AttackCooldown >= duration);
@@ -421,6 +431,10 @@ public class AI : MonoBehaviour
                 StateMachine.Play("Chase");
                 PlayAggroSound();
             }
+        }
+        else
+        {
+            conditionTimer = 0f;
         }
     }
 
@@ -519,7 +533,7 @@ public class AI : MonoBehaviour
     public void onHurt()
     {
         EnemyHurt = true;
-
+        //soundLastPosition = Player.transform.position;
         if (Destructible.Health <= Stats.healthThresholdForReaction * Destructible.MaxHealth && !HealthThresholdReaction)
         {
             if (typeOfEnemy == enemyType.big)

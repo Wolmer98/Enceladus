@@ -20,7 +20,6 @@ public class AnimChaseBiteAction : AnimatorAction
     {
         ai.ChasingPlayer = false;
         ai.IsAttacking = false;
-        ai.Animator.SetBool("Walking", false);
     }
 
     public override void UpdateAction(AI ai, Animator anim)

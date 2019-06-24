@@ -291,6 +291,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MediumEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8275400314718403886, guid: a07eac15c3cec9440b7a5d7aa109cdf3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8275400314718403875, guid: a07eac15c3cec9440b7a5d7aa109cdf3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -932,7 +937,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964747069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.25, y: 10.48, z: -1.44}
+  m_LocalPosition: {x: -11.91, y: 0.861, z: -1.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1473,7 +1478,7 @@ PrefabInstance:
     - target: {fileID: 8275400314718403886, guid: e83445adeba25504995ca2ee2220067a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8275400314718403875, guid: e83445adeba25504995ca2ee2220067a,
         type: 3}

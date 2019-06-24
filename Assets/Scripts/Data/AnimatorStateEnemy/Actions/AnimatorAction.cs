@@ -12,13 +12,11 @@ public abstract class AnimatorAction : ScriptableObject
     {
         ai.Agent.isStopped = true;
         ai.IsMoving = false;
-        ai.walkingSoundEmitter.Stop();
     }
 
     protected void AIStartedMoving(AI ai)
     {
         ai.Agent.isStopped = false;
         ai.IsMoving = true;
-        ai.walkingSoundEmitter.Play();
     }
 }

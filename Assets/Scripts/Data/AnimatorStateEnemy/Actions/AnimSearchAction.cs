@@ -8,14 +8,16 @@ public class AnimSearchAction : AnimatorAction
 {
     public override void EnterActions(AI ai, Animator anim)
     {
-        ai.FoundSearchPoints = false;
-        FindSearchPoints(ai);
+        ai.SearchPoints[0] = ai.SoundLastPosition;
         ai.Agent.SetDestination(ai.SearchPoints[0]);
         ai.SearchPointIndex = 0;
+        ai.Agent.SetDestination(ai.SearchPoints[ai.SearchPointIndex]);
+
         ai.Agent.isStopped = false;
         ai.ConditionTime = 0f;
         ai.Agent.speed = ai.Stats.chaseSpeed;
         ai.Animator.SetBool("Walking", true);
+        ai.Animator.Play("Walking");
     }
 
     public override void ExitAction(AI ai, Animator anim)
@@ -23,57 +25,50 @@ public class AnimSearchAction : AnimatorAction
         ai.FoundSearchPoints = false;
         ai.ConditionTime = 0f;
         anim.ResetTrigger("Search");
-        ai.Animator.SetBool("Walking", false);
+        //ai.Animator.SetBool("Walking", false);
     }
 
     public override void UpdateAction(AI ai, Animator anim)
     {
-        if (!ai.FoundSearchPoints)
-        {
-            return;
-        }
-
         if(ai.Agent.remainingDistance <= ai.Agent.stoppingDistance && !ai.Agent.pathPending)
         {
-            ai.SearchPointIndex = (ai.SearchPointIndex + 1) % ai.SearchPoints.Length;
-            ai.Agent.SetDestination(ai.SearchPoints[ai.SearchPointIndex]);
-            if (Random.Range(0f, 1f) < ai.Stats.chanceOfNearRadius)
+            if (Random.Range(0f, 1f) < ai.Stats.chanceOfFarRadius)
             {
                 ai.ActionTime = 0.0f;
                 ai.SetATimer = true;
 
                 ai.Animator.Play("EchoLocation");
-
-                ai.Animator.SetBool("Walking", false);
+                ai.PlayEcho(1.0f);
                 AIStoppedMoving(ai);
+                //Find new search point
+                if(ai.SearchPointIndex < ai.SearchPoints.Length)
+                {
+                    FindNewSearchPoint(ai);
+                }
+                //ai.SearchPointIndex = (ai.SearchPointIndex + 1) % ai.SearchPoints.Length;
+                //ai.Agent.SetDestination(ai.SearchPoints[ai.SearchPointIndex]);
             }
         }
         else if (ai.SetATimer)
         {
-            if (ai.ActionTimeCheck(ai.Stats.nearRadiusDuration))
+            if (ai.ActionTimeCheck(ai.Stats.farRadiusDuration))
             {
                 ai.SetATimer = false;
-                ai.Animator.SetTrigger("EchoLocationOver");
-                AIStoppedMoving(ai);
+                ai.Animator.SetBool("Walking", true);
+                ai.Animator.Play("Walking");
+                AIStartedMoving(ai);
             }
-        }
-        else
-        {
-            AIStartedMoving(ai);
-            ai.Animator.SetBool("Walking", true);
         }
     }
 
 
-    private void FindSearchPoints(AI ai)
+    private void FindNewSearchPoint(AI ai)
     {
-        // ai.SearchPoints[0] = ai.SoundLastPosition;
-        ai.SearchPoints[0] = ai.SoundLastPosition;
         int missedPoints = 0;
 
         NavMeshPath path = new NavMeshPath();
 
-        for (int i = 1; i < ai.Stats.nbrSearchPos; i++)
+        for (int i = 0; i < 1; i++)
         {
             Vector3 randomDir = Random.insideUnitSphere * ai.Stats.searchRadius;
             randomDir += ai.SoundLastPosition;
@@ -89,15 +84,14 @@ public class AnimSearchAction : AnimatorAction
                     {
                         if (GetPathLength(path) < ai.Stats.searchRadius)
                         {
-                            ai.SearchPoints[i] = hit.position;
-                            ai.FoundSearchPoints = true;
+                            ai.Agent.SetDestination(hit.position);
                         }
                         else
                         {
                             missedPoints++;
                             if(missedPoints >= 20)
                             {
-                                Debug.LogWarning("AI was unable to find enough points on a navmesh");
+                                Debug.LogWarning("AI was unable to find a search point on a navmesh");
                                 ai.FoundSearchPoints = false;
                                 break;
                             }
