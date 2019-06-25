@@ -33,7 +33,7 @@ MonoBehaviour:
   searchRadius: 10
   searchTime: 20
   nbrSearchPos: 10
-  chanceOfNearRadius: 1
+  chanceOfNearRadius: 0.3
   nearRadiusLerpSpeed: 2
   echoDetectionNearRadius: 7
   nearRadiusDuration: 4

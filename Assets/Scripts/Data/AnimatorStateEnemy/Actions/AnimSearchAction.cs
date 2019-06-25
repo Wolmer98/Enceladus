@@ -18,6 +18,7 @@ public class AnimSearchAction : AnimatorAction
         ai.Agent.speed = ai.Stats.chaseSpeed;
         ai.Animator.SetBool("Walking", true);
         ai.Animator.Play("Walking");
+        ai.SetATimer = false;
     }
 
     public override void ExitAction(AI ai, Animator anim)
@@ -25,6 +26,7 @@ public class AnimSearchAction : AnimatorAction
         ai.FoundSearchPoints = false;
         ai.ConditionTime = 0f;
         anim.ResetTrigger("Search");
+        ai.SetATimer = false;
         //ai.Animator.SetBool("Walking", false);
     }
 
@@ -32,7 +34,7 @@ public class AnimSearchAction : AnimatorAction
     {
         if(ai.Agent.remainingDistance <= ai.Agent.stoppingDistance && !ai.Agent.pathPending)
         {
-            if (Random.Range(0f, 1f) < ai.Stats.chanceOfFarRadius)
+            if (Random.Range(0f, 1f) < ai.Stats.chanceOfFarRadius && !ai.SetATimer)
             {
                 ai.ActionTime = 0.0f;
                 ai.SetATimer = true;
@@ -51,12 +53,14 @@ public class AnimSearchAction : AnimatorAction
         }
         else if (ai.SetATimer)
         {
+            ai.DetectionSphere.radius = Mathf.Lerp(ai.DetectionSphere.radius, ai.Stats.echoDetectionFarRadius, ai.Stats.farRadiusLerpSpeed * Time.deltaTime);
             if (ai.ActionTimeCheck(ai.Stats.farRadiusDuration))
             {
                 ai.SetATimer = false;
                 ai.Animator.SetBool("Walking", true);
                 ai.Animator.Play("Walking");
                 AIStartedMoving(ai);
+                ai.DetectionSphere.radius = ai.Stats.detectionRadius;
             }
         }
     }

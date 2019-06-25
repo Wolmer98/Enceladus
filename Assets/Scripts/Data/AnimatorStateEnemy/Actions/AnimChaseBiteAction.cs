@@ -14,12 +14,15 @@ public class AnimChaseBiteAction : AnimatorAction
         }
         ai.Agent.speed = ai.Stats.chaseSpeed;
         AIStartedMoving(ai);
+
+        ai.DetectionSphere.radius = ai.Stats.detectionRadius * ai.Stats.chaseDetectionMultiplier;
     }
 
     public override void ExitAction(AI ai, Animator anim)
     {
         ai.ChasingPlayer = false;
         ai.IsAttacking = false;
+        ai.DetectionSphere.radius = ai.Stats.detectionRadius;
     }
 
     public override void UpdateAction(AI ai, Animator anim)
