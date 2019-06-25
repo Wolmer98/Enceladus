@@ -19,6 +19,7 @@ public class AI_Stats : ScriptableObject
     [Header("Detection")]
     public LayerMask targetsLayerMask;
     public float detectionRadius = 2f;
+    public float chaseDetectionMultiplier = 2f;
     public float timeBetweenAggroSound = 30f;
     public float distanceToMoveTowardsSound = 10f;
 

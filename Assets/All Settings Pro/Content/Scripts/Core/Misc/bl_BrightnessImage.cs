@@ -16,7 +16,7 @@ public class bl_BrightnessImage : MonoBehaviour {
     public void SetValue(float val)
     {
         Value = val;
-        Alpha.alpha = (1 - Value);
+        Alpha.alpha = (Value);
     }
 
     private CanvasGroup _Alpha;

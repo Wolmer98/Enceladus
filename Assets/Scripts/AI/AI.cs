@@ -61,13 +61,6 @@ public class AI : MonoBehaviour
     private bool playerBehindWallForSound;
     private bool playingSoundBehindWall;
 
-
-
-    // Vartiations in sound timing.
-    float startSoundTimer;
-    bool hasSoundStarted;
-    float soundTimer;
-
     // State variables
     private float actionTimer;
     private float conditionTimer;
@@ -230,10 +223,7 @@ public class AI : MonoBehaviour
         //Testing
         if(room == null)
             patrolWaypoints = FindObjectsOfType<PatrolWaypoint>();
-        //if (baseState == null)
-        //{
-        //    return;
-        //}
+
         // Get and find
         currentState = baseState;
         rigidbody = GetComponent<Rigidbody>();
@@ -245,22 +235,15 @@ public class AI : MonoBehaviour
         startPosition = new Vector3(transform.position.x, 0, transform.position.z);
         IDsRegisteredAt = new List<int>();
         AlliesAround = new List<AI>();
-        //pc = FindObjectOfType<PlayerController>();
 
         //Start values
         detectionSphere.radius = stats.detectionRadius;
         SearchPoints = new Vector3[stats.nbrSearchPos];
-        //agent.speed = stats.moveSpeed + float.Epsilon;
-        //baseStoppingDist = agent.stoppingDistance;
         AttackCooldown = stats.attackSpeed;
         ChargeCooldown = stats.chargeCooldown;
         //skinnedmeshRenderEmissionOriginalColor = skinnedMeshRenderer.materials[0].GetColor("_EmissionColor"); Not used for now.
+        skinnedMeshRenderer.materials[0].SetColor("_EmissionColor", Color.white);
 
-        //If rigidbody Movement
-        //agent.updatePosition = false;
-        //agent.updateRotation = false;
-
-        //GetComponent<Animator>().Play("Idle");
     }
 
     public void AnimUpdate()                //Used by animator
@@ -574,7 +557,7 @@ public class AI : MonoBehaviour
             Debug.Log("SoundEmitter was null on AI");
             return;
         }
-
+        soundEmitter.EventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         soundEmitter.Event = echoSound;
         soundEmitter.Play();
         soundEmitter.EventInstance.release();
