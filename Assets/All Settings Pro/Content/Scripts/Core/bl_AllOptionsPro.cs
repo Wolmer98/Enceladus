@@ -426,10 +426,13 @@ public class bl_AllOptionsPro : MonoBehaviour
     /// 
     /// </summary>
     /// <param name="v"></param>
-    public void SetBrightness(float v)
+    public void SetBrightness(float v = 0)
     {
         if (BrightnessImage == null)
             return;
+
+        if (v == 0)
+            v = BrightnessSlider.value;
 
         _brightness = v;
         BrightnessImage.SetValue(v);
