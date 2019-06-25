@@ -27,6 +27,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sizeType: 0
   propType: 4
+  propRarity: 0
   destroyOnStart: 0
   destroyChance: 0
 --- !u!1001 &954763200108307397
@@ -86,6 +87,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 44a679faa137acc4b95f4dced7812573, type: 3}
       propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 027c2a5f67fb90241a43c895bb62f55b, type: 2}
+    - target: {fileID: 2300000, guid: 44a679faa137acc4b95f4dced7812573, type: 3}
+      propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 027c2a5f67fb90241a43c895bb62f55b, type: 2}
     m_RemovedComponents: []

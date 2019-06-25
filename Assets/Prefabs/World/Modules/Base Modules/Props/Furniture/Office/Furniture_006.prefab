@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sizeType: 0
   propType: 4
+  propRarity: 0
   destroyOnStart: 0
   destroyChance: 0
 --- !u!65 &406100662248947010
