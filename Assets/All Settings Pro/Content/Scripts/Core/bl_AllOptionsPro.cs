@@ -31,8 +31,7 @@ public class bl_AllOptionsPro : MonoBehaviour
     private int DefaultBlendWeight = 1;
     [SerializeField, Range(0, 100)]
     private int DefaultShadowDistance = 40;
-    [SerializeField, Range(0, 1)]
-    private int DefaultBrightness = 1;
+    private float DefaultBrightness = 0.2f;
     [SerializeField, Range(0.01f, 3)]
     private int DefaultLoadBias = 1;
 
@@ -100,6 +99,7 @@ public class bl_AllOptionsPro : MonoBehaviour
     [SerializeField] private Text HudScaleText;
     [SerializeField] private Text BrightnessText;
     private float _brightness;
+    private Color _ambientColor = Color.black;
 
     [SerializeField] private Text ShadowProjectionText;
     private bool shadowProjection = false;
@@ -428,14 +428,19 @@ public class bl_AllOptionsPro : MonoBehaviour
     /// <param name="v"></param>
     public void SetBrightness(float v = 0)
     {
-        if (BrightnessImage == null)
-            return;
+        if (_ambientColor == Color.black)
+            _ambientColor = RenderSettings.ambientLight;
+
+        //if (BrightnessImage == null)
+        //    return;
 
         if (v == 0)
             v = BrightnessSlider.value;
-
+        
         _brightness = v;
-        BrightnessImage.SetValue(v);
+        RenderSettings.ambientLight = Color.Lerp(_ambientColor * Mathf.Max(1, v * 10), Color.white, v);
+
+        //BrightnessImage.SetValue(v);
         BrightnessSlider.value = v;
         BrightnessText.text = string.Format("{0}%", (v * 100).ToString("F0"));
     }

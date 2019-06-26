@@ -21979,11 +21979,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1332834314807447092}
     m_Modifications:
-    - target: {fileID: 1362682627066215233, guid: b355fc6858044674883bb151338e17f0,
-        type: 3}
-      propertyPath: m_Name
-      value: SettingCategory_Visual_Button
-      objectReference: {fileID: 0}
     - target: {fileID: 1362682627056498079, guid: b355fc6858044674883bb151338e17f0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -22008,6 +22003,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: ChangeSelectionButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362682627066215233, guid: b355fc6858044674883bb151338e17f0,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingCategory_Visual_Button
       objectReference: {fileID: 0}
     - target: {fileID: 1362682627046569621, guid: b355fc6858044674883bb151338e17f0,
         type: 3}
@@ -22147,11 +22147,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1332834314807447092}
     m_Modifications:
-    - target: {fileID: 1362682627066215233, guid: b355fc6858044674883bb151338e17f0,
-        type: 3}
-      propertyPath: m_Name
-      value: SettingCategory_Audio_Button
-      objectReference: {fileID: 0}
     - target: {fileID: 1362682627056498079, guid: b355fc6858044674883bb151338e17f0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -22176,6 +22171,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: ChangeSelectionButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362682627066215233, guid: b355fc6858044674883bb151338e17f0,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingCategory_Audio_Button
       objectReference: {fileID: 0}
     - target: {fileID: 1362682627046569621, guid: b355fc6858044674883bb151338e17f0,
         type: 3}
@@ -22315,11 +22315,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1332834314807447092}
     m_Modifications:
-    - target: {fileID: 1362682627066215233, guid: b355fc6858044674883bb151338e17f0,
-        type: 3}
-      propertyPath: m_Name
-      value: SettingCategory_General_Button
-      objectReference: {fileID: 0}
     - target: {fileID: 1362682627056498079, guid: b355fc6858044674883bb151338e17f0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -22339,6 +22334,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: ChangeSelectionButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362682627066215233, guid: b355fc6858044674883bb151338e17f0,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingCategory_General_Button
       objectReference: {fileID: 0}
     - target: {fileID: 1362682627046569621, guid: b355fc6858044674883bb151338e17f0,
         type: 3}
@@ -22478,11 +22478,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1332834314807447092}
     m_Modifications:
-    - target: {fileID: 1362682627066215233, guid: b355fc6858044674883bb151338e17f0,
-        type: 3}
-      propertyPath: m_Name
-      value: SettingCategory_Controls_Button
-      objectReference: {fileID: 0}
     - target: {fileID: 1362682627056498079, guid: b355fc6858044674883bb151338e17f0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -22507,6 +22502,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: ChangeSelectionButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362682627066215233, guid: b355fc6858044674883bb151338e17f0,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingCategory_Controls_Button
       objectReference: {fileID: 0}
     - target: {fileID: 1362682627046569621, guid: b355fc6858044674883bb151338e17f0,
         type: 3}
