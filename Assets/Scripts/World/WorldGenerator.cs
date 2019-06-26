@@ -728,6 +728,8 @@ public class WorldGenerator : MonoBehaviour
         //Debug.Log("<b>WorldGenerator: <color=teal>Spawning Player!</color></b>");
         //playerContainer.SetActive(true);
         //player.gameObject.SetActive(true);
+        player.transform.position = StartRoom.transform.position;
+
         player.IsFrozen = false;
         player.GetComponent<FPSController>().IsFrozen = false;
         player.InitPlayer();
