@@ -104,7 +104,7 @@ public class Destructible : MonoBehaviour
         }
 
         damage *= (1 - calcResistance);
-        damage = Mathf.Max(0, damage);
+        damage = Mathf.Max(1, damage);
 
         if (destructible)
         {
