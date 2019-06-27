@@ -51,7 +51,7 @@ public class FPSController : MonoBehaviour
 
     [Header("Mouse Settings")]
     [SerializeField]
-    float MouseSensitivity = 2;
+    public float MouseSensitivity = 2;
     [SerializeField]
     [Range(0f, 0.5f)]
     float MouseSmoothing = 0.1f;

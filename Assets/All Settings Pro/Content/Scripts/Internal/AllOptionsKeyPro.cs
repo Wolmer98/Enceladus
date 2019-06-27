@@ -23,6 +23,7 @@
     public const string RealtimeReflection = "GameName.RealtimeReflection";
     public const string LodBias = "GameName.LoadBias";
     public const string HUDScale = "GameName.HudScale";
+    public const string MouseSensitivity = "GameName.MouseSensitivity";
 
     public static int BoolToInt(bool b)
     {

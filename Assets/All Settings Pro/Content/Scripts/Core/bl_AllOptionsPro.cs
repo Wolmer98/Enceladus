@@ -94,12 +94,15 @@ public class bl_AllOptionsPro : MonoBehaviour
     [SerializeField] private Slider ShadowDistanceSlider;
     private float cacheShadowDistance;
     [SerializeField] private Slider BrightnessSlider;
+    [SerializeField] private Slider MouseSensitivitySlider;
     [SerializeField] private Slider LoadBiasSlider;
     [SerializeField] private Slider HUDScaleFactor;
     [SerializeField] private Text HudScaleText;
     [SerializeField] private Text BrightnessText;
+    [SerializeField] private Text MouseSensitivityText;
     private float _brightness;
     private Color _ambientColor = Color.black;
+    private float _mouseSensitivity;
 
     [SerializeField] private Text ShadowProjectionText;
     private bool shadowProjection = false;
@@ -436,13 +439,27 @@ public class bl_AllOptionsPro : MonoBehaviour
 
         if (v == 0)
             v = BrightnessSlider.value;
-        
+
         _brightness = v;
         RenderSettings.ambientLight = Color.Lerp(_ambientColor * Mathf.Max(1, v * 10), Color.white, v);
 
         //BrightnessImage.SetValue(v);
         BrightnessSlider.value = v;
         BrightnessText.text = string.Format("{0}%", (v * 100).ToString("F0"));
+    }
+
+    public void SetMouseSensitivity(float v = 80)
+    {
+        v = MouseSensitivitySlider.value;
+
+        _mouseSensitivity = v;
+        MouseSensitivityText.text = string.Format((v / 100).ToString("F1"));
+
+        FPSController fpsController = FindObjectOfType<FPSController>();
+        if (fpsController == null)
+            return;
+
+        fpsController.MouseSensitivity = _mouseSensitivity;
     }
 
     /// <summary>
@@ -629,7 +646,10 @@ public class bl_AllOptionsPro : MonoBehaviour
         _realtimeReflection = AllOptionsKeyPro.IntToBool(PlayerPrefs.GetInt(AllOptionsKeyPro.RealtimeReflection, 1));
         _lodBias = PlayerPrefs.GetFloat(AllOptionsKeyPro.LodBias, DefaultLoadBias);
         _hudScale = PlayerPrefs.GetFloat(AllOptionsKeyPro.HUDScale, _hudScale);
+        _mouseSensitivity = PlayerPrefs.GetFloat(AllOptionsKeyPro.MouseSensitivity, 80);
 
+        SetMouseSensitivity(_mouseSensitivity);
+        MouseSensitivitySlider.value = _mouseSensitivity;
         SetBrightness(_brightness);
         ShadowDistance(sd);
         ShadowDistanceSlider.value = sd;
@@ -807,5 +827,6 @@ public class bl_AllOptionsPro : MonoBehaviour
         PlayerPrefs.SetInt(AllOptionsKeyPro.RealtimeReflection, AllOptionsKeyPro.BoolToInt(_realtimeReflection));
         PlayerPrefs.SetFloat(AllOptionsKeyPro.LodBias, _lodBias);
         PlayerPrefs.SetFloat(AllOptionsKeyPro.HUDScale, _hudScale);
+        PlayerPrefs.SetFloat(AllOptionsKeyPro.MouseSensitivity, _mouseSensitivity);
     }
 }

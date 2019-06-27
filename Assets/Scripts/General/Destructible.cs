@@ -97,13 +97,13 @@ public class Destructible : MonoBehaviour
             camShake.InitCameraShake(0.2f, 0.1f, 30);
         }
 
-        float calcResistance = resistance - penetration;
+        float calcResistance = (resistance - penetration) / 100; //10 resistance = 10% damage reduction.
         if (calcResistance < 0)
         {
             calcResistance = 0;
         }
 
-        damage -= calcResistance;
+        damage *= (1 - calcResistance);
         damage = Mathf.Max(0, damage);
 
         if (destructible)
@@ -150,7 +150,7 @@ public class Destructible : MonoBehaviour
 
     public void AddResistance(float value)
     {
-        resistance = Mathf.Max(0, resistance + value);
+        resistance = Mathf.Max(0, resistance + (value * Mathf.Max(0, (1 - (resistance / 100)))));
     }
 
     private void Update()
