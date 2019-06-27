@@ -37,12 +37,13 @@ public class Pickup : MonoBehaviour
     /// <summary>
     /// Adds the picked up values to the player.
     /// </summary>
-    public virtual void PickUp(PlayerController pc, bool pickUpIsPrefab = false)
+    public virtual bool PickUp(PlayerController pc, bool pickUpIsPrefab = false)
     {
         if (pickUpIsPrefab == false)
         {
             FMODUnity.RuntimeManager.PlayOneShot(pickupSound, transform.position);
             Destroy(gameObject);
         }
+        return true;
     }
 }

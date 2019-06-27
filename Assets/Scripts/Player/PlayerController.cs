@@ -303,7 +303,10 @@ public class PlayerController : MonoBehaviour
                     LastInteractionType = InteractionType.Pickup;
                 }
 
-                PickupItem();
+                bool pickedUpItem = PickupItem();
+                if (pickedUpItem == false)
+                    return;
+
                 interactNotification = true;
             }
 
@@ -354,7 +357,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void PickupItem()
+    private bool PickupItem()
     {
         RaycastHit hit;
         if (Physics.Raycast(MainCamera.transform.position, MainCamera.transform.forward, out hit, reach, interactionMask))
@@ -362,12 +365,13 @@ public class PlayerController : MonoBehaviour
             Pickup pickup = hit.transform.GetComponentInParent<Pickup>();
             if (pickup != null)
             {
-                pickup.PickUp(this);
+                bool result = pickup.PickUp(this);
                 LastPickedUpName = pickup.PickupName;
                 LastPickedUpText = pickup.PickupText;
-                return;
+                return result;
             }
         }
+        return false;
     }
 
     public void AddSuitMod(CharacterScreenOption so)

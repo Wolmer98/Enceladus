@@ -144,7 +144,7 @@ public class Weapon : MonoBehaviour
 
     [Header("Ammo")]
     [SerializeField] float currentMagAmmo;
-    [SerializeField] float storageAmmo;
+    [SerializeField] public float storageAmmo;
     [SerializeField] float maxStorageAmmo;
 
     [Header("Audio")]

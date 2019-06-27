@@ -18,10 +18,11 @@ public class Pickup_Log : Pickup
         this.logID = logID;
     }
 
-    public override void PickUp(PlayerController pc, bool pickupIsPrefab = false)
+    public override bool PickUp(PlayerController pc, bool pickupIsPrefab = false)
     {
         GameStateHandler.unlockedLocalLogs.Add(logID);
 
         base.PickUp(pc, pickupIsPrefab);
+        return true;
     }
 }

@@ -11,7 +11,7 @@ public class Pickup_Weapon : Pickup
     /// <summary>
     /// Assigns the picked up item to the player.
     /// </summary>
-    public override void PickUp(PlayerController pc, bool pickupIsPrefab = false)
+    public override bool PickUp(PlayerController pc, bool pickupIsPrefab = false)
     {
         if (pc.MeleeWeapon == null)
         {
@@ -25,6 +25,8 @@ public class Pickup_Weapon : Pickup
                 Destroy(gameObject);
             }
         }
+
+        return true;
     }
 
     /// <summary>

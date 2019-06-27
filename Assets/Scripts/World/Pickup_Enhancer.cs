@@ -33,16 +33,20 @@ public class Pickup_Enhancer : Pickup
     /// <summary>
     /// Adds the picked up values to the player.
     /// </summary>
-    public override void PickUp(PlayerController pc, bool pickUpIsPrefab = false)
+    public override bool PickUp(PlayerController pc, bool pickUpIsPrefab = false)
     {
-        if (isSuitMod && pc.SuitMods.Contains(SuitModOption))
+        if (isSuitMod && AlreadyEquippedSuitMod(suitModOption, pc))
         {
             Debug.Log("Suit mod Already Equipped");
-            return;
+            return false;
         }
 
-        pc.MainWeapon.AddStorageAmmo(ammo);
         pc.MainWeapon.AddMaxStorageAmmo(maxAmmoStorage);
+
+        if (pc.MainWeapon.StorageAmmo >= pc.MainWeapon.storageAmmo && ammo > 0)
+            return false;
+
+        pc.MainWeapon.AddStorageAmmo(ammo);
         pc.Destructible.AddMaxHealth(maxHealth);
         pc.Destructible.Heal(health);
         pc.Destructible.AddRegeneration(regeneration);
@@ -61,5 +65,16 @@ public class Pickup_Enhancer : Pickup
         }
 
         base.PickUp(pc, pickUpIsPrefab);
+        return true;
+    }
+
+    private bool AlreadyEquippedSuitMod(CharacterScreenOption suitmod, PlayerController pc)
+    {
+        foreach (var suitMod in pc.SuitMods)
+        {
+            if (suitmod.OptionText == suitmod.OptionText)
+                return true;
+        }
+        return false;
     }
 }
