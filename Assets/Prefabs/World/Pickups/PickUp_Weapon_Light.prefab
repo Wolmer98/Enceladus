@@ -141,5 +141,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sizeType: 1
   propType: 2
+  propRarity: 3
   destroyOnStart: 0
   destroyChance: 0

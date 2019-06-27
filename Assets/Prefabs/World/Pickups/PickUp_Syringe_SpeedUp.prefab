@@ -54,6 +54,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PickUp_Syringe_SpeedUp
       objectReference: {fileID: 0}
+    - target: {fileID: 2103984980241952034, guid: 1a888b6782da4444084a27d2b41ee566,
+        type: 3}
+      propertyPath: propRarity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4396013765905935712, guid: 1a888b6782da4444084a27d2b41ee566,
         type: 3}
       propertyPath: GlowColor.r

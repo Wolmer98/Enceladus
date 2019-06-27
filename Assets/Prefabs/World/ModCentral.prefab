@@ -195,8 +195,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sizeType: 0
   propType: 1
+  propRarity: 0
   destroyOnStart: 1
-  destroyChance: 0.34
+  destroyChance: 0.7
 --- !u!65 &4312876433770709692
 BoxCollider:
   m_ObjectHideFlags: 0

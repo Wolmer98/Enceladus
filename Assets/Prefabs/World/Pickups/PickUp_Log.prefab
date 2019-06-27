@@ -41,6 +41,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PickUp_Log
       objectReference: {fileID: 0}
+    - target: {fileID: 2103984980241952034, guid: 1a888b6782da4444084a27d2b41ee566,
+        type: 3}
+      propertyPath: propRarity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6183207593267077535, guid: 1a888b6782da4444084a27d2b41ee566,
         type: 3}
       propertyPath: m_LocalPosition.x
