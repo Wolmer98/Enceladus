@@ -41,7 +41,7 @@ MonoBehaviour:
   maxHealth: 0
   regeneration: 0
   resistance: 0
-  speed: 1
+  speed: 2
 --- !u!1001 &3742826420457472327
 PrefabInstance:
   m_ObjectHideFlags: 0

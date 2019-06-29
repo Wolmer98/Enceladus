@@ -43,8 +43,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 07bf410195366be48962e113327dd34d, type: 2}
   - {fileID: 11400000, guid: 27c06b188cee19a46861b44677f67aba, type: 2}
   - {fileID: 11400000, guid: bc6dced1ebaf5a34a842bd895c568bbd, type: 2}
-  RNG_ammunition: {x: 30, y: 100}
-  RNG_maxStorageAmmo: {x: 40, y: 120}
+  RNG_ammunition: {x: 60, y: 140}
+  RNG_maxStorageAmmo: {x: 120, y: 280}
   RNG_startMeleeWeapon: []
   RNG_amountOfSuitMods: {x: 0, y: 3}
   RNG_suitMods:

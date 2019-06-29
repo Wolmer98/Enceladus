@@ -144,7 +144,7 @@ public class Weapon : MonoBehaviour
 
     [Header("Ammo")]
     [SerializeField] float currentMagAmmo;
-    [SerializeField] public float storageAmmo;
+    [SerializeField] float storageAmmo;
     [SerializeField] float maxStorageAmmo;
 
     [Header("Audio")]
@@ -215,6 +215,7 @@ public class Weapon : MonoBehaviour
 
     public float CurrentMagAmmo { get { return currentMagAmmo; } }
     public float StorageAmmo { get { return storageAmmo; } }
+    public float MaxStorageAmmo { get { return maxStorageAmmo;  } }
 
     public float ChargeValue
     {

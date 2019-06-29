@@ -19,8 +19,8 @@ MonoBehaviour:
   portrait: {fileID: 21300000, guid: 93d3c380f2ee12c4a81443c4088d5cf8, type: 3}
   description: 
   startWeaponMod: {fileID: 11400000, guid: f2141161896d7ee4887a9049c75255aa, type: 2}
-  ammunition: 60
-  maxStorageAmmo: 60
+  ammunition: 100
+  maxStorageAmmo: 200
   startMeleeWeapon: {fileID: 5535022068161692519, guid: 0673d477f02b41d44b3bd0b3c76dbee0,
     type: 3}
   suitMods: []

@@ -43,7 +43,7 @@ public class Pickup_Enhancer : Pickup
 
         pc.MainWeapon.AddMaxStorageAmmo(maxAmmoStorage);
 
-        if (pc.MainWeapon.StorageAmmo >= pc.MainWeapon.storageAmmo && ammo > 0)
+        if (pc.MainWeapon.StorageAmmo >= pc.MainWeapon.MaxStorageAmmo && ammo > 0)
             return false;
 
         pc.MainWeapon.AddStorageAmmo(ammo);

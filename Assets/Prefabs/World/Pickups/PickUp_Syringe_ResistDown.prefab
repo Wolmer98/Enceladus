@@ -27,7 +27,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupSound: event:/Objects/Pick Ups/Consumables/Syringe_down
   pickupName: Use syringe
-  pickupText: Decreased resistance.
+  pickupText: Increased health, decreased resistance.
   isSuitMod: 0
   suitModOption:
     optionText: 
@@ -38,9 +38,9 @@ MonoBehaviour:
   ammo: 0
   maxAmmoStorage: 0
   health: 0
-  maxHealth: 0
+  maxHealth: 5
   regeneration: 0
-  resistance: -1
+  resistance: -5
   speed: 0
 --- !u!1001 &3742826420457472327
 PrefabInstance:
