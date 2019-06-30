@@ -72,7 +72,7 @@ public class Pickup_Enhancer : Pickup
     {
         foreach (var suitMod in pc.SuitMods)
         {
-            if (suitmod.OptionText.Equals(suitmod.OptionText))
+            if (suitMod.OptionText.Equals(suitmod.OptionText))
                 return true;
         }
         return false;

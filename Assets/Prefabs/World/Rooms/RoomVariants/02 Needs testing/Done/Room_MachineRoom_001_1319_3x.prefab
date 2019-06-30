@@ -16466,7 +16466,7 @@ PrefabInstance:
     - target: {fileID: 2586791589924750122, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
       propertyPath: m_Name
-      value: Room_MachineRoom_001_1292_3x
+      value: Room_MachineRoom_001_1319_3x
       objectReference: {fileID: 0}
     - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
@@ -16511,7 +16511,7 @@ PrefabInstance:
     - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
       propertyPath: volume
-      value: 1292
+      value: 1319
       objectReference: {fileID: 0}
     - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
@@ -16596,12 +16596,12 @@ PrefabInstance:
     - target: {fileID: 1351241087929720140, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
       propertyPath: m_Size.z
-      value: 8.3667345
+      value: 9.241941
       objectReference: {fileID: 0}
     - target: {fileID: 1351241087929720140, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
       propertyPath: m_Center.z
-      value: 17.556265
+      value: 17.11866
       objectReference: {fileID: 0}
     - target: {fileID: 1351241087929720140, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
