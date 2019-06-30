@@ -13,6 +13,35 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 24.507992, y: 7.607703, z: 12.139044}
   m_Center: {x: -9.34848, y: 3.9028172, z: 5.207856}
+--- !u!114 &3026251897256806781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3189235421660361976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: -334000983
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 65536
+  m_UseGeometry: 1
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.33333334
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: e24739c7c654dd144b717501863195a5, type: 2}
 --- !u!1 &8083217890147023517
 GameObject:
   m_ObjectHideFlags: 0
@@ -13994,20 +14023,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+    - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
-      propertyPath: shadowMapRenderTexture
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: strength
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 3.73
+      propertyPath: m_Intensity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 290790580035203918, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
@@ -14024,10 +14043,20 @@ PrefabInstance:
       propertyPath: m_Range
       value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
-      propertyPath: m_Intensity
-      value: 1
+      propertyPath: shadowMapRenderTexture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: strength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 3.73
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b817bed0c0de444f902febbab10f31f, type: 3}
@@ -30028,20 +30057,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+    - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
-      propertyPath: shadowMapRenderTexture
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: strength
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 3.73
+      propertyPath: m_Intensity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 290790580035203918, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
@@ -30058,10 +30077,20 @@ PrefabInstance:
       propertyPath: m_Range
       value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
-      propertyPath: m_Intensity
-      value: 1
+      propertyPath: shadowMapRenderTexture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: strength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 3.73
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b817bed0c0de444f902febbab10f31f, type: 3}
@@ -32958,20 +32987,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+    - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
-      propertyPath: shadowMapRenderTexture
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: strength
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 3.73
+      propertyPath: m_Intensity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 290790580035203918, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
@@ -32988,10 +33007,20 @@ PrefabInstance:
       propertyPath: m_Range
       value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
-      propertyPath: m_Intensity
-      value: 1
+      propertyPath: shadowMapRenderTexture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: strength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 3.73
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b817bed0c0de444f902febbab10f31f, type: 3}
@@ -59719,10 +59748,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: e24739c7c654dd144b717501863195a5,
+      objectReference: {fileID: 23800000, guid: 70a5451d0ae8fd8489ddc05d03085f78,
         type: 2}
+    - target: {fileID: 8888248964475272914, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: m_UseGeometry
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 359e9ac54880e2243a5acb441c825369, type: 3}
+--- !u!4 &3003697764604073492 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5456223606602363991, guid: 359e9ac54880e2243a5acb441c825369,
+    type: 3}
+  m_PrefabInstance: {fileID: 7068154724200882755}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3189235421660361976 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5644507808278156987, guid: 359e9ac54880e2243a5acb441c825369,
+    type: 3}
+  m_PrefabInstance: {fileID: 7068154724200882755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &684693303299739568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7752847439047634419, guid: 359e9ac54880e2243a5acb441c825369,
@@ -59732,12 +59778,6 @@ Transform:
 --- !u!1 &4751579610134667625 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2586791589924750122, guid: 359e9ac54880e2243a5acb441c825369,
-    type: 3}
-  m_PrefabInstance: {fileID: 7068154724200882755}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &3003697764604073492 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5456223606602363991, guid: 359e9ac54880e2243a5acb441c825369,
     type: 3}
   m_PrefabInstance: {fileID: 7068154724200882755}
   m_PrefabAsset: {fileID: 0}
