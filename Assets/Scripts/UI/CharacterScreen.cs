@@ -9,6 +9,7 @@ public class CharacterScreen : MonoBehaviour
 {
     [Header("General")]
     [SerializeField] Text characterName;
+    [SerializeField] Image characterPortrait;
     [SerializeField] Button textButtonPrefab;
     [SerializeField] GameObject selectionBox;
     [SerializeField] LayoutGroup optionsLayoutGroup;
@@ -270,6 +271,11 @@ public class CharacterScreen : MonoBehaviour
     public void SetCharacterNameText(string text)
     {
         characterName.text = text;
+    }
+
+    public void SetCharacterPortraitImage(Sprite portrait)
+    {
+        characterPortrait.sprite = portrait;
     }
 
     private void SetInfoText(string text)

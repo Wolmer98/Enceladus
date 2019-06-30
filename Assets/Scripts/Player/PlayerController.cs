@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float baseThrowForce = 1;
     [SerializeField] LayerMask interactionMask;
     [SerializeField] LayerMask defaultLayer;
-    
+
     [Space]
     [SerializeField] GameObject flashLight;
 
@@ -107,7 +107,7 @@ public class PlayerController : MonoBehaviour
 
         ApplyCharacter();
         /**/
-        
+
 
         MainCamera = Camera.main;
         Debug.Log("Player Camera: " + MainCamera.name);
@@ -130,6 +130,7 @@ public class PlayerController : MonoBehaviour
     private void ApplyCharacter()
     {
         FindObjectOfType<CharacterScreen>().SetCharacterNameText(characterData.CharacterName);
+        FindObjectOfType<CharacterScreen>().SetCharacterPortraitImage(characterData.Portrait);
 
         MainWeapon.ApplyMod(characterData.StartWeaponMod, true);
         MainWeapon.AddMaxStorageAmmo(characterData.MaxStorageAmmo);
@@ -305,7 +306,14 @@ public class PlayerController : MonoBehaviour
 
                 bool pickedUpItem = PickupItem();
                 if (pickedUpItem == false)
+                {
+                    if (hit.transform.GetComponent<Pickup_Enhancer>()?.ammo > 0)
+                        FindObjectOfType<UIController>()?.ShowNotification("Ammo Storage Is Full", 1);
+                    else
+                        FindObjectOfType<UIController>()?.ShowNotification("Suit Mod Already Equipped", 1);
+
                     return;
+                }
 
                 interactNotification = true;
             }

@@ -19,8 +19,8 @@ MonoBehaviour:
   portrait: {fileID: 21300000, guid: 27dd704a3b95fdd4fa0c192944f44776, type: 3}
   description: 
   startWeaponMod: {fileID: 11400000, guid: 742ca4cf32195194aa631d0eadd7ca59, type: 2}
-  ammunition: 9999
-  maxStorageAmmo: 99999
+  ammunition: 10000
+  maxStorageAmmo: 10000
   startMeleeWeapon: {fileID: 0}
   suitMods: []
   health: Infinity

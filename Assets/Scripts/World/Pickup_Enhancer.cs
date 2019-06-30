@@ -15,13 +15,13 @@ public class Pickup_Enhancer : Pickup
     [SerializeField] int keycards;
 
     [Space]
-    [SerializeField] float ammo;
-    [SerializeField] float maxAmmoStorage;
-    [SerializeField] float health;
-    [SerializeField] float maxHealth;
-    [SerializeField] float regeneration;
-    [SerializeField] float resistance;
-    [SerializeField] float speed;
+    [SerializeField] public float ammo;
+    [SerializeField] public float maxAmmoStorage;
+    [SerializeField] public float health;
+    [SerializeField] public float maxHealth;
+    [SerializeField] public float regeneration;
+    [SerializeField] public float resistance;
+    [SerializeField] public float speed;
 
     public CharacterScreenOption SuitModOption { get { return suitModOption; } }
 

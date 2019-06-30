@@ -59,7 +59,7 @@ public class UIController : MonoBehaviour
     bool characterScreenEnabled;
     float scifiEffectTimer = 0;
 
-    private Queue<Notification> notificationQueue = new Queue<Notification>();
+    public Queue<Notification> notificationQueue = new Queue<Notification>();
 
     //public float ScreenBlurPercentage { get { return currentScreenBlurSize / screenBlurCap; } }
 
