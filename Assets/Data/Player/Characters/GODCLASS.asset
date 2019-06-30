@@ -22,7 +22,10 @@ MonoBehaviour:
   ammunition: 10000
   maxStorageAmmo: 10000
   startMeleeWeapon: {fileID: 0}
-  suitMods: []
+  suitMods:
+  - {fileID: 4349723090368424127, guid: e7ff9ca5fa24cb547b3d8de215c6003f, type: 3}
+  - {fileID: 4349723090368424127, guid: a4e339ce71326434289b87d03907b2bb, type: 3}
+  - {fileID: 4349723090368424127, guid: c1ce6641a827c674d9ea2a8983ff5423, type: 3}
   health: Infinity
   maxHealth: Infinity
   regeneration: 0
