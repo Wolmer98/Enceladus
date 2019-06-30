@@ -36,6 +36,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4022963516393972640, guid: bab8984ab4a35594088fa91ea51e833f,
+        type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 3013910907101597253, guid: e2854ef631d46f743951cf647b75f985,
+        type: 3}
     - target: {fileID: 2412708305093287996, guid: bab8984ab4a35594088fa91ea51e833f,
         type: 3}
       propertyPath: m_Enabled

@@ -16,7 +16,7 @@ MonoBehaviour:
   characterNameOnly: CHEATY CHEATSSON
   characterClassOnly: GODCLASS
   characterColor: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
-  portrait: {fileID: 21300000, guid: 27dd704a3b95fdd4fa0c192944f44776, type: 3}
+  portrait: {fileID: 21300000, guid: 6648d502d01720541a20c4c399aed9cf, type: 3}
   description: 
   startWeaponMod: {fileID: 11400000, guid: 742ca4cf32195194aa631d0eadd7ca59, type: 2}
   ammunition: 10000

@@ -38,8 +38,8 @@ TagManager:
   - OcclusionExclusion
   - LoadingCameraExclusion
   - FogOfWarVisible
-  - 
-  - 
+  - EnemyPieces
+  - EnemyBlood
   - 
   - 
   - 
