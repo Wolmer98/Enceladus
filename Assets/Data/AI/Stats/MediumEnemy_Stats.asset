@@ -23,6 +23,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4096
   detectionRadius: 4
+  chaseDetectionMultiplier: 2
   timeBetweenAggroSound: 30
   distanceToMoveTowardsSound: 6
   moveSpeed: 2
@@ -42,7 +43,7 @@ MonoBehaviour:
   echoDetectionFarRadius: 7
   farRadiusDuration: 2
   awareOfFriendRadius: 5
-  healthThresholdForReaction: 0.5
+  healthThresholdForReaction: 0.3
   speedMultiplier: 1
   damageMultiplier: 1
   chargeSpeedMultiplier: 1

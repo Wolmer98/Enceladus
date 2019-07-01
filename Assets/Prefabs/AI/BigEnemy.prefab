@@ -175,6 +175,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3013910907101597253, guid: 45f6a724384db10409a4e043a8461dc2,
         type: 3}
+    - target: {fileID: 3867102749469848878, guid: bab8984ab4a35594088fa91ea51e833f,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2412708305093287996, guid: bab8984ab4a35594088fa91ea51e833f,
         type: 3}
       propertyPath: m_Radius

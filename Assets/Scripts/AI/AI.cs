@@ -159,6 +159,7 @@ public class AI : MonoBehaviour
     public bool IsStunned { get; set; }
     public bool HasCharged { get; set; }
     public bool HealthThresholdReaction { get; set; }
+    public bool BeenHealthStunned { get; set; }
 
 
     public Vector3 DamagePosition { get { return transform.position + (transform.forward * damagePosition.z) + (transform.up * damagePosition.y); } } //Used by anim
@@ -215,9 +216,11 @@ public class AI : MonoBehaviour
         Destructible.OnHurt.AddListener(delegate { FMODUnity.RuntimeManager.PlayOneShot(hitMarkSound); });
 
         FMODUnity.RuntimeManager.PlayOneShot(spawnSound, transform.position);
+        if (!HasRunStart)
+            Start();
     }
 
-
+    private bool HasRunStart;
     private void Start()
     {
         //Testing
@@ -225,7 +228,6 @@ public class AI : MonoBehaviour
             patrolWaypoints = FindObjectsOfType<PatrolWaypoint>();
 
         // Get and find
-        currentState = baseState;
         rigidbody = GetComponent<Rigidbody>();
         agent = GetComponent<NavMeshAgent>();
         raycastManager = FindObjectOfType<RaycastManager>();
@@ -240,10 +242,11 @@ public class AI : MonoBehaviour
         detectionSphere.radius = stats.detectionRadius;
         SearchPoints = new Vector3[stats.nbrSearchPos];
         AttackCooldown = stats.attackSpeed;
-        ChargeCooldown = stats.chargeCooldown;
+        ChargeCooldown = stats.chargeCooldown / 2;
         //skinnedmeshRenderEmissionOriginalColor = skinnedMeshRenderer.materials[0].GetColor("_EmissionColor"); Not used for now.
         skinnedMeshRenderer.materials[0].SetColor("_EmissionColor", Color.white);
 
+        HasRunStart = true;
     }
 
     public void AnimUpdate()                //Used by animator
@@ -253,16 +256,16 @@ public class AI : MonoBehaviour
             return;
         }
 
-        if (currentState != null)
-        {
-            currentState.UpdateState(this);
-        }
+        //if (currentState != null)
+        //{
+        //    currentState.UpdateState(this);
+        //}
 
         AIMoving();
 
         if (waterManager != null)
         {
-            CheckIfUnderWater();
+            //CheckIfUnderWater();
         }
     }
 
@@ -406,8 +409,10 @@ public class AI : MonoBehaviour
             }
         }
 
-        Debug.Log("AI heard sound");
-        if(!StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Chase"))
+        //Debug.Log("AI heard sound");
+        if(!StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Chase") 
+            || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Charge") 
+            || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Stunned"))
         {
             if(!ChasingPlayer && !FleeingFromPlayer && !IsStunned)
             {
@@ -415,7 +420,7 @@ public class AI : MonoBehaviour
                 PlayAggroSound();
             }
         }
-        else
+        else if (!StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Search"))
         {
             conditionTimer = 0f;
         }
@@ -523,8 +528,16 @@ public class AI : MonoBehaviour
             {
                 Enrage = true;
             }
-            StateMachine.Play("Stunned");
+            if (typeOfEnemy == enemyType.medium)
+            {
+                StateMachine.Play("CallBackup");
+            }
             HealthThresholdReaction = true;
+        }
+        if (Destructible.Health <= Destructible.MaxHealth / 2 && !BeenHealthStunned)
+        {
+            StateMachine.Play("Stunned");
+            BeenHealthStunned = true;
         }
     }
 

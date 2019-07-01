@@ -6,7 +6,7 @@ using UnityEngine;
 public class AnimChargeCollisionCheck : AI_Condition
 {
     public float raycastRange = 2f;
-    public float raycastRadius = 0.2f;
+    public float raycastRadius = 0.5f;
     public LayerMask collisionMask;
 
     [FMODUnity.EventRef]

@@ -16,13 +16,14 @@ public class AnimChaseBiteAction : AnimatorAction
         AIStartedMoving(ai);
 
         ai.DetectionSphere.radius = ai.Stats.detectionRadius * ai.Stats.chaseDetectionMultiplier;
+        anim.ResetTrigger("Chase");
     }
 
     public override void ExitAction(AI ai, Animator anim)
     {
-        ai.ChasingPlayer = false;
         ai.IsAttacking = false;
         ai.DetectionSphere.radius = ai.Stats.detectionRadius;
+        anim.ResetTrigger("Chase");
     }
 
     public override void UpdateAction(AI ai, Animator anim)
@@ -57,5 +58,16 @@ public class AnimChaseBiteAction : AnimatorAction
             ai.Animator.Play("BiteAttack");
             FMODUnity.RuntimeManager.PlayOneShot(ai.attackSound, ai.transform.position);
         }
+
+
+        if (ai.Agent.isOnOffMeshLink)
+        {
+            ai.Agent.speed = ai.Stats.chaseSpeed / 4;
+        }
+        else
+        {
+            ai.Agent.speed = ai.Stats.chaseSpeed;
+        }
+
     }
 }

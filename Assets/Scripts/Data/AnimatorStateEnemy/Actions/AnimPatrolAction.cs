@@ -22,6 +22,7 @@ public class AnimPatrolAction : AnimatorAction
         AIStartedMoving(ai);
         ai.Agent.SetDestination(ai.PatrolWaypoints[ai.PatrolWaypointIndex].transform.position);
         ai.SetATimer = false;
+        ai.ChasingPlayer = false;
     }
 
     public override void ExitAction(AI ai, Animator anim)

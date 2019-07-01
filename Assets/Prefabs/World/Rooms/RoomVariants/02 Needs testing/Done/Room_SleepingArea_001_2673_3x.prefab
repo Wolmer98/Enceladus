@@ -41,7 +41,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.33333334
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 70a5451d0ae8fd8489ddc05d03085f78, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: add37a18155a72344af7a471a382bdae, type: 2}
 --- !u!1 &8083217890147023517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,6 +1610,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6470029531833860294}
     m_Modifications:
+    - target: {fileID: 3946224894122750360, guid: bcf825de86c89b94c9a3d46f917618c0,
+        type: 3}
+      propertyPath: m_Name
+      value: PointLight (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 3946224894122750341, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1664,11 +1669,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946224894122750360, guid: bcf825de86c89b94c9a3d46f917618c0,
-        type: 3}
-      propertyPath: m_Name
-      value: PointLight (1)
       objectReference: {fileID: 0}
     - target: {fileID: 3946224894122750340, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
@@ -6468,6 +6468,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: strength
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
       propertyPath: m_Color.g
@@ -6502,16 +6512,6 @@ PrefabInstance:
         type: 3}
       propertyPath: shadowMapRenderTexture
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: strength
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b817bed0c0de444f902febbab10f31f, type: 3}
@@ -9066,6 +9066,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: strength
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
       propertyPath: m_Color.g
@@ -9100,16 +9110,6 @@ PrefabInstance:
         type: 3}
       propertyPath: shadowMapRenderTexture
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: strength
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b817bed0c0de444f902febbab10f31f, type: 3}
@@ -11181,6 +11181,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: strength
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
       propertyPath: m_Color.g
@@ -11215,16 +11225,6 @@ PrefabInstance:
         type: 3}
       propertyPath: shadowMapRenderTexture
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: strength
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b817bed0c0de444f902febbab10f31f, type: 3}
@@ -17828,6 +17828,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: strength
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
       propertyPath: m_Color.g
@@ -17862,16 +17872,6 @@ PrefabInstance:
         type: 3}
       propertyPath: shadowMapRenderTexture
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: strength
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b817bed0c0de444f902febbab10f31f, type: 3}
@@ -19539,6 +19539,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: strength
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
       propertyPath: m_Color.g
@@ -19573,16 +19583,6 @@ PrefabInstance:
         type: 3}
       propertyPath: shadowMapRenderTexture
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: strength
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b817bed0c0de444f902febbab10f31f, type: 3}
@@ -20619,6 +20619,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: strength
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
       propertyPath: m_Color.g
@@ -20653,16 +20663,6 @@ PrefabInstance:
         type: 3}
       propertyPath: shadowMapRenderTexture
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: strength
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b817bed0c0de444f902febbab10f31f, type: 3}
@@ -22467,6 +22467,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6470029531833860294}
     m_Modifications:
+    - target: {fileID: 3946224894122750360, guid: bcf825de86c89b94c9a3d46f917618c0,
+        type: 3}
+      propertyPath: m_Name
+      value: PointLight
+      objectReference: {fileID: 0}
     - target: {fileID: 3946224894122750341, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22521,11 +22526,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946224894122750360, guid: bcf825de86c89b94c9a3d46f917618c0,
-        type: 3}
-      propertyPath: m_Name
-      value: PointLight
       objectReference: {fileID: 0}
     - target: {fileID: 3946224894122750340, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
@@ -23884,6 +23884,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: strength
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
       propertyPath: m_Color.g
@@ -23918,16 +23928,6 @@ PrefabInstance:
         type: 3}
       propertyPath: shadowMapRenderTexture
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: strength
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b817bed0c0de444f902febbab10f31f, type: 3}
@@ -26137,6 +26137,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: strength
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
       propertyPath: m_Color.g
@@ -26171,16 +26181,6 @@ PrefabInstance:
         type: 3}
       propertyPath: shadowMapRenderTexture
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: strength
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b817bed0c0de444f902febbab10f31f, type: 3}
@@ -26596,6 +26596,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: strength
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
       propertyPath: m_Color.g
@@ -26630,16 +26640,6 @@ PrefabInstance:
         type: 3}
       propertyPath: shadowMapRenderTexture
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: strength
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b817bed0c0de444f902febbab10f31f, type: 3}
@@ -27271,6 +27271,56 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2586791589924750122, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: m_Name
+      value: Room_SleepingArea_001_2673_3x
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: roomName
+      value: SleepingArea_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 5151068112166847514}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 9208703178723494639}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 7921591238717490868}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: volume
+      value: 2673
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: rarity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7752847439047634419, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27326,56 +27376,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2586791589924750122, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: m_Name
-      value: Room_SleepingArea_001_2673_3x
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: roomName
-      value: SleepingArea_001
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 5151068112166847514}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 9208703178723494639}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 7921591238717490868}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[3]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: volume
-      value: 2673
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[4]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: rarity
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1351241087929720140, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
       propertyPath: m_Size.z
@@ -27425,7 +27425,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: e24739c7c654dd144b717501863195a5,
+      objectReference: {fileID: 23800000, guid: dc957fbe91362db44823effb06896709,
         type: 2}
     - target: {fileID: 8888248964475272914, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
@@ -31113,6 +31113,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: strength
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
       propertyPath: m_Color.g
@@ -31147,16 +31157,6 @@ PrefabInstance:
         type: 3}
       propertyPath: shadowMapRenderTexture
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: strength
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670674367867311674, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b817bed0c0de444f902febbab10f31f, type: 3}

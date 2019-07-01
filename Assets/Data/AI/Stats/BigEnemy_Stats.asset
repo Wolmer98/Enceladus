@@ -17,12 +17,13 @@ MonoBehaviour:
   attackSpeed: 4
   stunDuration: 2
   chargeCooldown: 20
-  chargeRangeInterval: {x: 3, y: 7}
+  chargeRangeInterval: {x: 4, y: 7}
   chargeWindupTime: 1
   targetsLayerMask:
     serializedVersion: 2
     m_Bits: 4096
   detectionRadius: 7
+  chaseDetectionMultiplier: 2
   timeBetweenAggroSound: 30
   distanceToMoveTowardsSound: 6
   moveSpeed: 2

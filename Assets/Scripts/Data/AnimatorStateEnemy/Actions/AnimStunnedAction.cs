@@ -12,7 +12,7 @@ public class AnimStunnedAction : AnimatorAction
         ai.IsStunned = true;
         ai.ActionTime = 0.0f;
         ai.Rigidbody.isKinematic = true;
-        ai.walkingSoundEmitter.Stop();
+        ai.IsMoving = false;
     }
 
     public override void ExitAction(AI ai, Animator anim)

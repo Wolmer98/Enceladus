@@ -12,6 +12,7 @@ public class AnimSearchAction : AnimatorAction
         ai.Agent.SetDestination(ai.SearchPoints[0]);
         ai.SearchPointIndex = 0;
         ai.Agent.SetDestination(ai.SearchPoints[ai.SearchPointIndex]);
+        ai.ChasingPlayer = false;
 
         ai.Agent.isStopped = false;
         ai.ConditionTime = 0f;

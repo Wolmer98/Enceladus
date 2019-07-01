@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 [CreateAssetMenu(fileName = "AnimChargeAction", menuName = "AI/AnimAction/Charge")]
 public class AnimChargeAction : AnimatorAction
@@ -8,18 +9,24 @@ public class AnimChargeAction : AnimatorAction
     public override void EnterActions(AI ai, Animator anim)
     {
         ai.ChasingPlayer = true;
-        ai.Agent.isStopped = true;
+        ai.Agent.updatePosition = false;
         FMODUnity.RuntimeManager.PlayOneShot(ai.aggroSound, ai.transform.position);
         ai.Agent.updateRotation = false;
         ai.HasCharged = true;
+        ai.Agent.autoTraverseOffMeshLink = false;
+        ai.ChargeCooldown = 0.0f;
+        ai.Agent.enabled = false;
     }
 
     public override void ExitAction(AI ai, Animator anim)
     {
-        ai.ChasingPlayer = false;
+        anim.ResetTrigger("Charge");
         ai.SetATimer = false;
         ai.Rigidbody.freezeRotation = false;
         ai.Agent.updateRotation = true;
+        ai.Agent.autoTraverseOffMeshLink = true;
+        ai.Agent.updatePosition = true;
+        ai.Agent.enabled = true;
     }
 
     public override void UpdateAction(AI ai, Animator anim)
@@ -49,7 +56,7 @@ public class AnimChargeAction : AnimatorAction
         }
         else if (ai.HasCharged)
         {
-            Debug.Log("Looking");
+            //Debug.Log("Looking");
             LookInDirection(ai);
         }
     }

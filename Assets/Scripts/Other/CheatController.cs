@@ -14,6 +14,8 @@ public class CheatController : MonoBehaviour
     [SerializeField] KeyCode hurtPlayerKey = KeyCode.Z;
     [SerializeField] KeyCode spawnEnemiesKey = KeyCode.B;
     [SerializeField] KeyCode increaseSpeedKey = KeyCode.U;
+    [SerializeField] KeyCode disableWater = KeyCode.I;
+    [SerializeField] KeyCode addPlayerResist = KeyCode.R;
 
     WorldGenerator worldGenerator;
     PlayerController playerController;
@@ -77,6 +79,16 @@ public class CheatController : MonoBehaviour
                 FPSController playerC = FindObjectOfType<FPSController>();
                 if (playerC != null)
                     playerC.AddSpeed(10);
+            }
+            else if(Input.GetKeyDown(disableWater))
+            {
+                FindObjectOfType<WaterManager>().gameObject.SetActive(false);
+                Debug.Log("Water gameobject has been disabled");
+            }
+            else if (Input.GetKeyDown(addPlayerResist))
+            {
+                FindObjectOfType<PlayerController>().gameObject.GetComponent<Destructible>().AddResistance(1000);
+                Debug.Log("Player has gained 1000 resistance");
             }
         }
 
@@ -158,19 +170,6 @@ public class CheatController : MonoBehaviour
     private void KillAllEnemies()
     {
         FindObjectOfType<EnemySpawnManager>().RemoveAllEnemies();
-
-
-        //AI[] enemies = FindObjectsOfType<AI>();
-        //if (enemies != null && enemies.Length > 0)
-        //{
-        //    foreach (AI enemy in enemies)
-        //    {
-        //        Destructible d = enemy.GetComponent<Destructible>();
-        //        if (d != null)
-        //        {
-        //            d.Hurt(100000);
-        //        }
-        //    }
-        //}
     }
+
 }

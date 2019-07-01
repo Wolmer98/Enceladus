@@ -398,7 +398,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.8194529
+      - time: 0.9172447
         functionName: StunOver
         data: 
         objectReferenceParameter: {instanceID: 0}
@@ -503,7 +503,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.5
+    previousCalculatedGlobalScale: 0.42
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
