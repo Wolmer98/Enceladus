@@ -222,14 +222,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1048186965170983250}
     m_Modifications:
-    - target: {fileID: 100000, guid: b0dbfeff06b91ec41bec7ba488ecbed6, type: 3}
-      propertyPath: m_Name
-      value: Door Frame Half
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: b0dbfeff06b91ec41bec7ba488ecbed6, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b0dbfeff06b91ec41bec7ba488ecbed6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.52
@@ -273,6 +265,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: b0dbfeff06b91ec41bec7ba488ecbed6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b0dbfeff06b91ec41bec7ba488ecbed6, type: 3}
+      propertyPath: m_Name
+      value: Door Frame Half
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b0dbfeff06b91ec41bec7ba488ecbed6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b0dbfeff06b91ec41bec7ba488ecbed6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -345,14 +345,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1048186965170983250}
     m_Modifications:
-    - target: {fileID: 100000, guid: b0dbfeff06b91ec41bec7ba488ecbed6, type: 3}
-      propertyPath: m_Name
-      value: Door Frame Half (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: b0dbfeff06b91ec41bec7ba488ecbed6, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b0dbfeff06b91ec41bec7ba488ecbed6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.52
@@ -396,6 +388,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: b0dbfeff06b91ec41bec7ba488ecbed6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b0dbfeff06b91ec41bec7ba488ecbed6, type: 3}
+      propertyPath: m_Name
+      value: Door Frame Half (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b0dbfeff06b91ec41bec7ba488ecbed6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b0dbfeff06b91ec41bec7ba488ecbed6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -468,11 +468,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6633288747225702986}
     m_Modifications:
-    - target: {fileID: 2660617512910498643, guid: 430cbe6beb9cf694faad04aea1a00c3e,
-        type: 3}
-      propertyPath: m_Name
-      value: Colliders
-      objectReference: {fileID: 0}
     - target: {fileID: 3436482797462517336, guid: 430cbe6beb9cf694faad04aea1a00c3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -528,6 +523,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2660617512910498643, guid: 430cbe6beb9cf694faad04aea1a00c3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Colliders
+      objectReference: {fileID: 0}
     - target: {fileID: 3280240763144715195, guid: 430cbe6beb9cf694faad04aea1a00c3e,
         type: 3}
       propertyPath: m_Enabled
@@ -557,11 +557,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2845608217343588849}
     m_Modifications:
-    - target: {fileID: 299878267240655341, guid: e6597d556bfa55246bf14ed2ebc26218,
-        type: 3}
-      propertyPath: m_Name
-      value: Door_001
-      objectReference: {fileID: 0}
     - target: {fileID: 452899339995526521, guid: e6597d556bfa55246bf14ed2ebc26218,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -641,6 +636,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 299878267240655341, guid: e6597d556bfa55246bf14ed2ebc26218,
+        type: 3}
+      propertyPath: m_Name
+      value: Door_001
       objectReference: {fileID: 0}
     - target: {fileID: 3058153825671945944, guid: e6597d556bfa55246bf14ed2ebc26218,
         type: 3}
@@ -802,6 +802,11 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1568667968100194545, guid: e6597d556bfa55246bf14ed2ebc26218,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4155838988547265620, guid: e6597d556bfa55246bf14ed2ebc26218,
         type: 3}
       propertyPath: m_Extents.z
@@ -810,7 +815,7 @@ PrefabInstance:
     - target: {fileID: 4155838988547265620, guid: e6597d556bfa55246bf14ed2ebc26218,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3993534207800618822, guid: e6597d556bfa55246bf14ed2ebc26218,
         type: 3}
@@ -820,7 +825,7 @@ PrefabInstance:
     - target: {fileID: 3993534207800618822, guid: e6597d556bfa55246bf14ed2ebc26218,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5711681182346648823, guid: e6597d556bfa55246bf14ed2ebc26218,
         type: 3}
@@ -1035,12 +1040,12 @@ PrefabInstance:
     - target: {fileID: 2270246342546974009, guid: 72141265db784054586e63ee5c2cc05a,
         type: 3}
       propertyPath: m_EndPoint.z
-      value: 0.4
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2270246342546974009, guid: 72141265db784054586e63ee5c2cc05a,
         type: 3}
       propertyPath: m_StartPoint.z
-      value: -0.5
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 8002302427633573380, guid: 72141265db784054586e63ee5c2cc05a,
         type: 3}
@@ -1080,11 +1085,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1048186965170983250}
     m_Modifications:
-    - target: {fileID: 4083967322981783916, guid: 9a29a4d242a99e0469b73bfa9f16e64e,
-        type: 3}
-      propertyPath: m_Name
-      value: Connection Point
-      objectReference: {fileID: 0}
     - target: {fileID: 6325677521419628801, guid: 9a29a4d242a99e0469b73bfa9f16e64e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1154,6 +1154,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083967322981783916, guid: 9a29a4d242a99e0469b73bfa9f16e64e,
+        type: 3}
+      propertyPath: m_Name
+      value: Connection Point
       objectReference: {fileID: 0}
     - target: {fileID: 396754949865151379, guid: 9a29a4d242a99e0469b73bfa9f16e64e,
         type: 3}

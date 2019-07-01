@@ -28,7 +28,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.33333334
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 227a71812f9063a46b142e73de27512f, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 68f0f35a52efe1b4cadc438ceb4dc42e, type: 2}
 --- !u!1 &8083217890147023517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,56 +1266,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2586791589924750122, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: m_Name
-      value: Room_Deadend_001_54_1x
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: roomName
-      value: Deadend_001
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 5362072376259136409}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[3]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: volume
-      value: 54
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[4]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: rarity
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7752847439047634419, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1371,6 +1321,56 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2586791589924750122, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: m_Name
+      value: Room_Deadend_001_54_1x
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: roomName
+      value: Deadend_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 5362072376259136409}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: volume
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: rarity
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1351241087929720140, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
       propertyPath: m_Size.z
@@ -1420,13 +1420,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: c12d53938bcf0e649b1799bb9cb9c7d3,
+      objectReference: {fileID: 23800000, guid: 6f78b00fd0a933840bb39b5129538549,
         type: 2}
     - target: {fileID: 8888248964475272914, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: c12d53938bcf0e649b1799bb9cb9c7d3,
+      objectReference: {fileID: 23800000, guid: 6f78b00fd0a933840bb39b5129538549,
         type: 2}
     - target: {fileID: 8888248964475272914, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}

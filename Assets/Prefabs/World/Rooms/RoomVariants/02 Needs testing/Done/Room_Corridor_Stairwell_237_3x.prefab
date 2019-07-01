@@ -41,7 +41,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.33333334
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 6f78b00fd0a933840bb39b5129538549, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 118517bc495c1a643a2d8b46a97dfc81, type: 2}
 --- !u!1 &8083217890147023517
 GameObject:
   m_ObjectHideFlags: 0
@@ -3251,56 +3251,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2586791589924750122, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: m_Name
-      value: Room_Corridor_Stairwell_237_3x
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: roomName
-      value: Corridor_Stairwell
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 5151068112166847514}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 7393268868121849171}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 7525464068272928245}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[3]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: volume
-      value: 237
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[4]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: rarity
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7752847439047634419, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3356,6 +3306,56 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2586791589924750122, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: m_Name
+      value: Room_Corridor_Stairwell_237_3x
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: roomName
+      value: Corridor_Stairwell
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 5151068112166847514}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 7393268868121849171}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 7525464068272928245}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: volume
+      value: 237
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: rarity
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1351241087929720140, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
       propertyPath: m_Size.z
@@ -3405,7 +3405,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: 68f0f35a52efe1b4cadc438ceb4dc42e,
+      objectReference: {fileID: 23800000, guid: 8cf5e5c7ccbfd4c498dc048fc368fdaf,
         type: 2}
     - target: {fileID: 8888248964475272914, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}

@@ -69,6 +69,15 @@ public class Door : MonoBehaviour
             //Debug.Log(navMeshLink.area);
             navMeshLink.UpdateLink();
         }
+
+        if (!IsOpen)
+        {
+            if (doorNavmeshObstacle != null)
+            {
+                doorNavmeshObstacle.carving = enabled;
+                doorNavmeshObstacle.enabled = enabled;
+            }
+        }
     }
 
     /// <summary>
@@ -263,5 +272,12 @@ public class Door : MonoBehaviour
             emitter.EventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         if (openEmitter != null)
             openEmitter.EventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+
+        if (doorNavmeshObstacle != null)
+        {
+            doorNavmeshObstacle.carving = false;
+            doorNavmeshObstacle.enabled = false;
+        }
+
     }
 }
