@@ -33,6 +33,15 @@ public class AnimChaseBiteAction : AnimatorAction
         {
             return;
         }
+        if(!ai.Agent.isOnNavMesh)
+        {
+            ai.Agent.enabled = false;
+            return;
+        }
+        else if (!ai.Agent.enabled)
+        {
+            ai.Agent.enabled = true;
+        }
 
         ai.Agent.SetDestination(ai.Player.transform.position);
 

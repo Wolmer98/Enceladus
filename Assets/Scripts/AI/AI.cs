@@ -403,10 +403,10 @@ public class AI : MonoBehaviour
         else
         {
             SetSoundLastPostionOnPath(soundPosition);
-            if(gameObject.activeSelf && agent.isActiveAndEnabled)
-            {
-                agent.destination = soundLastPosition;
-            }
+            //if(gameObject.activeSelf && agent.isActiveAndEnabled && !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Stunned"))
+            //{
+            //    agent.destination = soundLastPosition;
+            //}
         }
 
         //Debug.Log("AI heard sound");
@@ -534,7 +534,7 @@ public class AI : MonoBehaviour
             }
             HealthThresholdReaction = true;
         }
-        if (Destructible.Health <= Destructible.MaxHealth / 2 && !BeenHealthStunned)
+        if (Destructible.Health <= Destructible.MaxHealth * stats.procentHealthStun && !BeenHealthStunned)
         {
             StateMachine.Play("Stunned");
             BeenHealthStunned = true;

@@ -27,13 +27,13 @@ public class AnimChargeCollisionCheck : AI_Condition
             {
                 DealDamage(ai, hit);
                 FMODUnity.RuntimeManager.PlayOneShot(ai.attackSound, ai.transform.position);
-                ai.Animator.SetTrigger("HitPlayer");
+                //ai.Animator.SetTrigger("HitPlayer");
 
-                //CameraShake cameraShake = ai.Player.MainCamera.GetComponent<CameraShake>();
-                //if(cameraShake)
-                //{
-                //    cameraShake.InitCameraShake();
-                //}
+                CameraShake cameraShake = ai.Player.MainCamera.gameObject.GetComponent<CameraShake>();
+                if (cameraShake)
+                {
+                    cameraShake.InitCameraShake();
+                }
                 ai.StateMachine.Play("Chase");
             }
         }

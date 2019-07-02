@@ -53,6 +53,8 @@ public class AI_Stats : ScriptableObject
     [Header("Stat Threshold")]
     [Range(0, 1)]
     public float healthThresholdForReaction;
+    [Range(0, 1)]
+    public float procentHealthStun;
 
 
     [Header("Stat boosts(Enrage)")]

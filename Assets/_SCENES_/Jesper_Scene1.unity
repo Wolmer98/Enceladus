@@ -120,11 +120,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 602034801}
     m_Modifications:
-    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
-        type: 3}
-      propertyPath: m_Name
-      value: PatrolWaypoint
-      objectReference: {fileID: 0}
     - target: {fileID: 7813908165932160350, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -179,6 +174,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
+        type: 3}
+      propertyPath: m_Name
+      value: PatrolWaypoint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6, type: 3}
@@ -360,11 +360,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 602034801}
     m_Modifications:
-    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
-        type: 3}
-      propertyPath: m_Name
-      value: PatrolWaypoint (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 7813908165932160350, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -419,6 +414,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
+        type: 3}
+      propertyPath: m_Name
+      value: PatrolWaypoint (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6, type: 3}
@@ -526,11 +526,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 602034801}
     m_Modifications:
-    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
-        type: 3}
-      propertyPath: m_Name
-      value: PatrolWaypoint (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 7813908165932160350, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -585,6 +580,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
+        type: 3}
+      propertyPath: m_Name
+      value: PatrolWaypoint (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6, type: 3}
@@ -1395,11 +1395,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 602034801}
     m_Modifications:
-    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
-        type: 3}
-      propertyPath: m_Name
-      value: PatrolWaypoint (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7813908165932160350, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1454,6 +1449,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
+        type: 3}
+      propertyPath: m_Name
+      value: PatrolWaypoint (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6, type: 3}
@@ -1773,11 +1773,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 602034801}
     m_Modifications:
-    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
-        type: 3}
-      propertyPath: m_Name
-      value: PatrolWaypoint (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7813908165932160350, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1832,6 +1827,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
+        type: 3}
+      propertyPath: m_Name
+      value: PatrolWaypoint (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6, type: 3}

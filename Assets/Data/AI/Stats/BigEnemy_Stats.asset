@@ -23,9 +23,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4096
   detectionRadius: 7
-  chaseDetectionMultiplier: 2
+  chaseDetectionMultiplier: 1.5
   timeBetweenAggroSound: 30
-  distanceToMoveTowardsSound: 6
+  distanceToMoveTowardsSound: 10
   moveSpeed: 2
   chaseSpeed: 3
   rotationDuration: 2
@@ -36,14 +36,15 @@ MonoBehaviour:
   nbrSearchPos: 10
   chanceOfNearRadius: 0.3
   nearRadiusLerpSpeed: 2
-  echoDetectionNearRadius: 7
+  echoDetectionNearRadius: 9
   nearRadiusDuration: 4
   chanceOfFarRadius: 0.4
   farRadiusLerpSpeed: 2
-  echoDetectionFarRadius: 9
+  echoDetectionFarRadius: 12
   farRadiusDuration: 3
   awareOfFriendRadius: 5
   healthThresholdForReaction: 0.2
+  procentHealthStun: 0.5
   speedMultiplier: 1
   damageMultiplier: 1
   chargeSpeedMultiplier: 1

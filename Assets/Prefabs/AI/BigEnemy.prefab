@@ -39,18 +39,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2560041065408471634}
     m_Modifications:
-    - target: {fileID: 100000, guid: ab811f4f04258624d933daf72d013bf0, type: 3}
-      propertyPath: m_Name
-      value: crab_ver2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: ab811f4f04258624d933daf72d013bf0, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 84632c9b024a27543b5e96157b34a626, type: 2}
-    - target: {fileID: 13700000, guid: ab811f4f04258624d933daf72d013bf0, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d728cfda381045849b94e38da14225d0, type: 2}
     - target: {fileID: 400000, guid: ab811f4f04258624d933daf72d013bf0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -107,6 +95,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ab811f4f04258624d933daf72d013bf0, type: 3}
+      propertyPath: m_Name
+      value: crab_ver2
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: ab811f4f04258624d933daf72d013bf0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d728cfda381045849b94e38da14225d0, type: 2}
+    - target: {fileID: 9500000, guid: ab811f4f04258624d933daf72d013bf0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 84632c9b024a27543b5e96157b34a626, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab811f4f04258624d933daf72d013bf0, type: 3}
 --- !u!1 &2307570167020548078 stripped
@@ -175,11 +175,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3013910907101597253, guid: 45f6a724384db10409a4e043a8461dc2,
         type: 3}
-    - target: {fileID: 3867102749469848878, guid: bab8984ab4a35594088fa91ea51e833f,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2412708305093287996, guid: bab8984ab4a35594088fa91ea51e833f,
         type: 3}
       propertyPath: m_Radius
@@ -199,6 +194,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412708305093287996, guid: bab8984ab4a35594088fa91ea51e833f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5320105365859915356, guid: bab8984ab4a35594088fa91ea51e833f,
         type: 3}
@@ -263,7 +263,7 @@ PrefabInstance:
     - target: {fileID: 5320105365859915355, guid: bab8984ab4a35594088fa91ea51e833f,
         type: 3}
       propertyPath: m_Radius
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5320105365859915355, guid: bab8984ab4a35594088fa91ea51e833f,
         type: 3}
@@ -357,11 +357,6 @@ PrefabInstance:
       propertyPath: radiusOfDamageSphere
       value: 0.8
       objectReference: {fileID: 0}
-    - target: {fileID: 4371731702330214237, guid: bab8984ab4a35594088fa91ea51e833f,
-        type: 3}
-      propertyPath: Event
-      value: event:/Enemy/Crab/Crab_SFX/Crab_Big_Movement
-      objectReference: {fileID: 0}
     - target: {fileID: 1768780852744767789, guid: bab8984ab4a35594088fa91ea51e833f,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -377,14 +372,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8266979189306855593, guid: bab8984ab4a35594088fa91ea51e833f,
+    - target: {fileID: 1022237229127710084, guid: bab8984ab4a35594088fa91ea51e833f,
         type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.103
-      objectReference: {fileID: 0}
-    - target: {fileID: 8266979189306855593, guid: bab8984ab4a35594088fa91ea51e833f,
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bc6b3dbddc10dbc4982afd7942ce2472, type: 2}
+    - target: {fileID: 3867102749469848878, guid: bab8984ab4a35594088fa91ea51e833f,
         type: 3}
-      propertyPath: m_LocalPosition.z
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5633053724915822088, guid: bab8984ab4a35594088fa91ea51e833f,
@@ -397,6 +392,16 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 84632c9b024a27543b5e96157b34a626, type: 2}
+    - target: {fileID: 8266979189306855593, guid: bab8984ab4a35594088fa91ea51e833f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.103
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266979189306855593, guid: bab8984ab4a35594088fa91ea51e833f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4807451908527570828, guid: bab8984ab4a35594088fa91ea51e833f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -407,6 +412,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: c13560ae511ff804d959392551d3da13, type: 3}
+    - target: {fileID: 4371731702330214237, guid: bab8984ab4a35594088fa91ea51e833f,
+        type: 3}
+      propertyPath: Event
+      value: event:/Enemy/Crab/Crab_SFX/Crab_Big_Movement
+      objectReference: {fileID: 0}
     - target: {fileID: 1148728943054364809, guid: bab8984ab4a35594088fa91ea51e833f,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -432,11 +442,6 @@ PrefabInstance:
       propertyPath: m_Range
       value: 0.58
       objectReference: {fileID: 0}
-    - target: {fileID: 1022237229127710084, guid: bab8984ab4a35594088fa91ea51e833f,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: bc6b3dbddc10dbc4982afd7942ce2472, type: 2}
     - target: {fileID: 1725596151361280041, guid: bab8984ab4a35594088fa91ea51e833f,
         type: 3}
       propertyPath: m_IsActive

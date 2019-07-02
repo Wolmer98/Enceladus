@@ -16,7 +16,14 @@ public abstract class AnimatorAction : ScriptableObject
 
     protected void AIStartedMoving(AI ai)
     {
-        ai.Agent.isStopped = false;
-        ai.IsMoving = true;
+        if (ai.Agent.isOnNavMesh)
+        {
+            ai.Agent.isStopped = false;
+            ai.IsMoving = true;
+        }
+        else
+        {
+            Debug.Log("AI was not on a mesh");
+        }
     }
 }
