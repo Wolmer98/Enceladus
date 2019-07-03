@@ -2013,7 +2013,7 @@ MonoBehaviour:
   firePoint: {fileID: 1331320176663436666}
   hitMask:
     serializedVersion: 2
-    m_Bits: 67585
+    m_Bits: 591873
   shutdownEffect: {fileID: 1966272560010051332}
   shutdownSound: event:/Player/Player_Gore_Death
   mainWeaponMod: {fileID: 11400000, guid: f2141161896d7ee4887a9049c75255aa, type: 2}
