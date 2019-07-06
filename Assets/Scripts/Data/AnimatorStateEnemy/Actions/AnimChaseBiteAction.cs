@@ -17,6 +17,7 @@ public class AnimChaseBiteAction : AnimatorAction
 
         ai.DetectionSphere.radius = ai.Stats.detectionRadius * ai.Stats.chaseDetectionMultiplier;
         anim.ResetTrigger("Chase");
+        ai.Agent.autoTraverseOffMeshLink = false;
     }
 
     public override void ExitAction(AI ai, Animator anim)
@@ -24,6 +25,7 @@ public class AnimChaseBiteAction : AnimatorAction
         ai.IsAttacking = false;
         ai.DetectionSphere.radius = ai.Stats.detectionRadius;
         anim.ResetTrigger("Chase");
+        ai.Agent.autoTraverseOffMeshLink = true;
     }
 
     public override void UpdateAction(AI ai, Animator anim)
@@ -41,6 +43,11 @@ public class AnimChaseBiteAction : AnimatorAction
         else if (!ai.Agent.enabled)
         {
             ai.Agent.enabled = true;
+        }
+
+        if (ai.Agent.isOnOffMeshLink && !ai.MoveAcrossNavMeshesStarted)
+        {
+            ai.MoveAcrossNavMeshLinkStart();
         }
 
         ai.Agent.SetDestination(ai.Player.transform.position);
