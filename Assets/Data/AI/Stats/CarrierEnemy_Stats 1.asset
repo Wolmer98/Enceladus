@@ -24,7 +24,7 @@ MonoBehaviour:
   targetsLayerMask:
     serializedVersion: 2
     m_Bits: 4096
-  detectionRadius: 7
+  detectionRadius: 6
   chaseDetectionMultiplier: 1.5
   timeBetweenAggroSound: 30
   distanceToMoveTowardsSound: 10
@@ -38,11 +38,11 @@ MonoBehaviour:
   nbrSearchPos: 10
   chanceOfNearRadius: 0.2
   nearRadiusLerpSpeed: 2
-  echoDetectionNearRadius: 9
+  echoDetectionMultiplier: 0.2
   nearRadiusDuration: 3
   chanceOfFarRadius: 0.3
   farRadiusLerpSpeed: 2
-  echoDetectionFarRadius: 12
+  echoDetectionFarMultiplier: 0.4
   farRadiusDuration: 2
   awareOfFriendRadius: 5
   healthThresholdForReaction: 0.3

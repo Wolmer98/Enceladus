@@ -42,12 +42,17 @@ public class AI_Stats : ScriptableObject
     [Range(0, 1)]
     public float chanceOfNearRadius = 0.3f;
     public float nearRadiusLerpSpeed = 3f;
-    public float echoDetectionNearRadius = 4f;
+    [Range(0f,1f)]
+    public float echoDetectionMultiplier = 0.2f;
+    [HideInInspector] public float echoDetectionNearRadius { get { return detectionRadius * (1 + echoDetectionMultiplier); } }
+
     public float nearRadiusDuration = 3f;
     [Range(0, 1)]
     public float chanceOfFarRadius= 0.2f;
     public float farRadiusLerpSpeed = 2f;
-    public float echoDetectionFarRadius = 6f;
+    [Range(0f, 1f)]
+    public float echoDetectionFarMultiplier = 0.4f;
+    [HideInInspector] public float echoDetectionFarRadius { get { return detectionRadius * (1 + echoDetectionFarMultiplier); } }
     public float farRadiusDuration = 2f;
 
     [Header("Allies")]

@@ -271,6 +271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: exploderboi
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: dffca0a5b523102489b3220ff9a5d4c0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: eeb70ab8c0e44c24c8f8eeec92553c8c, type: 2}
     - target: {fileID: 400466, guid: dffca0a5b523102489b3220ff9a5d4c0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -315,10 +319,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: dffca0a5b523102489b3220ff9a5d4c0, type: 3}
-      propertyPath: m_Controller
+    - target: {fileID: 13700000, guid: dffca0a5b523102489b3220ff9a5d4c0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 9100000, guid: eeb70ab8c0e44c24c8f8eeec92553c8c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1a8c6207aabe9f43b385fc5a7acdcef, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dffca0a5b523102489b3220ff9a5d4c0, type: 3}
 --- !u!1 &5344986757679665412 stripped
