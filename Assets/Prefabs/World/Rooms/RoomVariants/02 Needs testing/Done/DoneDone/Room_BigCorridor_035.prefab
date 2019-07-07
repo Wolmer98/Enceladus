@@ -55,9 +55,9 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.33333334
+  m_VoxelSize: 0.2
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 7cf193c9a6da2ba45bd20083215976fd, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: c64cd62ae32f42e4ab3fbd62c04ce875, type: 2}
 --- !u!1 &8083217890147023517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,31 +1551,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: strength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.74158955
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.9528302
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.9372585
-      objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420485, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: m_Color.r
@@ -1615,6 +1590,31 @@ PrefabInstance:
         type: 3}
       propertyPath: strength
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.74158955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9372585
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: strength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4752284083071958059, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
@@ -1903,31 +1903,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: strength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.74158955
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.9528302
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.9372585
-      objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420485, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: m_Color.r
@@ -1967,6 +1942,31 @@ PrefabInstance:
         type: 3}
       propertyPath: strength
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.74158955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9372585
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: strength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4752284083071958059, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
@@ -2513,31 +2513,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: strength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.74158955
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.9528302
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.9372585
-      objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420485, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: m_Color.r
@@ -2577,6 +2552,31 @@ PrefabInstance:
         type: 3}
       propertyPath: strength
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.74158955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9372585
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: strength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4752284083071958059, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
@@ -2864,10 +2864,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3946224894122750340, guid: bcf825de86c89b94c9a3d46f917618c0,
+    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: shadowMapRenderTexture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
+        type: 3}
+      propertyPath: strength
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3946224894122750362, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
@@ -2909,15 +2914,10 @@ PrefabInstance:
       propertyPath: m_Shadows.m_Type
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
+    - target: {fileID: 3946224894122750340, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
-      propertyPath: shadowMapRenderTexture
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
-        type: 3}
-      propertyPath: strength
-      value: 3
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcf825de86c89b94c9a3d46f917618c0, type: 3}
@@ -3551,10 +3551,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3946224894122750340, guid: bcf825de86c89b94c9a3d46f917618c0,
+    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: shadowMapRenderTexture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
+        type: 3}
+      propertyPath: strength
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3946224894122750362, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
@@ -3596,15 +3601,10 @@ PrefabInstance:
       propertyPath: m_Shadows.m_Type
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
+    - target: {fileID: 3946224894122750340, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
-      propertyPath: shadowMapRenderTexture
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
-        type: 3}
-      propertyPath: strength
-      value: 2
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcf825de86c89b94c9a3d46f917618c0, type: 3}
@@ -5555,10 +5555,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3946224894122750340, guid: bcf825de86c89b94c9a3d46f917618c0,
+    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: shadowMapRenderTexture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
+        type: 3}
+      propertyPath: strength
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3946224894122750362, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
@@ -5600,15 +5605,10 @@ PrefabInstance:
       propertyPath: m_Shadows.m_Type
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
+    - target: {fileID: 3946224894122750340, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
-      propertyPath: shadowMapRenderTexture
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
-        type: 3}
-      propertyPath: strength
-      value: 3
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcf825de86c89b94c9a3d46f917618c0, type: 3}
@@ -6639,31 +6639,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: strength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.74158955
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.9528302
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.9372585
-      objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420485, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: m_Color.r
@@ -6705,6 +6680,31 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420484, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.74158955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9372585
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: strength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: customDistanceFalloffPower
       value: 2
@@ -11405,17 +11405,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawnPoint
       objectReference: {fileID: 0}
-    - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
-        type: 3}
-      propertyPath: enemySpawnPointPacks.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
-        type: 3}
-      propertyPath: enemySpawnPointPacks.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: d1c034f81252be042a465f1bc1d2046a,
-        type: 2}
     - target: {fileID: 7282654397332474806, guid: 9fbefd83d8272b542b0019feac7e83d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11471,6 +11460,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
+        type: 3}
+      propertyPath: enemySpawnPointPacks.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
+        type: 3}
+      propertyPath: enemySpawnPointPacks.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: d1c034f81252be042a465f1bc1d2046a,
+        type: 2}
+    - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
+        type: 3}
+      propertyPath: enemySpawnPointPacks.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d1005ccb3dfc8649975c858735e58be,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fbefd83d8272b542b0019feac7e83d0, type: 3}
 --- !u!114 &2361765470943527718 stripped
@@ -13504,31 +13510,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: strength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.74158955
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.9528302
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.9372585
-      objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420485, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: m_Color.r
@@ -13570,6 +13551,31 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420484, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.74158955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9372585
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: strength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: customDistanceFalloffPower
       value: 2
@@ -14188,31 +14194,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: strength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.74158955
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.9528302
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.9372585
-      objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420485, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: m_Color.r
@@ -14254,6 +14235,31 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420484, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.74158955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9372585
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: strength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: customDistanceFalloffPower
       value: 2
@@ -14458,31 +14464,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: strength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.74158955
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.9528302
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.9372585
-      objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420485, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: m_Color.r
@@ -14522,6 +14503,31 @@ PrefabInstance:
         type: 3}
       propertyPath: strength
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.74158955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9372585
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: strength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4752284083071958059, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
@@ -15853,31 +15859,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: strength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.74158955
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.9528302
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.9372585
-      objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420485, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: m_Color.r
@@ -15919,6 +15900,31 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420484, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.74158955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9372585
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: strength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: customDistanceFalloffPower
       value: 2
@@ -16557,7 +16563,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: c584db9becf367244ab511c8f9c96df6,
+      objectReference: {fileID: 23800000, guid: 50664178a3bad6349931c48e9a6d86b3,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 359e9ac54880e2243a5acb441c825369, type: 3}
@@ -17426,31 +17432,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: strength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.74158955
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.9528302
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.9372585
-      objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420485, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: m_Color.r
@@ -17492,6 +17473,31 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420484, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.74158955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9372585
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: strength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: customDistanceFalloffPower
       value: 2
@@ -18386,31 +18392,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: strength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.74158955
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.9528302
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.9372585
-      objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420485, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: m_Color.r
@@ -18452,6 +18433,31 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420484, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.74158955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9372585
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: strength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: customDistanceFalloffPower
       value: 2
@@ -19294,10 +19300,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3946224894122750340, guid: bcf825de86c89b94c9a3d46f917618c0,
+    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: shadowMapRenderTexture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
+        type: 3}
+      propertyPath: strength
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3946224894122750362, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
@@ -19339,15 +19350,10 @@ PrefabInstance:
       propertyPath: m_Shadows.m_Type
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
+    - target: {fileID: 3946224894122750340, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
-      propertyPath: shadowMapRenderTexture
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
-        type: 3}
-      propertyPath: strength
-      value: 3
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcf825de86c89b94c9a3d46f917618c0, type: 3}
@@ -19412,31 +19418,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: strength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.74158955
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.9528302
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.9372585
-      objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420485, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: m_Color.r
@@ -19478,6 +19459,31 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420484, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.74158955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9372585
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: strength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: customDistanceFalloffPower
       value: 2
@@ -19751,31 +19757,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: strength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.74158955
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.9528302
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.9372585
-      objectReference: {fileID: 0}
     - target: {fileID: 4351700888270420485, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
       propertyPath: m_Color.r
@@ -19815,6 +19796,31 @@ PrefabInstance:
         type: 3}
       propertyPath: strength
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.74158955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848580149219020920, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9372585
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: strength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565574706277638001, guid: dc8f3955c063af240afd23143f496335,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4752284083071958059, guid: dc8f3955c063af240afd23143f496335,
         type: 3}
@@ -20171,10 +20177,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3946224894122750340, guid: bcf825de86c89b94c9a3d46f917618c0,
+    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: shadowMapRenderTexture
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3946224894122750362, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
@@ -20216,10 +20222,10 @@ PrefabInstance:
       propertyPath: m_Shadows.m_Type
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3946224894122750363, guid: bcf825de86c89b94c9a3d46f917618c0,
+    - target: {fileID: 3946224894122750340, guid: bcf825de86c89b94c9a3d46f917618c0,
         type: 3}
-      propertyPath: shadowMapRenderTexture
-      value: 
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcf825de86c89b94c9a3d46f917618c0, type: 3}

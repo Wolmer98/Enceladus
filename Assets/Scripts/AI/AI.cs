@@ -11,10 +11,10 @@ public class AI : MonoBehaviour
     public enemyType typeOfEnemy;
     [Header("AI Components")]
     [SerializeField] Animator AIStateMachine;
-    [SerializeField] AI_State baseState;
-    [SerializeField] AI_State detectedSoundState;
-    [SerializeField] AI_State currentState;
-    [SerializeField] AI_Transition[] onHurtConditions;
+    AI_State baseState;
+    AI_State detectedSoundState;
+    AI_State currentState;
+    AI_Transition[] onHurtConditions;
 
     [Header("GameObject Components")]
     [SerializeField] SphereCollider detectionSphere;
@@ -146,7 +146,26 @@ public class AI : MonoBehaviour
     public bool FoundSearchPoints { get; set; }
 
     // Combat
-    public Destructible Destructible { get; private set; }
+    private Destructible destructible;
+    public Destructible Destructible
+    {
+        get
+        {
+            if (destructible == null)
+            {
+                destructible = GetComponent<Destructible>();
+                return destructible;
+            }
+            else
+            {
+                return destructible;
+            }
+        }
+        private set
+        {
+            destructible = GetComponent<Destructible>();
+        }
+    }
     public float AttackCooldown { get; set; }
     public bool IsAttacking { get; set; }
     public bool ChasingPlayer { get; set; }
@@ -209,7 +228,6 @@ public class AI : MonoBehaviour
 
         FindNearbyAllies = true;
 
-        Destructible = GetComponent<Destructible>();
         Destructible.AddMaxHealth(Destructible.MaxHealth * difficultyMod - Destructible.MaxHealth);
         Destructible.Heal(Destructible.MaxHealth);
 

@@ -16,9 +16,11 @@ MonoBehaviour:
   damage: 20
   attackSpeed: 4
   stunDuration: 2
+  ShowCharge: 1
   chargeCooldown: 20
   chargeRangeInterval: {x: 4, y: 7}
   chargeWindupTime: 1
+  ShowDetection: 1
   targetsLayerMask:
     serializedVersion: 2
     m_Bits: 4096

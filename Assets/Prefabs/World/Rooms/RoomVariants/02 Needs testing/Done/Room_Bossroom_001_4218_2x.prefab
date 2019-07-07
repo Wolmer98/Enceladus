@@ -65,9 +65,9 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.33333334
+  m_VoxelSize: 0.2
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 012db997932224f43950bd44211f7d1e, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 4a9c5e79427a53e4aa2b9997c85f5712, type: 2}
 --- !u!1 &7803314818653411186
 GameObject:
   m_ObjectHideFlags: 0
@@ -28441,6 +28441,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
+        type: 3}
+      propertyPath: enemySpawnPointPacks.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
+        type: 3}
+      propertyPath: enemySpawnPointPacks.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5fd77121b840661429fff7b195109011,
+        type: 2}
+    - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
+        type: 3}
+      propertyPath: enemySpawnPointPacks.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d1005ccb3dfc8649975c858735e58be,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fbefd83d8272b542b0019feac7e83d0, type: 3}
 --- !u!1001 &6516910875819678164
@@ -31508,7 +31525,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: 12d531563442f0149b82672a37067079,
+      objectReference: {fileID: 23800000, guid: 3161f73921745ee4eaecd32a723c667f,
         type: 2}
     - target: {fileID: 8888248964475272914, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
@@ -31523,7 +31540,7 @@ PrefabInstance:
     - target: {fileID: 8888248964475272914, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
       propertyPath: m_VoxelSize
-      value: 0.2
+      value: 0.083333336
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 359e9ac54880e2243a5acb441c825369, type: 3}

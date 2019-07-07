@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using NaughtyAttributes;
 
 [CreateAssetMenu(fileName = "AI_Stats", menuName = "AI/Stats")]
 public class AI_Stats : ScriptableObject
@@ -12,16 +13,18 @@ public class AI_Stats : ScriptableObject
     public float stunDuration = 2f;
 
     [Header("Charge")]
-    public float chargeCooldown = 6.0f;
-    public Vector2 chargeRangeInterval;
-    public float chargeWindupTime = 0.5f;
+    public bool ShowCharge = true;
+    [ShowIf("ShowCharge")]public float chargeCooldown = 6.0f;
+    [ShowIf("ShowCharge")] public Vector2 chargeRangeInterval;
+    [ShowIf("ShowCharge")] public float chargeWindupTime = 0.5f;
 
     [Header("Detection")]
-    public LayerMask targetsLayerMask;
-    public float detectionRadius = 2f;
-    public float chaseDetectionMultiplier = 2f;
-    public float timeBetweenAggroSound = 30f;
-    public float distanceToMoveTowardsSound = 10f;
+    public bool ShowDetection = true;
+    [ShowIf("ShowDetection")] public LayerMask targetsLayerMask;
+    [ShowIf("ShowDetection")] public float detectionRadius = 2f;
+    [ShowIf("ShowDetection")] public float chaseDetectionMultiplier = 2f;
+    [ShowIf("ShowDetection")] public float timeBetweenAggroSound = 30f;
+    [ShowIf("ShowDetection")] public float distanceToMoveTowardsSound = 10f;
 
     [Header("Movement")]
     public float moveSpeed = 1f;

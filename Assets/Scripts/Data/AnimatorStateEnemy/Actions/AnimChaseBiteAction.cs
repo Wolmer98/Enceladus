@@ -66,7 +66,7 @@ public class AnimChaseBiteAction : AnimatorAction
             ai.transform.LookAt(new Vector3 (ai.Player.transform.position.x, ai.transform.position.y, ai.Player.transform.position.z));
         }
 
-        if (ai.AttackTimer(ai.Stats.attackSpeed) && dist < ai.Stats.attackRange)
+        if (ai.AttackTimer(ai.Stats.attackSpeed) && dist < ai.Stats.attackRange && ai.typeOfEnemy != enemyType.carrier)
         {
             ai.IsAttacking = true;
             AIStoppedMoving(ai);

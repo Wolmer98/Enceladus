@@ -49,4 +49,9 @@ public class AnimatorFunctions : MonoBehaviour
         ai.IsAttacking = false;
     }
 
+    public void Explode()
+    {
+
+    }
+
 }

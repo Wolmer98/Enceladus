@@ -39,9 +39,9 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.33333334
+  m_VoxelSize: 0.2
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 4b1a26841deb9764f8551a04a8522166, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 46661a335e155874a90d86e6323a50dd, type: 2}
 --- !u!1 &8083217890147023517
 GameObject:
   m_ObjectHideFlags: 0
@@ -14023,10 +14023,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
-      propertyPath: m_Intensity
-      value: 1
+      propertyPath: shadowMapRenderTexture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: strength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 3.73
       objectReference: {fileID: 0}
     - target: {fileID: 290790580035203918, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
@@ -14043,20 +14053,10 @@ PrefabInstance:
       propertyPath: m_Range
       value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+    - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
-      propertyPath: shadowMapRenderTexture
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: strength
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 3.73
+      propertyPath: m_Intensity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b817bed0c0de444f902febbab10f31f, type: 3}
@@ -30057,10 +30057,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
-      propertyPath: m_Intensity
-      value: 1
+      propertyPath: shadowMapRenderTexture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: strength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 3.73
       objectReference: {fileID: 0}
     - target: {fileID: 290790580035203918, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
@@ -30077,20 +30087,10 @@ PrefabInstance:
       propertyPath: m_Range
       value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+    - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
-      propertyPath: shadowMapRenderTexture
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: strength
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 3.73
+      propertyPath: m_Intensity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b817bed0c0de444f902febbab10f31f, type: 3}
@@ -32987,10 +32987,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
-      propertyPath: m_Intensity
-      value: 1
+      propertyPath: shadowMapRenderTexture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: strength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 3.73
       objectReference: {fileID: 0}
     - target: {fileID: 290790580035203918, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
@@ -33007,20 +33017,10 @@ PrefabInstance:
       propertyPath: m_Range
       value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
+    - target: {fileID: 2434821507802913075, guid: 4b817bed0c0de444f902febbab10f31f,
         type: 3}
-      propertyPath: shadowMapRenderTexture
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: strength
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 290790580035203919, guid: 4b817bed0c0de444f902febbab10f31f,
-        type: 3}
-      propertyPath: customDistanceFalloffPower
-      value: 3.73
+      propertyPath: m_Intensity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b817bed0c0de444f902febbab10f31f, type: 3}
@@ -59748,7 +59748,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: 443302723deda244192603eb6f6dcfa2,
+      objectReference: {fileID: 23800000, guid: 9a292f4f78af73542b65f508ebde8343,
         type: 2}
     - target: {fileID: 8888248964475272914, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
