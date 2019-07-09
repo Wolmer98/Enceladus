@@ -2,13 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using NaughtyAttributes;
 public enum enemyType { swarm, medium, big, hiveMother, carrier, reaper }
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class AI : MonoBehaviour
 {
     public enemyType typeOfEnemy;
+    public bool SwarmController;
+
+    [ShowIf("SwarmController")] [SerializeField] GameObject swarmEnemy;
+    [ShowIf("SwarmController")] [SerializeField] Vector2Int numberOfEnemies;
+    [ShowIf("SwarmController")] [SerializeField] NavMeshAgent swarmAgent;
+
     [Header("AI Components")]
     [SerializeField] Animator AIStateMachine;
     AI_State baseState;
@@ -19,18 +25,18 @@ public class AI : MonoBehaviour
     [Header("GameObject Components")]
     [SerializeField] SphereCollider detectionSphere;
     [SerializeField] AI_Stats stats;
-    [SerializeField] Animator animator;
-    [SerializeField] GameObject underwaterEffects;
+    [HideIf("SwarmController")] [SerializeField] Animator animator;
+    [HideIf("SwarmController")] [SerializeField] GameObject underwaterEffects;
     [SerializeField] Transform topOfCrabForWaterLevel;
-    [SerializeField] SkinnedMeshRenderer skinnedMeshRenderer;
+    [HideIf("SwarmController")] [SerializeField] SkinnedMeshRenderer skinnedMeshRenderer;
 
     [Header("Jumping")]
     [SerializeField] LayerMask jumpLayerMask;
     [SerializeField] float rayCastRange = 1;
 
     [Header("DamageArea")]
-    [SerializeField] Vector3 damagePosition;
-    [SerializeField] float radiusOfDamageSphere = 0.6f;
+    [HideIf("SwarmController")] [SerializeField] Vector3 damagePosition;
+    [HideIf("SwarmController")] [SerializeField] float radiusOfDamageSphere = 0.6f;
 
     [Header("Sound Settings")]
     public FMODUnity.StudioEventEmitter soundEmitter;
@@ -99,6 +105,8 @@ public class AI : MonoBehaviour
     public Vector3 StartPosition { get { return startPosition; } }
     public Vector3 StartRotation { get { return startRotation; } }
     public Animator StateMachine { get { return AIStateMachine; } }
+
+    public enemyType TypeOfEnemy { get { return typeOfEnemy; } }
 
     // Visuals getters
 
@@ -211,6 +219,15 @@ public class AI : MonoBehaviour
     }
     #endregion
 
+    #region Swarm
+    public int SwarmSize { get; set; }
+    public Vector2Int AmountOfEnemies { get { return numberOfEnemies; } }
+    public List<SwarmAI> SwarmAIs { get; set; }
+    public GameObject SwarmPrefab { get { return swarmEnemy; } }
+    public NavMeshAgent SwarmAgent { get { return swarmAgent; } }
+    #endregion
+
+
     /// <summary>
     /// Called to initiate the AI with information relevant for it.
     /// </summary>
@@ -226,12 +243,13 @@ public class AI : MonoBehaviour
         ID = Id;
         EnemySpawnManager = enemySpawnManager;
 
-        FindNearbyAllies = true;
+        if(typeOfEnemy != enemyType.swarm)
+        {
+            Destructible.AddMaxHealth(Destructible.MaxHealth * difficultyMod - Destructible.MaxHealth);
+            Destructible.Heal(Destructible.MaxHealth);
 
-        Destructible.AddMaxHealth(Destructible.MaxHealth * difficultyMod - Destructible.MaxHealth);
-        Destructible.Heal(Destructible.MaxHealth);
-
-        Destructible.OnHurt.AddListener(delegate { FMODUnity.RuntimeManager.PlayOneShot(hitMarkSound); });
+            Destructible.OnHurt.AddListener(delegate { FMODUnity.RuntimeManager.PlayOneShot(hitMarkSound); });
+        }
 
         FMODUnity.RuntimeManager.PlayOneShot(spawnSound, transform.position);
         if (!HasRunStart)
@@ -245,24 +263,27 @@ public class AI : MonoBehaviour
         if(room == null)
             patrolWaypoints = FindObjectsOfType<PatrolWaypoint>();
 
-        // Get and find
-        rigidbody = GetComponent<Rigidbody>();
-        agent = GetComponent<NavMeshAgent>();
-        raycastManager = FindObjectOfType<RaycastManager>();
-        waterManager = FindObjectOfType<WaterManager>();
+        if(typeOfEnemy != enemyType.swarm)
+        {
+            // Get and find
+            rigidbody = GetComponent<Rigidbody>();
+            agent = GetComponent<NavMeshAgent>();
+            raycastManager = FindObjectOfType<RaycastManager>();
+            waterManager = FindObjectOfType<WaterManager>();
 
-        //Init
-        startPosition = new Vector3(transform.position.x, 0, transform.position.z);
-        IDsRegisteredAt = new List<int>();
-        AlliesAround = new List<AI>();
+            //Init
+            startPosition = new Vector3(transform.position.x, 0, transform.position.z);
+            IDsRegisteredAt = new List<int>();
+            AlliesAround = new List<AI>();
 
-        //Start values
+            //Start values
+            SearchPoints = new Vector3[stats.nbrSearchPos];
+            AttackCooldown = stats.attackSpeed;
+            ChargeCooldown = stats.chargeCooldown / 2;
+            //skinnedmeshRenderEmissionOriginalColor = skinnedMeshRenderer.materials[0].GetColor("_EmissionColor"); Not used for now.
+            skinnedMeshRenderer.materials[0].SetColor("_EmissionColor", Color.white);
+        }
         detectionSphere.radius = stats.detectionRadius;
-        SearchPoints = new Vector3[stats.nbrSearchPos];
-        AttackCooldown = stats.attackSpeed;
-        ChargeCooldown = stats.chargeCooldown / 2;
-        //skinnedmeshRenderEmissionOriginalColor = skinnedMeshRenderer.materials[0].GetColor("_EmissionColor"); Not used for now.
-        skinnedMeshRenderer.materials[0].SetColor("_EmissionColor", Color.white);
 
         HasRunStart = true;
     }
@@ -482,6 +503,14 @@ public class AI : MonoBehaviour
             inSight = raycastManager.IsPlayerInRaycastRange(position, range);
             return inSight;
         }
+        else
+        {
+            raycastManager = FindObjectOfType<RaycastManager>();
+            inSight = raycastManager.IsPlayerInRaycastRange(position, range);
+            return inSight;
+        }
+        
+
         return false;
     }
 
@@ -634,5 +663,18 @@ public class AI : MonoBehaviour
         MoveAcrossNavMeshesStarted = false;
 
     }
+
+    public void SwarmDied(SwarmAI swarmAI)
+    {
+        SwarmAIs.Remove(swarmAI);
+        if(SwarmAIs.Count <= 0)
+        {
+            IsMoving = false;
+            StopSounds();
+            NotifyEnemyManagerDeath();
+            Destroy(this.gameObject);
+        }
+    }
+
 
 }

@@ -1591,7 +1591,7 @@ PrefabInstance:
     - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
         type: 3}
       propertyPath: enemySpawnPointPacks.Array.size
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
         type: 3}
@@ -1604,6 +1604,12 @@ PrefabInstance:
       propertyPath: enemySpawnPointPacks.Array.data[4]
       value: 
       objectReference: {fileID: 11400000, guid: 7d1005ccb3dfc8649975c858735e58be,
+        type: 2}
+    - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
+        type: 3}
+      propertyPath: enemySpawnPointPacks.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: dd88698fd97627e44a90c1ab0bb48ee9,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fbefd83d8272b542b0019feac7e83d0, type: 3}

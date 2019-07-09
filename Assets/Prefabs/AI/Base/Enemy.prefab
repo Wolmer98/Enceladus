@@ -269,18 +269,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfEnemy: 0
-  baseState: {fileID: 0}
-  detectedSoundState: {fileID: 0}
-  currentState: {fileID: 0}
-  onHurtConditions:
-  - transitionName: Check Hp Threshold
-    condition: {fileID: 11400000, guid: edc0f303e0691db45b30a08935bc87db, type: 2}
-    trueState: {fileID: 0}
-    falseState: {fileID: 0}
-  - transitionName: ShotAndUnaware
-    condition: {fileID: 11400000, guid: 59cf1805290dc1045977d17bcbd73cb2, type: 2}
-    trueState: {fileID: 0}
-    falseState: {fileID: 0}
+  SwarmController: 0
+  swarmEnemy: {fileID: 0}
+  numberOfEnemies: {x: 6, y: 10}
+  AIStateMachine: {fileID: 0}
   detectionSphere: {fileID: 5633053724915822088}
   stats: {fileID: 11400000, guid: 59c2ec6059dc3274389c0473e4bcfe1f, type: 2}
   animator: {fileID: 4807451908531732812}
@@ -657,12 +649,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 696472774682301955, guid: 601fd486d622d9d459a7b215c7e47c3c,
+    - target: {fileID: 3299835106504546655, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 3299835106504546655, guid: 601fd486d622d9d459a7b215c7e47c3c,
+    - target: {fileID: 696472774682301955, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
       propertyPath: m_Layer
       value: 11
@@ -677,22 +669,22 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 2153239888904658151, guid: 601fd486d622d9d459a7b215c7e47c3c,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2562504904614797101, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6920652486101461267, guid: 601fd486d622d9d459a7b215c7e47c3c,
+    - target: {fileID: 2153239888904658151, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7556462981294206028, guid: 601fd486d622d9d459a7b215c7e47c3c,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920652486101461267, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
       propertyPath: playOnAwake
       value: 0
@@ -728,6 +720,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: crab
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: c13560ae511ff804d959392551d3da13, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d67266f6d059b4b49986ee88d858ee9a, type: 2}
+    - target: {fileID: 13700000, guid: c13560ae511ff804d959392551d3da13, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6239972cf958a6e4096ca80af982fd71, type: 2}
     - target: {fileID: 400000, guid: c13560ae511ff804d959392551d3da13, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -784,14 +784,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: c13560ae511ff804d959392551d3da13, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: d67266f6d059b4b49986ee88d858ee9a, type: 2}
-    - target: {fileID: 13700000, guid: c13560ae511ff804d959392551d3da13, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6239972cf958a6e4096ca80af982fd71, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c13560ae511ff804d959392551d3da13, type: 3}
 --- !u!4 &4807451908523962028 stripped

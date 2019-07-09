@@ -271,7 +271,10 @@ public class EnemySpawnManager : MonoBehaviour
     {
         GameObject enemy = Instantiate(enemyToSpawn, enemySpawnPoint.transform.position, Quaternion.identity, transform);
         enemy.GetComponent<AI>().InitAi(enemySpawnPoint.GetComponentInParent<Room>(), difficultyMod, AiID, this);
-        enemy.GetComponentInChildren<Destructible>().OnDeath.AddListener(delegate { RemoveEnemy(); });
+        if(enemy.GetComponent<AI>().TypeOfEnemy != global::enemyType.swarm)
+        {
+            enemy.GetComponentInChildren<Destructible>().OnDeath.AddListener(delegate { RemoveEnemy(); });
+        }
         enemyCount++;
         AiID++;
         enemiesAlive.Add(enemy.GetComponent<AI>());
