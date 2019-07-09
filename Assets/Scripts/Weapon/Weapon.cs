@@ -574,6 +574,9 @@ public class Weapon : MonoBehaviour
 
         foreach (ParticleSystem p in currentChargeUps)
         {
+            if (p == null)
+                continue;
+
             if (play)
                 p.Play();
             else

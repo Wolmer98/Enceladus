@@ -68,7 +68,7 @@ public class FireBehavior_Raycast : FireBehavior
                     float areaOfEffect = Mathf.Max(0, weapon.WeaponStats.areaOfEffect);
                     if (areaOfEffect > 0)
                     {
-                        Collider[] colliders = Physics.OverlapSphere(hitPoint, areaOfEffect);
+                        Collider[] colliders = Physics.OverlapSphere(hitPoint, areaOfEffect, weapon.HitMask);
                         foreach (Collider col in colliders)
                         {
                             HitDestructible(weapon, col.gameObject, hit.point);
