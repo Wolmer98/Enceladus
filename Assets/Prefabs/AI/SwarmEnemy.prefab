@@ -133,7 +133,7 @@ MonoBehaviour:
         m_MethodName: InstantiateRigidbody
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 3013910907101597253, guid: e2854ef631d46f743951cf647b75f985,
+          m_ObjectArgument: {fileID: 3013910907101597253, guid: a88978e965904bb43860036a21dba81c,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
@@ -464,10 +464,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: crabSwarm
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 35c2b38225082ff4eb45dbc577950f8d, type: 2}
     - target: {fileID: 400000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -512,6 +508,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 35c2b38225082ff4eb45dbc577950f8d, type: 2}
     - target: {fileID: 13700000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

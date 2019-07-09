@@ -46,6 +46,8 @@ public class EnemySpawnManager : MonoBehaviour
 
     private float timerForDisable;
     private int AiID;
+    
+    public int CurrentLevel { get; private set; }
 
     public EnemySpawnPoint[] EnemySpawnPoints { get { return enemySpawnPoints; } }
 
@@ -88,7 +90,7 @@ public class EnemySpawnManager : MonoBehaviour
             worldGenerator.OnWorldStart.AddListener(delegate { IncreaseDifficulty(); });
             hasSubscribedToWorldGenerator = true;
         }
-
+        CurrentLevel = worldGenerator.CurrentLevel;
 
         player = FindObjectOfType<PlayerController>();
         playerToSpawnPointPath = new NavMeshPath();
@@ -380,7 +382,7 @@ public class EnemySpawnManager : MonoBehaviour
             Debug.Log("CurrentLeve:" + worldGenerator.CurrentLevel + "     Stat modifier: " + difficultyMod);
             extraSpawnChance = increasedSpawnChance.Evaluate(worldGenerator.CurrentLevel / 10);
             Debug.Log("Extra spawn chance of enemies are now : " + extraSpawnChance);
-
+            CurrentLevel = worldGenerator.CurrentLevel;
         }
     }
 

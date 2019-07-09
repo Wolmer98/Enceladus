@@ -143,11 +143,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 602034801}
     m_Modifications:
-    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
-        type: 3}
-      propertyPath: m_Name
-      value: PatrolWaypoint
-      objectReference: {fileID: 0}
     - target: {fileID: 7813908165932160350, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -202,6 +197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
+        type: 3}
+      propertyPath: m_Name
+      value: PatrolWaypoint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6, type: 3}
@@ -338,7 +338,7 @@ MonoBehaviour:
   overrideColor: 0
   overridingColor: {r: 1, g: 1, b: 1, a: 1}
   useShadow: 1
-  shadowMapRenderTexture: {fileID: 236050464}
+  shadowMapRenderTexture: {fileID: 340924515}
   useCookie: 1
   cookieMapRenderTexture: {fileID: 0}
   enableOutOfPhaseColor: 0
@@ -419,7 +419,7 @@ PrefabInstance:
     - target: {fileID: 8275400314718403886, guid: a07eac15c3cec9440b7a5d7aa109cdf3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8275400314718403875, guid: a07eac15c3cec9440b7a5d7aa109cdf3,
         type: 3}
@@ -485,11 +485,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 602034801}
     m_Modifications:
-    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
-        type: 3}
-      propertyPath: m_Name
-      value: PatrolWaypoint (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 7813908165932160350, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -545,6 +540,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
+        type: 3}
+      propertyPath: m_Name
+      value: PatrolWaypoint (4)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6, type: 3}
 --- !u!4 &201240126 stripped
@@ -553,7 +553,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 201240125}
   m_PrefabAsset: {fileID: 0}
---- !u!84 &236050464
+--- !u!84 &340924515
 RenderTexture:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -683,11 +683,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 602034801}
     m_Modifications:
-    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
-        type: 3}
-      propertyPath: m_Name
-      value: PatrolWaypoint (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 7813908165932160350, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -742,6 +737,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
+        type: 3}
+      propertyPath: m_Name
+      value: PatrolWaypoint (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6, type: 3}
@@ -1119,7 +1119,7 @@ PrefabInstance:
     - target: {fileID: 8275400314718403886, guid: 582ea85883b2d0f4aa2784fd10e58cc7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8275400314718403875, guid: 582ea85883b2d0f4aa2784fd10e58cc7,
         type: 3}
@@ -1950,11 +1950,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 602034801}
     m_Modifications:
-    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
-        type: 3}
-      propertyPath: m_Name
-      value: PatrolWaypoint (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7813908165932160350, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2010,6 +2005,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
+        type: 3}
+      propertyPath: m_Name
+      value: PatrolWaypoint (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6, type: 3}
 --- !u!4 &1676624540 stripped
@@ -2033,7 +2033,7 @@ PrefabInstance:
     - target: {fileID: 8275400314718403886, guid: e83445adeba25504995ca2ee2220067a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8275400314718403875, guid: e83445adeba25504995ca2ee2220067a,
         type: 3}
@@ -2328,11 +2328,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 602034801}
     m_Modifications:
-    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
-        type: 3}
-      propertyPath: m_Name
-      value: PatrolWaypoint (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7813908165932160350, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2388,6 +2383,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
+        type: 3}
+      propertyPath: m_Name
+      value: PatrolWaypoint (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6, type: 3}
 --- !u!4 &1905077841 stripped
@@ -2411,7 +2411,7 @@ PrefabInstance:
     - target: {fileID: 8275400314718403886, guid: 5aca6742f208ac54ea7a1541673863cf,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8275400314718403875, guid: 5aca6742f208ac54ea7a1541673863cf,
         type: 3}
