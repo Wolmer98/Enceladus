@@ -755,11 +755,14 @@ public class Weapon : MonoBehaviour
             return;
         }
 
-        ParticleSystemRandomizer particleSystemRandomizer = muzzleFlashParent.GetComponent<ParticleSystemRandomizer>();
-        if (particleSystemRandomizer != null)
+        if (muzzleFlashParent != null)
         {
-            particleSystemRandomizer.PlayParticleSystems();
-            return;
+            ParticleSystemRandomizer particleSystemRandomizer = muzzleFlashParent.GetComponent<ParticleSystemRandomizer>();
+            if (particleSystemRandomizer != null)
+            {
+                particleSystemRandomizer.PlayParticleSystems();
+                return;
+            }
         }
 
         foreach (ParticleSystem ps in currentMuzzleFlashes)

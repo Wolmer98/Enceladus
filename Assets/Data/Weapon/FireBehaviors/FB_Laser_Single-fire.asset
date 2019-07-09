@@ -19,12 +19,11 @@ MonoBehaviour:
   chargeSound: event:/Weapons/Laser/Laser_Charge
   reloadSound: event:/Weapons/Reload/Reload_Temp
   triggerSound: event:/Weapons/Weapon_Empty_Trigger
-  muzzleFlash: {fileID: 1731172368965416610, guid: aa064db3449d91944b09af28e73dba53,
+  muzzleFlash: {fileID: 5535400089256053459, guid: d1017d6b402adeb4db733ffb0fff79fb,
     type: 3}
   lineRenderer: {fileID: 5575950346846941138, guid: 658285b3ce6e20f49a043aa9bdc89363,
     type: 3}
-  chargeUp: {fileID: 4672594394762944367, guid: 0cc41c7d4f3f8a8449c174cdd649ae14,
-    type: 3}
+  chargeUp: {fileID: 204251786563271845, guid: ff11004d43ce7b044b40462aedcce38c, type: 3}
   recoilAmplitude: 8
   recoilSpeed: 3
   recoilPermanentAmplitude: 1.2
