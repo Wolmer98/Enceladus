@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f972c13a444324e9538f927b1459dd, type: 3}
   m_Name: FB_Laser_Single-fire
   m_EditorClassIdentifier: 
+  WeaponType: 1
   fireMode: 0
   specialFireType: 0
   fireSound: event:/Weapons/Laser/Laser_Release

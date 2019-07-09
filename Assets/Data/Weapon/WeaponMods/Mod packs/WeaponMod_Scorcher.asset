@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: WeaponMod_Scorcher
   m_EditorClassIdentifier: 
   weaponModName: Scorcher
+  weaponPickupText: Default
   weaponModDescription: This setting fires a large plasma ball to melt the opposition.
   emissionColor: {r: 0.7607843, g: 0.67058825, b: 0.21568628, a: 1}
   screenBlurSize:
@@ -68,7 +69,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   suppressionIncrement: 0.5
   suppressionRecoveryDelay: 1
-  fireBehavior: {fileID: 11400000, guid: f797cf0b132240b4cb8c6e0b5c977f64, type: 2}
+  fireBehavior: {fileID: 11400000, guid: a53828fd3630c3344b86e584ba2deec9, type: 2}
   weaponStats:
     damage: 35
     accuracy: 0.9

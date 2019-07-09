@@ -6,7 +6,7 @@ public class PlayerAnimatorController : MonoBehaviour
 {
     [SerializeField] FPSController fpsController;
     [SerializeField] Weapon weapon;
-    [SerializeField] Animator weaponAnimator;
+    [SerializeField] public Animator weaponAnimator;
     [SerializeField] Animator playerAnimator;
 
 
@@ -67,5 +67,20 @@ public class PlayerAnimatorController : MonoBehaviour
     {
         playerAnimator.enabled = true;
         playerAnimator.SetBool("Dead", true);
+    }
+
+    public void PlayGrabAnimation()
+    {
+        weaponAnimator.SetTrigger("Grab");
+    }
+
+    public void SetFire(bool fire)
+    {
+        weaponAnimator.SetBool("Fire", fire);
+    }
+
+    public void SetWeapon(WeaponType weaponType)
+    {
+        weaponAnimator.SetFloat("RangedWeapon", (float)weaponType);
     }
 }

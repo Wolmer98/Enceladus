@@ -235,6 +235,18 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        if (MainWeapon.FireBehavior.WeaponType == WeaponType.Laser)
+        {
+            if (Input.GetKeyDown(inputData.GetKeyCode("Fire")) && mainWeaponActive)
+            {
+                GetComponent<PlayerAnimatorController>().SetFire(true);
+            }
+            else if (Input.GetKeyUp(inputData.GetKeyCode("Fire")) && mainWeaponActive)
+            {
+                GetComponent<PlayerAnimatorController>().SetFire(false);
+            }
+        }
+
         if (Input.GetKeyDown(inputData.GetKeyCode("Reload")) && mainWeaponActive)
         {
             MainWeapon.Reload();
@@ -360,6 +372,7 @@ public class PlayerController : MonoBehaviour
 
             if (interactNotification)
             {
+                GetComponent<PlayerAnimatorController>().PlayGrabAnimation();
                 OnInteract.Invoke();
             }
         }

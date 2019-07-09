@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: WeaponMod_Scrambler
   m_EditorClassIdentifier: 
   weaponModName: Scrambler
+  weaponPickupText: Default
   weaponModDescription: 'This setting fires plasma projectiles '
   emissionColor: {r: 0.38431373, g: 0.48235294, b: 0.09803922, a: 1}
   screenBlurSize:
@@ -68,7 +69,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   suppressionIncrement: 0.1
   suppressionRecoveryDelay: 1
-  fireBehavior: {fileID: 11400000, guid: d8ffe2d000468cf49b4157c864eaac29, type: 2}
+  fireBehavior: {fileID: 11400000, guid: e336f2f0f741120469a97c7b2ed07091, type: 2}
   weaponStats:
     damage: 30
     accuracy: 0.8

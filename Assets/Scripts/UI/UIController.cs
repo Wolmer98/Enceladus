@@ -31,11 +31,11 @@ public class UIController : MonoBehaviour
     Vector2Int notificationCSPos;
 
     [Header("Other UI")]
-    [SerializeField] Text magInfoText;
-    [SerializeField] Text storageAmmo;
+    [SerializeField] public Text magInfoText;
+    [SerializeField] public Text storageAmmo;
     [SerializeField] CanvasGroup hurtFadeScreen;
-    [SerializeField] Image chargeUpImage;
-    [SerializeField] Image minChargeUpImage;
+    [SerializeField] public Image chargeUpImage;
+    [SerializeField] public Image minChargeUpImage;
     [SerializeField] GameObject miniMap;
 
     [Header("Loading Screen")]

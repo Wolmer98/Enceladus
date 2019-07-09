@@ -70,7 +70,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   suppressionIncrement: 0.7
   suppressionRecoveryDelay: 1
-  fireBehavior: {fileID: 11400000, guid: f797cf0b132240b4cb8c6e0b5c977f64, type: 2}
+  fireBehavior: {fileID: 11400000, guid: a53828fd3630c3344b86e584ba2deec9, type: 2}
   weaponStats:
     damage: 45
     accuracy: 0.85

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a677af9dd3d38874db403599691dc1b5, type: 3}
   m_Name: FB_Plasma_Automatic
   m_EditorClassIdentifier: 
+  WeaponType: 1
   fireMode: 1
   specialFireType: 0
   fireSound: event:/Weapons/Plasma/Plasma_SemiAuto
@@ -21,6 +22,7 @@ MonoBehaviour:
   muzzleFlash: {fileID: 3073301278125712093, guid: d99c34a699cc8de4abfba3933fd60623,
     type: 3}
   lineRenderer: {fileID: 0}
+  chargeUp: {fileID: 0}
   recoilAmplitude: 5
   recoilSpeed: 3
   recoilPermanentAmplitude: 0.75

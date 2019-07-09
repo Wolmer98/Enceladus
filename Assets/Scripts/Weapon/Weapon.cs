@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
+public enum WeaponType { Bullet, Laser, Plasma }
+
 [System.Serializable]
 public class WeaponStats
 {
@@ -107,6 +109,7 @@ public class WeaponStats
 public class Weapon : MonoBehaviour
 {
     [SerializeField] Transform firePoint;
+    [SerializeField] Transform[] firePoints;
     [SerializeField] LayerMask hitMask;
 
     [Header("Shutdown Settings")]
@@ -178,6 +181,9 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject chargeUpProjectile;
     [SerializeField] GameObject chargeUpEffect;
     Vector3 projectileStartScale;
+
+    [Header("Rigs")]
+    [SerializeField] GameObject[] weaponRigs;
 
     // Line renderer.
     LineRenderer lineRenderer;
@@ -820,6 +826,9 @@ public class Weapon : MonoBehaviour
                 weaponStats.ApplyWeaponStats(mainWeaponMod.WeaponStats, true, true, true);
             }
 
+            //Switch rig.
+            SwitchWeaponRig(weaponMod.FireBehavior.WeaponType);
+
             //Apply new main mod stats and behavior.
             mainWeaponMod = weaponMod;
             fireBehavior = weaponMod.FireBehavior;
@@ -890,6 +899,30 @@ public class Weapon : MonoBehaviour
         }
 
         return weaponMod;
+    }
+
+    public void SwitchWeaponRig(WeaponType weaponType)
+    {
+        for (int i = 0; i < weaponRigs.Length; i++)
+        {
+            if (i == (int)weaponType)
+            {
+                weaponRigs[i].SetActive(true);
+                firePoint = firePoints[i];
+                mainAnimator = weaponRigs[i].GetComponent<Animator>();
+                FindObjectOfType<PlayerAnimatorController>().weaponAnimator = weaponRigs[i].GetComponent<Animator>();
+                //uiController.storageAmmo = weaponRigs[i].transform.Find(uiController.storageAmmo.gameObject.name).GetComponent<Text>();
+                //uiController.magInfoText = weaponRigs[i].transform.Find(uiController.magInfoText.name).GetComponent<Text>();
+                //uiController.chargeUpImage = weaponRigs[i].transform.Find(uiController.chargeUpImage.name).GetComponent<Image>();
+                //uiController.minChargeUpImage = weaponRigs[i].transform.Find(uiController.minChargeUpImage.name).GetComponent<Image>();
+            }
+            else
+            {
+                weaponRigs[i].SetActive(false);
+            }
+        }
+        
+        FindObjectOfType<PlayerAnimatorController>().SetWeapon(weaponType);
     }
 }
 

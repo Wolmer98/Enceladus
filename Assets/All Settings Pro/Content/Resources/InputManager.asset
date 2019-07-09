@@ -55,3 +55,6 @@ MonoBehaviour:
   - Function: Reload
     Key: 114
     Description: Reload Weapon
+  - Function: Aim
+    Key: 324
+    Description: Aim Weapon

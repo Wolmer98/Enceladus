@@ -10,6 +10,7 @@ public abstract class FireBehavior : ScriptableObject
 {
     protected const float spreadRadius = 1f;
 
+    public WeaponType WeaponType;
     [SerializeField] protected FireMode fireMode;
     [SerializeField] protected SpecialFireType specialFireType;
 
