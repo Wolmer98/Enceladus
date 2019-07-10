@@ -8,6 +8,9 @@ public enum enemyType { swarm, medium, big, hiveMother, carrier, reaper }
 [RequireComponent(typeof(NavMeshAgent))]
 public class AI : MonoBehaviour
 {
+
+    public GameObject swarmControllerPrefab;
+
     public enemyType typeOfEnemy;
     public bool SwarmController;
 
@@ -225,6 +228,12 @@ public class AI : MonoBehaviour
     public List<SwarmAI> SwarmAIs { get; set; }
     public GameObject SwarmPrefab { get { return swarmEnemy; } }
     public NavMeshAgent SwarmAgent { get { return swarmAgent; } }
+    #endregion
+
+    #region HiveMother
+    public bool HasSpawnedEnemies { get; set; }
+    public bool SpawningEnemies { get; set; }
+    public bool ChaseOnSpawn { get; set; }
     #endregion
 
 
@@ -448,18 +457,19 @@ public class AI : MonoBehaviour
             //}
         }
 
+
         //Debug.Log("AI heard sound");
         if(!StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Chase") 
             || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Charge") 
             || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Stunned"))
         {
-            if(!ChasingPlayer && !FleeingFromPlayer && !IsStunned)
+            if(!ChasingPlayer && !FleeingFromPlayer && !IsStunned && !SpawningEnemies)
             {
                 StateMachine.Play("Chase");
                 PlayAggroSound();
             }
         }
-        else if (!StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Search"))
+        else if (!StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Search") || TypeOfEnemy == enemyType.hiveMother)
         {
             conditionTimer = 0f;
         }

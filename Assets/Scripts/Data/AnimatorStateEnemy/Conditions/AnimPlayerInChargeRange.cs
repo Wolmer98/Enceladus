@@ -14,7 +14,7 @@ public class AnimPlayerInChargeRange : AI_Condition
         {
             float dist = Vector3.Distance(ai.transform.position, ai.Player.transform.position);
 
-            if (dist >= ai.Stats.chargeRangeInterval.x && dist <= ai.Stats.chargeRangeInterval.y)
+            if (dist >= ai.Stats.chargeRangeInterval.x && dist <= ai.Stats.chargeRangeInterval.y && !ai.Agent.isOnOffMeshLink)
             {
                 ai.ChargeDirection = (ai.Player.transform.position - ai.transform.position).normalized;
                 return RaycastTest(ai);

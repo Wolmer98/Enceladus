@@ -204,7 +204,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.15
+  m_Radius: 0.19
   m_Height: 0.4
   m_Direction: 2
   m_Center: {x: 0, y: 0.11, z: 0}
@@ -328,16 +328,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8275400314718403875}
     m_Modifications:
-    - target: {fileID: 6122055237054951797, guid: 601fd486d622d9d459a7b215c7e47c3c,
-        type: 3}
-      propertyPath: m_Name
-      value: Bullet_hit_enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 6122055237054951797, guid: 601fd486d622d9d459a7b215c7e47c3c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6144778812123795085, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -392,6 +382,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122055237054951797, guid: 601fd486d622d9d459a7b215c7e47c3c,
+        type: 3}
+      propertyPath: m_Name
+      value: Bullet_hit_enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122055237054951797, guid: 601fd486d622d9d459a7b215c7e47c3c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3299835106504546655, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
@@ -464,6 +464,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: crabSwarm
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 35c2b38225082ff4eb45dbc577950f8d, type: 2}
+    - target: {fileID: 13700000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9ea961b7025b5354cb126a13b5ecac6c, type: 2}
     - target: {fileID: 400000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -508,14 +516,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 35c2b38225082ff4eb45dbc577950f8d, type: 2}
-    - target: {fileID: 13700000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9ea961b7025b5354cb126a13b5ecac6c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
 --- !u!1 &5170189091635835532 stripped

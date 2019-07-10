@@ -76,14 +76,14 @@ public class AnimChaseBiteAction : AnimatorAction
         }
 
 
-        if (ai.Agent.isOnOffMeshLink)
-        {
-            ai.Agent.speed = ai.Stats.chaseSpeed / 4;
-        }
-        else
-        {
-            ai.Agent.speed = ai.Stats.chaseSpeed;
-        }
+        //if (ai.Agent.isOnOffMeshLink)
+        //{
+        //    ai.Agent.speed = ai.Stats.chaseSpeed / 4;
+        //}
+        //else
+        //{
+        //    ai.Agent.speed = ai.Stats.chaseSpeed;
+        //}
 
     }
 }

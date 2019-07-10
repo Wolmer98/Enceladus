@@ -24,7 +24,14 @@ public class AnimSwarmInit : AnimatorAction
             swarmAI.SkinnedMeshRenderer.materials[0].SetColor("_EmissionColor", Color.white);
         }
 
-        anim.Play("Idle");
+        if(ai.ChaseOnSpawn == true)
+        {
+            anim.Play("Chase");
+        }
+        else
+        {
+            anim.Play("Idle");
+        }
     }
 
     public override void ExitAction(AI ai, Animator anim)

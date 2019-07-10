@@ -12,6 +12,7 @@ public class AI_Stats : ScriptableObject
     public float attackSpeed = 2;
     public float stunDuration = 2f;
 
+
     [Header("Charge")]
     public bool ShowCharge = true;
     [ShowIf("ShowCharge")]public float chargeCooldown = 6.0f;

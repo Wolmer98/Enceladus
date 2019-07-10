@@ -9,6 +9,13 @@ public class AnimSwarmChase : AnimatorAction
     {
         anim.ResetTrigger("Chase");
         ai.IsMoving = true;
+        if (ai.SwarmAIs.Count <= 0)
+        {
+            ai.IsMoving = false;
+            ai.StopSounds();
+            ai.NotifyEnemyManagerDeath();
+            Destroy(ai.gameObject);
+        }
         foreach (SwarmAI swarmAI in ai.SwarmAIs)
         {
             if (swarmAI != null)
@@ -16,6 +23,8 @@ public class AnimSwarmChase : AnimatorAction
                 swarmAI.Agent.SetDestination(ai.Player.transform.position);
                 swarmAI.Animator.SetFloat("WalkingOffset", Random.Range(0f, 0.7f));
                 swarmAI.Animator.Play("Walking");
+
+                swarmAI.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
             }
         }
     }
@@ -27,6 +36,14 @@ public class AnimSwarmChase : AnimatorAction
 
     public override void UpdateAction(AI ai, Animator anim)
     {
+        if (ai.SwarmAIs.Count <= 0)
+        {
+            ai.IsMoving = false;
+            ai.StopSounds();
+            ai.NotifyEnemyManagerDeath();
+            Destroy(ai.gameObject);
+        }
+
         ai.SwarmAgent.SetDestination(ai.Player.transform.position);
 
         foreach (SwarmAI swarmAI in ai.SwarmAIs)
@@ -35,6 +52,14 @@ public class AnimSwarmChase : AnimatorAction
             {
                 swarmAI.UpdateChaseSwarm();
             }
+            else
+            {
+                ai.IsMoving = false;
+                ai.StopSounds();
+                ai.NotifyEnemyManagerDeath();
+                Destroy(ai.gameObject);
+            }
         }
+
     }
 }

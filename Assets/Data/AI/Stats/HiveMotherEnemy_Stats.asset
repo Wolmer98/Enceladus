@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864521336bd0fd74eb5b483a0c9645c5, type: 3}
+  m_Name: HiveMotherEnemy_Stats
+  m_EditorClassIdentifier: 
+  attackRange: 3
+  damage: 15
+  attackSpeed: 4
+  stunDuration: 2
+  ShowCharge: 0
+  chargeCooldown: 20
+  chargeRangeInterval: {x: 4, y: 7}
+  chargeWindupTime: 1
+  ShowDetection: 1
+  targetsLayerMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  detectionRadius: 8
+  chaseDetectionMultiplier: 1.5
+  timeBetweenAggroSound: 30
+  distanceToMoveTowardsSound: 10
+  moveSpeed: 1
+  chaseSpeed: 1.5
+  rotationDuration: 2
+  rotationSpeed: 5
+  chargeSpeed: 8
+  searchRadius: 10
+  searchTime: 20
+  nbrSearchPos: 10
+  chanceOfNearRadius: 0.3
+  nearRadiusLerpSpeed: 2
+  echoDetectionMultiplier: 0.2
+  nearRadiusDuration: 4
+  chanceOfFarRadius: 0.4
+  farRadiusLerpSpeed: 2
+  echoDetectionFarMultiplier: 0.4
+  farRadiusDuration: 3
+  awareOfFriendRadius: 5
+  healthThresholdForReaction: 0.2
+  procentHealthStun: 0.5
+  speedMultiplier: 1
+  damageMultiplier: 1
+  chargeSpeedMultiplier: 1

@@ -54,4 +54,15 @@ public class AnimatorFunctions : MonoBehaviour
 
     }
 
+    public void SpawnEnemies()
+    {
+        ai.HasSpawnedEnemies = true;
+        GameObject spawnedAI;
+
+        spawnedAI = Instantiate(ai.swarmControllerPrefab, ai.transform.position, Quaternion.identity, ai.EnemySpawnManager.transform);
+        AI spawnedAIComponent = spawnedAI.GetComponent<AI>();
+        spawnedAIComponent.ChaseOnSpawn = true;
+        spawnedAIComponent.InitAi(ai.Room, ai.DifficultyMod, ai.ID, ai.EnemySpawnManager);
+    }
+
 }

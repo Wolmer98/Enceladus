@@ -12,6 +12,7 @@ public class EnemySpawnManager : MonoBehaviour
     [Header("Enemy Types")]
     [SerializeField] GameObject[] enemyType;
     [SerializeField] EnemySpawnPack[] enemySpawnPacks;
+    [SerializeField] GameObject swarmControllerPrefab;
     [Header("Enemy Counters")]
     [SerializeField] int maxEnemyCount = 20;
     [SerializeField] int enemyCount;
@@ -50,6 +51,7 @@ public class EnemySpawnManager : MonoBehaviour
     public int CurrentLevel { get; private set; }
 
     public EnemySpawnPoint[] EnemySpawnPoints { get { return enemySpawnPoints; } }
+
 
     private void Start()
     {

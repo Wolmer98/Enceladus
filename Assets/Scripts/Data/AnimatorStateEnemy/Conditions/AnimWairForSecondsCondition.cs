@@ -8,6 +8,13 @@ public class AnimWairForSecondsCondition : AI_Condition
     public float secondToWait = 4f;
     public override bool CheckCondition(AI ai)
     {
-        return ai.ConditionTimeCheck(secondToWait);
+        if (!ai.Agent.isOnOffMeshLink)
+        {
+            return ai.ConditionTimeCheck(secondToWait);
+        }
+        else
+        {
+            return false;
+        }
     }
 }

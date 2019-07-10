@@ -67,6 +67,12 @@ public class SwarmAI : MonoBehaviour
             Agent.SetDestination(swarmController.Player.transform.position);
         }
 
+
+        if (transform.position.y <= -100f)
+        {
+            GetComponent<Destructible>().Hurt(10000f);
+        }
+
         LookAtPlayer();
     }
 

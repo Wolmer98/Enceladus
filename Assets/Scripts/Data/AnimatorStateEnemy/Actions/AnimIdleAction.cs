@@ -10,7 +10,10 @@ public class AnimIdleAction : AnimatorAction
         AIStoppedMoving(ai);
         ai.Animator.SetBool("Walking", false);
         ai.Animator.Play("Idle");
-        ai.ConditionTime = 0f;
+        if(ai.typeOfEnemy != enemyType.hiveMother)
+        {
+            ai.ConditionTime = 0f;
+        }
     }
 
     public override void ExitAction(AI ai, Animator anim)

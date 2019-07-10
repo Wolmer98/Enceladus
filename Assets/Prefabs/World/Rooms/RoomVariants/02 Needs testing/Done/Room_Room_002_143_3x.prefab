@@ -1609,7 +1609,7 @@ PrefabInstance:
         type: 3}
       propertyPath: enemySpawnPointPacks.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: dd88698fd97627e44a90c1ab0bb48ee9,
+      objectReference: {fileID: 11400000, guid: d1c034f81252be042a465f1bc1d2046a,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fbefd83d8272b542b0019feac7e83d0, type: 3}
