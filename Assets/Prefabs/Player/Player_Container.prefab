@@ -1203,42 +1203,60 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: -0.087914936
-      outSlope: -0.087914936
+      inSlope: 0.20794357
+      outSlope: 0.20794357
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.14159292
+      outWeight: 0.16129032
     - serializedVersion: 3
-      time: 1
+      time: 0.5
       value: 0
-      inSlope: -1.373147
-      outSlope: -1.373147
+      inSlope: -1.5756193
+      outSlope: -1.5756193
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.06194693
+      inWeight: 0.051878452
       outWeight: 0
     m_PreInfinity: 2
-    m_PostInfinity: 2
+    m_PostInfinity: 1
     m_RotationOrder: 4
   XCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 1
+      time: 0
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.76862055
+      outSlope: -0.76862055
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.33333334
+      outWeight: 0.121645786
+    - serializedVersion: 3
+      time: 0.5
+      value: 0
+      inSlope: 0.62995905
+      outSlope: 0.62995905
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.12838066
       outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.7924172
+      outSlope: -0.7924172
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.12164605
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  BobSpeed: 0.6
-  BobMultiplier: 0.02
-  StaminaMultiplier: 0.5
+  BobSpeed: 0.35
+  BobMultiplier: 0.035
+  StaminaMultiplier: 0.2
 --- !u!1 &4692740712660307927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,7 +1413,7 @@ MonoBehaviour:
   SprintKey: 304
   SprintSpeedMultiplier: 1.8
   maxStamina: 100
-  StaminaDrain: 2
+  StaminaDrain: 5
   StaminaGain: 10
   staminaDeclinePercentage: 0.05
   AccelerationRate: 2
