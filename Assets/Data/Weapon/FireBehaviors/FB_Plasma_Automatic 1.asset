@@ -21,7 +21,8 @@ MonoBehaviour:
   triggerSound: event:/Weapons/Weapon_Empty_Trigger
   muzzleFlash: {fileID: 7792118154606028704, guid: e9d131ebdbf340b42a972fd14991ebd2,
     type: 3}
-  lineRenderer: {fileID: 0}
+  lineRenderer: {fileID: 5575950346846941138, guid: d5c8dd9dd9e89764f9940387cd1b6f55,
+    type: 3}
   chargeUp: {fileID: 0}
   recoilAmplitude: 5
   recoilSpeed: 3
