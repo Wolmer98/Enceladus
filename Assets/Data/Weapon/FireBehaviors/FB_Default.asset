@@ -19,7 +19,7 @@ MonoBehaviour:
   chargeSound: event:/Weapons/Mechanic/Mech_Charge
   reloadSound: event:/Weapons/Reload/Reload_Temp
   triggerSound: event:/Weapons/Weapon_Empty_Trigger
-  muzzleFlash: {fileID: 1246246513978175638, guid: 4de907062de6270439bbe096302d93ab,
+  muzzleFlash: {fileID: 903353691713234265, guid: b6d7e989a9b35394283dcc15b228037d,
     type: 3}
   lineRenderer: {fileID: 5575950346846941138, guid: d5283a6694ba11c40a30b037fece6c65,
     type: 3}
