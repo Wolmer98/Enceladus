@@ -556,19 +556,43 @@ PrefabInstance:
     - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
         type: 3}
       propertyPath: enemySpawnPointPacks.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
         type: 3}
       propertyPath: enemySpawnPointPacks.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 98e37294a14661745b9fae049bfb5205,
+      objectReference: {fileID: 11400000, guid: d1c034f81252be042a465f1bc1d2046a,
         type: 2}
     - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
         type: 3}
       propertyPath: enemySpawnPointPacks.Array.data[2]
       value: 
       objectReference: {fileID: 11400000, guid: 5fd77121b840661429fff7b195109011,
+        type: 2}
+    - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
+        type: 3}
+      propertyPath: enemySpawnPointPacks.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d1005ccb3dfc8649975c858735e58be,
+        type: 2}
+    - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
+        type: 3}
+      propertyPath: enemySpawnPointPacks.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: dd88698fd97627e44a90c1ab0bb48ee9,
+        type: 2}
+    - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
+        type: 3}
+      propertyPath: enemySpawnPointPacks.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: d1c034f81252be042a465f1bc1d2046a,
+        type: 2}
+    - target: {fileID: 7282654397332474801, guid: 9fbefd83d8272b542b0019feac7e83d0,
+        type: 3}
+      propertyPath: enemySpawnPointPacks.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 98e37294a14661745b9fae049bfb5205,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fbefd83d8272b542b0019feac7e83d0, type: 3}

@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365312ce90892c54bbdd4bcda69f8a76, type: 3}
   m_Name: AnimInitMotherAction
   m_EditorClassIdentifier: 
+  initConditionTime: 20

@@ -461,9 +461,10 @@ public class AI : MonoBehaviour
         //Debug.Log("AI heard sound");
         if(!StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Chase") 
             || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Charge") 
-            || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Stunned"))
+            || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Stunned")
+            || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("SpawnSwarm"))
         {
-            if(!ChasingPlayer && !FleeingFromPlayer && !IsStunned && !SpawningEnemies)
+            if(!ChasingPlayer && !FleeingFromPlayer && !IsStunned)
             {
                 StateMachine.Play("Chase");
                 PlayAggroSound();
@@ -591,7 +592,7 @@ public class AI : MonoBehaviour
             }
             HealthThresholdReaction = true;
         }
-        if (Destructible.Health <= Destructible.MaxHealth * stats.procentHealthStun && !BeenHealthStunned)
+        if (Destructible.Health <= Destructible.MaxHealth * stats.procentHealthStun && !BeenHealthStunned && !MoveAcrossNavMeshesStarted)
         {
             StateMachine.Play("Stunned");
             BeenHealthStunned = true;
