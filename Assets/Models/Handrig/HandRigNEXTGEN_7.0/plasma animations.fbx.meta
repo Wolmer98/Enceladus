@@ -130,6 +130,14 @@ ModelImporter:
     100248: transform38
     100250: transform39
     100252: transform40
+    100254: ball_magazine
+    100256: ball_magazine1
+    100258: ball_magazine_reload
+    100260: cord
+    100262: fps_camera
+    100264: nitrogen
+    100266: plasma_rifle
+    100268: plasma_rifle_locator
     400000: azotas:polySurface1
     400002: base_joint
     400004: constraint_group
@@ -257,6 +265,15 @@ ModelImporter:
     400248: transform38
     400250: transform39
     400252: transform40
+    400254: ball_magazine
+    400256: ball_magazine1
+    400258: ball_magazine_reload
+    400260: cord
+    400262: fps_camera
+    400264: nitrogen
+    400266: plasma_rifle
+    400268: plasma_rifle_locator
+    2000000: fps_camera
     2100000: StingrayPBS1
     2100002: lambert11
     2100004: lambert14
@@ -268,23 +285,42 @@ ModelImporter:
     2300006: plasma_base:polySurface1
     2300008: polySurface28
     2300010: reload_magazine
+    2300012: ball_magazine
+    2300014: ball_magazine1
+    2300016: ball_magazine_reload
+    2300018: cord
+    2300020: nitrogen
+    2300022: plasma_rifle
     3300000: azotas:polySurface1
     3300002: laidas:polySurface1
     3300004: plasma_ball:polySurface1
     3300006: plasma_base:polySurface1
     3300008: polySurface28
     3300010: reload_magazine
+    3300012: ball_magazine
+    3300014: ball_magazine1
+    3300016: ball_magazine_reload
+    3300018: cord
+    3300020: nitrogen
+    3300022: plasma_rifle
     4300000: polySurface28
     4300002: plasma_base:polySurface1
     4300004: plasma_ball:polySurface1
     4300006: laidas:polySurface1
     4300008: azotas:polySurface1
     4300010: reload_magazine
+    4300012: plasma_rifle
+    4300014: ball_magazine
+    4300016: cord
+    4300018: nitrogen
+    4300020: ball_magazine_reload
+    4300022: ball_magazine1
     7400000: Reload
     7400002: Walk
     7400004: Run
     7400006: Grab
     9500000: //RootNode
+    13700000: polySurface28
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -349,7 +385,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Walk
+      name: Run
       takeName: plasma animations
       firstFrame: 250
       lastFrame: 276
@@ -377,7 +413,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Run
+      name: Walk
       takeName: plasma animations
       firstFrame: 171
       lastFrame: 195

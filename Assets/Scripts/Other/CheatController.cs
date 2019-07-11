@@ -60,9 +60,10 @@ public class CheatController : MonoBehaviour
             }
             else if (Input.GetKeyDown(hurtPlayerKey))
             {
+                playerController = FindObjectOfType<PlayerController>();
                 if (playerController != null)
                 {
-                    playerController.Destructible.Hurt(100);
+                    playerController.Destructible.Hurt(50);
                 }
             }
             else if (Input.GetKeyDown(spawnEnemiesKey))

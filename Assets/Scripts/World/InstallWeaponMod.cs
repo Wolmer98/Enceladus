@@ -32,6 +32,19 @@ public class InstallWeaponMod : MonoBehaviour
     public WeaponMod GetWeaponModAndInstall()
     {
         WeaponMod wp = weaponMod;
+        WeaponMod equippedMod = FindObjectOfType<Weapon>().MainWeaponMod;
+
+        if (weaponMods.Length > 1)
+        {
+            while (wp.WeaponModName == equippedMod.WeaponModName)
+            {
+                if (weaponMods.Length > 0)
+                {
+                    wp = weaponMods[Random.Range(0, weaponMods.Length)];
+                }
+            }
+        }
+
         weaponMod = null;
         GetComponent<GlowObject>().GlowColor = Color.black;
         GetComponent<GlowObject>().SetTargetColor(Color.black);
