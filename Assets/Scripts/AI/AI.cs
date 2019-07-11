@@ -619,6 +619,10 @@ public class AI : MonoBehaviour
     private void OnDestroy()
     {
         StopSounds();
+        if(coroutine != null)
+        {
+            StopCoroutine(coroutine);
+        }
     }
 
     public void PlayEcho(float ecolocationType)                             // Used by Animator
@@ -644,15 +648,17 @@ public class AI : MonoBehaviour
     }
 
 
-
+    private Coroutine coroutine;
     public void MoveAcrossNavMeshLinkStart()
     {
-        StartCoroutine(MoveAcrossNavMeshLink());
+        coroutine = StartCoroutine(MoveAcrossNavMeshLink());
         MoveAcrossNavMeshesStarted = true;
     }
+
     public bool MoveAcrossNavMeshesStarted { get; set; }
     private IEnumerator MoveAcrossNavMeshLink()
     {
+
         OffMeshLinkData data = agent.currentOffMeshLinkData;
         agent.updateRotation = false;
 

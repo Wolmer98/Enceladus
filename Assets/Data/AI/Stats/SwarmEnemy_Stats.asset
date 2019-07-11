@@ -28,8 +28,8 @@ MonoBehaviour:
   chaseDetectionMultiplier: 1.5
   timeBetweenAggroSound: 30
   distanceToMoveTowardsSound: 10
-  moveSpeed: 2
-  chaseSpeed: 4
+  moveSpeed: 3
+  chaseSpeed: 3
   rotationDuration: 2
   rotationSpeed: 5
   chargeSpeed: 8

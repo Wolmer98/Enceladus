@@ -152,6 +152,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 397651328572015062}
+        m_MethodName: InstantiateObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 9188226880907681801, guid: 91608bec9c542024887385317417dae2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onHurtSound: event:/Enemy/Crab/Crab_VO_Small/Crab_Small_Hurt
@@ -393,12 +405,12 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 3299835106504546655, guid: 601fd486d622d9d459a7b215c7e47c3c,
+    - target: {fileID: 696472774682301955, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 696472774682301955, guid: 601fd486d622d9d459a7b215c7e47c3c,
+    - target: {fileID: 3299835106504546655, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
       propertyPath: m_Layer
       value: 11
@@ -413,22 +425,22 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 2562504904614797101, guid: 601fd486d622d9d459a7b215c7e47c3c,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2153239888904658151, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7556462981294206028, guid: 601fd486d622d9d459a7b215c7e47c3c,
+    - target: {fileID: 2562504904614797101, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6920652486101461267, guid: 601fd486d622d9d459a7b215c7e47c3c,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7556462981294206028, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
       propertyPath: playOnAwake
       value: 0
@@ -464,14 +476,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: crabSwarm
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 35c2b38225082ff4eb45dbc577950f8d, type: 2}
-    - target: {fileID: 13700000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9ea961b7025b5354cb126a13b5ecac6c, type: 2}
     - target: {fileID: 400000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -516,6 +520,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 35c2b38225082ff4eb45dbc577950f8d, type: 2}
+    - target: {fileID: 13700000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9ea961b7025b5354cb126a13b5ecac6c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
 --- !u!1 &5170189091635835532 stripped

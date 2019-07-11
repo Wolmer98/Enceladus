@@ -9,7 +9,7 @@ public class AnimInExplosionRange : AI_Condition
     private RaycastManager raycastManager;
     public override bool CheckCondition(AI ai)
     {
-        if(Vector3.Distance(ai.transform.position, ai.Player.transform.position) >= ai.Agent.stoppingDistance)
+        if(Vector3.Distance(ai.transform.position, ai.Player.transform.position) >= ai.Agent.stoppingDistance && !ai.Agent.isOnOffMeshLink)
         {
             return RaycastTest(ai);
         }
