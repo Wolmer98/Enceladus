@@ -37,6 +37,7 @@ public class UIController : MonoBehaviour
     [SerializeField] public Image chargeUpImage;
     [SerializeField] public Image minChargeUpImage;
     [SerializeField] GameObject miniMap;
+    [SerializeField] GameObject visor;
 
     [Header("Loading Screen")]
     [SerializeField] CanvasGroup loadingScreen;
@@ -85,16 +86,20 @@ public class UIController : MonoBehaviour
             worldGenerator.OnWorldStart.AddListener(delegate { SetElevatorFloor(); });
             worldGenerator.OnWorldStart.AddListener(delegate { ShowObjective(); });
             worldGenerator.OnWorldStart.AddListener(delegate { SetMinimap(); });
+            worldGenerator.OnWorldStart.AddListener(delegate { SetVisor(); });
         }
 
         SetCursorLock(true);
+
+        SetMinimap(false);
+        SetVisor(false);
     }
 
     private void Start()
     {
         player.OnInteract.AddListener(delegate { ShowPickupNotification(); });
 
-        SetMinimap(false);
+
     }
 
     public void ShowObjective()
@@ -369,6 +374,14 @@ public class UIController : MonoBehaviour
         if (miniMap != null)
         {
             miniMap.SetActive(active);
+        }
+    }
+
+    private void SetVisor(bool active = true)
+    {
+        if (visor != null)
+        {
+            visor.SetActive(active);
         }
     }
 

@@ -23,7 +23,8 @@ MonoBehaviour:
     type: 3}
   lineRenderer: {fileID: 5575950346846941138, guid: 658285b3ce6e20f49a043aa9bdc89363,
     type: 3}
-  chargeUp: {fileID: 204251786563271845, guid: ff11004d43ce7b044b40462aedcce38c, type: 3}
+  chargeUp: {fileID: 5579067555320051476, guid: c82f9e1f806852746859def2b6177f50,
+    type: 3}
   recoilAmplitude: 8
   recoilSpeed: 3
   recoilPermanentAmplitude: 1.2
