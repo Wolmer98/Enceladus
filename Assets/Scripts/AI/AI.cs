@@ -464,7 +464,7 @@ public class AI : MonoBehaviour
             || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Stunned")
             || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("SpawnSwarm"))
         {
-            if(!ChasingPlayer && !FleeingFromPlayer && !IsStunned)
+            if(!ChasingPlayer && !FleeingFromPlayer && !IsStunned && !MoveAcrossNavMeshesStarted)
             {
                 StateMachine.Play("Chase");
                 PlayAggroSound();
