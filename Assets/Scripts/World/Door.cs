@@ -87,10 +87,13 @@ public class Door : MonoBehaviour
     {
         if (isLocked || IsActive)
         {
-            doorLocked = FMODUnity.RuntimeManager.CreateInstance(doorLockedEvent);
-            doorLocked.start();
-            doorLocked.release();
-            return;
+            if (doorLockedEvent != "" && doorLockedEvent != null)
+            {
+                doorLocked = FMODUnity.RuntimeManager.CreateInstance(doorLockedEvent);
+                doorLocked.start();
+                doorLocked.release();
+                return;
+            }
         }
 
         IsActive = true;
