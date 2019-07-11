@@ -179,12 +179,12 @@ public class WorldGenerator : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G) && !isBuildingWorld)
-        {
-            StopAllCoroutines();
-            StartCoroutine(DestroyWorld());
-            //StartCoroutine(GenerateWorld());
-        }
+        //if (Input.GetKeyDown(KeyCode.G) && !isBuildingWorld)
+        //{
+        //    StopAllCoroutines();
+        //    StartCoroutine(DestroyWorld());
+        //    //StartCoroutine(GenerateWorld());
+        //}
 
         if (isBuildingWorld)
         {

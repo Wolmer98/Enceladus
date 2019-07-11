@@ -50,7 +50,7 @@ MonoBehaviour:
     Key: 49
     Description: Select Primary Weapon
   - Function: Secondary Select
-    Key: 0
+    Key: 48
     Description: Select Secondary Weapon
   - Function: Reload
     Key: 114

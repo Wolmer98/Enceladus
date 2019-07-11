@@ -207,16 +207,19 @@ public class EnemySpawnManager : MonoBehaviour
 
     private void SpawnFromPack(EnemySpawnPoint spawnPoint, EnemySpawnPack spawnPointPack)
     {
-        for (int i = 0; i < spawnPointPack.enemies.Length; i++)
+        if (spawnPointPack != null)
         {
-            if (enemyCount >= maxEnemyCount)
+            for (int i = 0; i < spawnPointPack.enemies.Length; i++)
             {
-                break;
-            }
-            else
-            {
-                GameObject enemy = (spawnPointPack.enemies[i]);
-                InitAi(spawnPoint, enemy);
+                if (enemyCount >= maxEnemyCount)
+                {
+                    break;
+                }
+                else
+                {
+                    GameObject enemy = (spawnPointPack.enemies[i]);
+                    InitAi(spawnPoint, enemy);
+                }
             }
         }
     }

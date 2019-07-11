@@ -18,7 +18,7 @@ MonoBehaviour:
   meleeAttack: 102
   throwWeapon: 113
   mainWeaponSwitch: 49
-  meleeSwitch: 50
+  meleeSwitch: 48
   interactionButton: 101
   characterScreenOpen: 9
   menuButton: 27
