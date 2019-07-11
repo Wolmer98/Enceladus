@@ -15,6 +15,7 @@ public class AnimExplosionAction : AnimatorAction
         ai.Rigidbody.velocity = Vector3.zero;
         ai.Rigidbody.isKinematic = true;
         ai.IsMoving = false;
+        ai.IsAttacking = true;
     }
 
     public override void ExitAction(AI ai, Animator anim)
@@ -24,9 +25,8 @@ public class AnimExplosionAction : AnimatorAction
 
     public override void UpdateAction(AI ai, Animator anim)
     {
-        if (ai.ActionTimeCheck(ai.Stats.attackSpeed) && !ai.IsAttacking)
+        if (ai.ActionTimeCheck(ai.Stats.attackSpeed))
         {
-            ai.IsAttacking = true;
             Explode(ai);
         }
     }

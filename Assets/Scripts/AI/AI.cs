@@ -458,11 +458,17 @@ public class AI : MonoBehaviour
         }
 
 
+        if(MoveAcrossNavMeshesStarted)
+        {
+            return;
+        }
+
         //Debug.Log("AI heard sound");
         if(!StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Chase") 
             || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Charge") 
             || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Stunned")
-            || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("SpawnSwarm"))
+            || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("SpawnSwarm")
+            || !StateMachine.IsInTransition(0))
         {
             if(!ChasingPlayer && !FleeingFromPlayer && !IsStunned && !MoveAcrossNavMeshesStarted)
             {
@@ -470,7 +476,7 @@ public class AI : MonoBehaviour
                 PlayAggroSound();
             }
         }
-        else if (!StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Search") || TypeOfEnemy == enemyType.hiveMother)
+        else if (!StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Search") || TypeOfEnemy != enemyType.hiveMother)
         {
             conditionTimer = 0f;
         }

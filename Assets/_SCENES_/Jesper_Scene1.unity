@@ -143,11 +143,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 602034801}
     m_Modifications:
-    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
-        type: 3}
-      propertyPath: m_Name
-      value: PatrolWaypoint
-      objectReference: {fileID: 0}
     - target: {fileID: 7813908165932160350, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -202,6 +197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
+        type: 3}
+      propertyPath: m_Name
+      value: PatrolWaypoint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6, type: 3}
@@ -338,13 +338,13 @@ MonoBehaviour:
   overrideColor: 0
   overridingColor: {r: 1, g: 1, b: 1, a: 1}
   useShadow: 1
-  shadowMapRenderTexture: {fileID: 2055130336}
+  shadowMapRenderTexture: {fileID: 1656697802}
   useCookie: 1
   cookieMapRenderTexture: {fileID: 0}
   enableOutOfPhaseColor: 0
   outOfPhaseColorStrength: 0.1
   outOfPhaseColor: {r: 0, g: 1, b: 1, a: 1}
-  shadowDataRenderTexture: {fileID: 526088185}
+  shadowDataRenderTexture: {fileID: 1878664519}
   customDistanceFalloffThreshold: 0.5
   customDistanceFalloffPower: 2
   customCookieDistanceFalloffStartThreshold: 0.1
@@ -485,11 +485,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 602034801}
     m_Modifications:
-    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
-        type: 3}
-      propertyPath: m_Name
-      value: PatrolWaypoint (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 7813908165932160350, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -544,6 +539,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
+        type: 3}
+      propertyPath: m_Name
+      value: PatrolWaypoint (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6, type: 3}
@@ -720,11 +720,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 602034801}
     m_Modifications:
-    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
-        type: 3}
-      propertyPath: m_Name
-      value: PatrolWaypoint (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 7813908165932160350, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -780,6 +775,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
+        type: 3}
+      propertyPath: m_Name
+      value: PatrolWaypoint (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6, type: 3}
 --- !u!4 &454525954 stripped
@@ -788,38 +788,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 454525953}
   m_PrefabAsset: {fileID: 0}
---- !u!84 &526088185
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Aura Directional Light : Shadow Data Render Texture'
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 32
-  m_Height: 1
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 11
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &573308913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1985,6 +1953,38 @@ MonoBehaviour:
   frustumSettings:
     baseSettings: {fileID: 28983024}
     qualitySettings: {fileID: 1923512187}
+--- !u!84 &1656697802
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Aura Directional Light : Shadow Map Render Texture'
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 512
+  m_Height: 512
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 11
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &1676624539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1992,11 +1992,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 602034801}
     m_Modifications:
-    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
-        type: 3}
-      propertyPath: m_Name
-      value: PatrolWaypoint (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7813908165932160350, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2051,6 +2046,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
+        type: 3}
+      propertyPath: m_Name
+      value: PatrolWaypoint (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6, type: 3}
@@ -2363,6 +2363,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!84 &1878664519
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Aura Directional Light : Shadow Data Render Texture'
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 32
+  m_Height: 1
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 11
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &1905077840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2370,11 +2402,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 602034801}
     m_Modifications:
-    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
-        type: 3}
-      propertyPath: m_Name
-      value: PatrolWaypoint (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7813908165932160350, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2429,6 +2456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813908165932160336, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6,
+        type: 3}
+      propertyPath: m_Name
+      value: PatrolWaypoint (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b9544bb79a30c4594f5b0cdf4a9ad6, type: 3}
@@ -2550,38 +2582,6 @@ MonoBehaviour:
   enableOcclusionCulling: 1
   occlusionCullingAccuracy: 2
   enableLightProbes: 0
---- !u!84 &2055130336
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Aura Directional Light : Shadow Map Render Texture'
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 512
-  m_Height: 512
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 11
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &2065459054
 PrefabInstance:
   m_ObjectHideFlags: 0

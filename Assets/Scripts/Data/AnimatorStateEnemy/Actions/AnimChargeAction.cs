@@ -22,10 +22,10 @@ public class AnimChargeAction : AnimatorAction
     {
         anim.ResetTrigger("Charge");
         ai.SetATimer = false;
-        ai.Rigidbody.freezeRotation = false;
         ai.Agent.updateRotation = true;
         ai.Agent.autoTraverseOffMeshLink = true;
         ai.Agent.updatePosition = true;
+        ai.Agent.nextPosition = ai.transform.position;
         ai.Agent.enabled = true;
     }
 
