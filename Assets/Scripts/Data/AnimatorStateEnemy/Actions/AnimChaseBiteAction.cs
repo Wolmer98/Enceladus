@@ -55,7 +55,8 @@ public class AnimChaseBiteAction : AnimatorAction
 
         ai.Agent.SetDestination(ai.Player.transform.position);
 
-        float dist = Vector3.Distance(ai.transform.position, ai.Player.transform.position);
+        Vector3 playerPos = new Vector3(ai.Player.transform.position.x, ai.transform.position.y, ai.Player.transform.position.z);
+        float dist = Vector3.Distance(playerPos, ai.transform.position);
 
         if (dist > ai.Agent.stoppingDistance)
         {
@@ -65,8 +66,8 @@ public class AnimChaseBiteAction : AnimatorAction
         else
         {
             ai.Animator.SetBool("Walking", false);
-            AIStoppedMoving(ai);
-            ai.transform.LookAt(new Vector3 (ai.Player.transform.position.x, ai.transform.position.y, ai.Player.transform.position.z));
+            ai.IsMoving = false;
+            LookAtPlayer(ai, dist);
         }
 
         if (ai.AttackTimer(ai.Stats.attackSpeed) && dist < ai.Stats.attackRange && ai.typeOfEnemy != enemyType.carrier)
@@ -92,6 +93,34 @@ public class AnimChaseBiteAction : AnimatorAction
         {
             ai.Agent.speed = ai.Stats.chaseSpeed;
         }
+    }
 
+
+    private void LookAtPlayer(AI ai, float dist)
+    {
+        //ai.transform.LookAt(new Vector3 (ai.Player.transform.position.x, ai.transform.position.y, ai.Player.transform.position.z));
+
+        Vector3 toPlayer = (ai.Player.transform.position - ai.transform.position).normalized;
+        float angle = Vector3.Dot(ai.transform.forward, toPlayer);
+        if ((angle < 0.8 && dist >= 1.4) || angle < 0.6)
+        {
+            Debug.Log(dist);
+            ai.Animator.SetBool("Walking", true);
+        }
+        else
+        {
+            ai.Animator.SetBool("Walking", false);
+        }
+
+        Vector3 targetDir = ai.Player.transform.position - ai.transform.position;
+
+        // The step size is equal to speed times frame time.
+        float step = 3 * Time.deltaTime;
+
+        Vector3 newDir = Vector3.RotateTowards(ai.transform.forward, toPlayer, step, 0.0f);
+        Debug.DrawRay(ai.transform.position, newDir, Color.red);
+
+        // Move our position a step closer to the target.
+        ai.transform.rotation = Quaternion.LookRotation(newDir);
     }
 }
