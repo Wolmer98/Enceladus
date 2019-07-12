@@ -8,6 +8,7 @@ public class AnimSwarmChase : AnimatorAction
     public override void EnterActions(AI ai, Animator anim)
     {
         anim.ResetTrigger("Chase");
+        ai.ChasingPlayer = true;
         ai.IsMoving = true;
         if (ai.SwarmAIs.Count <= 0)
         {
@@ -44,18 +45,16 @@ public class AnimSwarmChase : AnimatorAction
             Destroy(ai.gameObject);
         }
 
-        ai.SwarmAgent.SetDestination(ai.Player.transform.position);
-
         foreach (SwarmAI swarmAI in ai.SwarmAIs)
         {
             if (swarmAI != null)
             {
                 swarmAI.UpdateChaseSwarm();
-                if(Vector3.Distance(swarmAI.transform.position, ai.SwarmAgent.transform.position) >= ai.DetectionSphere.radius)
-                {
-                    swarmAI.Agent.nextPosition = ai.SwarmAgent.nextPosition;
-                    swarmAI.transform.position = ai.SwarmAgent.nextPosition;
-                }
+                //if(Vector3.Distance(swarmAI.transform.position, ai.SwarmAgent.transform.position) >= ai.DetectionSphere.radius * 2)
+                //{
+                //    swarmAI.Agent.nextPosition = ai.SwarmAgent.nextPosition;
+                //    swarmAI.transform.position = ai.SwarmAgent.nextPosition;
+                //}
             }
             else
             {

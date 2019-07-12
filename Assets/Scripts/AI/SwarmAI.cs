@@ -40,7 +40,9 @@ public class SwarmAI : MonoBehaviour
     {
         if (AttackCooldown <= 0)
         {
-            if (Vector3.Distance(transform.position, swarmController.Player.transform.position) <= swarmController.Stats.attackRange
+            Vector3 playerPos = new Vector3(swarmController.Player.transform.position.x, transform.position.y, swarmController.Player.transform.position.z);
+            float dist = Vector3.Distance(playerPos, transform.position);
+            if (dist <= swarmController.Stats.attackRange
                 && swarmController.TestIfPlayerInSight(transform.position, swarmController.Stats.attackRange))
             {
                 JumpAttack();
@@ -53,7 +55,7 @@ public class SwarmAI : MonoBehaviour
                 CheckOverlapSphere();
             }
             
-            if(GroundCheck() && rb.velocity.y <= 0)
+            if(GroundCheck() && rb.velocity.y <= 0 || AttackCooldown <= 0)
             {
                 JumpAttackDone();
             }
@@ -73,14 +75,7 @@ public class SwarmAI : MonoBehaviour
             GetComponent<Destructible>().Hurt(10000f);
         }
 
-        if (Agent.isOnOffMeshLink)
-        {
-            Agent.speed = swarmController.Stats.chaseSpeed / 3;
-        }
-        else
-        {
-            Agent.speed = swarmController.Stats.chaseSpeed;
-        }
+        OffMeshTest();
 
         LookAtPlayer();
     }
@@ -158,7 +153,9 @@ public class SwarmAI : MonoBehaviour
 
     private void LookAtPlayer()
     {
-        float dist = Vector3.Distance(swarmController.Player.transform.position, transform.position);
+
+        Vector3 playerPos = new Vector3(swarmController.Player.transform.position.x, transform.position.y, swarmController.Player.transform.position.z);
+        float dist = Vector3.Distance(playerPos, transform.position);
         if(Agent.isStopped || Agent.stoppingDistance <= dist)
         {
             transform.LookAt(new Vector3(swarmController.Player.transform.position.x, transform.position.y, swarmController.Player.transform.position.z));
@@ -181,4 +178,16 @@ public class SwarmAI : MonoBehaviour
         Gizmos.DrawLine(transform.position, Vector3.down * jumpCheckRange);
     }
 
+
+    private void OffMeshTest()
+    {
+        if (Agent.isOnOffMeshLink)
+        {
+            Agent.speed = swarmController.Stats.chaseSpeed / 3;
+        }
+        else
+        {
+            Agent.speed = swarmController.Stats.chaseSpeed;
+        }
+    }
 }
