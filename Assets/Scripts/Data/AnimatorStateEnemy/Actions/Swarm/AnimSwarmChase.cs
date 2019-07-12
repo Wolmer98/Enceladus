@@ -51,6 +51,10 @@ public class AnimSwarmChase : AnimatorAction
             if (swarmAI != null)
             {
                 swarmAI.UpdateChaseSwarm();
+                if(Vector3.Distance(swarmAI.transform.position, ai.SwarmAgent.transform.position) >= ai.DetectionSphere.radius)
+                {
+                    swarmAI.Agent.nextPosition = ai.SwarmAgent.nextPosition;
+                }
             }
             else
             {

@@ -20,10 +20,14 @@ public class AnimSearchAction : AnimatorAction
         ai.Animator.SetBool("Walking", true);
         ai.Animator.Play("Walking");
         ai.SetATimer = false;
+        anim.ResetTrigger("Search");
+
+        Debug.Log("Enter Search");
     }
 
     public override void ExitAction(AI ai, Animator anim)
     {
+        Debug.Log("Exit Search");
         ai.FoundSearchPoints = false;
         ai.ConditionTime = 0f;
         anim.ResetTrigger("Search");
@@ -33,7 +37,9 @@ public class AnimSearchAction : AnimatorAction
 
     public override void UpdateAction(AI ai, Animator anim)
     {
-        if(ai.Agent.remainingDistance <= ai.Agent.stoppingDistance && !ai.Agent.pathPending)
+
+
+        if (ai.Agent.remainingDistance <= ai.Agent.stoppingDistance && !ai.Agent.pathPending)
         {
             if (Random.Range(0f, 1f) < ai.Stats.chanceOfFarRadius && !ai.SetATimer)
             {
@@ -90,6 +96,7 @@ public class AnimSearchAction : AnimatorAction
                         if (GetPathLength(path) < ai.Stats.searchRadius)
                         {
                             ai.Agent.SetDestination(hit.position);
+                            Debug.Log("AI found search point");
                         }
                         else
                         {

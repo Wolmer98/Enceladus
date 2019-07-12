@@ -16,39 +16,55 @@ public class AnimatorStateBehavior : StateMachineBehaviour
         {
             ai = animator.gameObject.GetComponent<AI>();
         }
+
+        if(ai.animatorAction != null)
+        {
+            ai.animatorAction.ExitAction(ai, animator);
+        }
+
         foreach (AnimatorAction animatorAction in actions)
         {
             animatorAction.EnterActions(ai, animator);
+
+            ai.animatorAction = animatorAction;
         }
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        // Preforms the actions for this state.
-        foreach (AnimatorAction animatorAction in actions)
+        if(!ai.MoveAcrossNavMeshesStarted)
         {
-            animatorAction.UpdateAction(ai, animator);
-        }
-        // Test for conditions and if AI should transition to another state.
-        foreach (AnimatiorConditionTransition condition in conditionTransitions)
-        {
-            if (condition.Condition != null)
+            // Preforms the actions for this state.
+            foreach (AnimatorAction animatorAction in actions)
             {
-                if (condition.Condition.CheckCondition(ai))
+                if (ai.animatorAction != animatorAction)
                 {
-                    if (condition.TrueState != null && condition.TrueState != "")
-                    {
-                        animator.SetTrigger(condition.TrueState);
-                        return;
-                    }
+                    return;
                 }
-                else
+                animatorAction.UpdateAction(ai, animator);
+            }
+
+            // Test for conditions and if AI should transition to another state.
+            foreach (AnimatiorConditionTransition condition in conditionTransitions)
+            {
+                if (condition.Condition != null)
                 {
-                    if (condition.FalseState != null && condition.FalseState != "")
+                    if (condition.Condition.CheckCondition(ai))
                     {
-                        animator.SetTrigger(condition.FalseState);
-                        return;
+                        if (condition.TrueState != null && condition.TrueState != "")
+                        {
+                            animator.SetTrigger(condition.TrueState);
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        if (condition.FalseState != null && condition.FalseState != "")
+                        {
+                            animator.SetTrigger(condition.FalseState);
+                            return;
+                        }
                     }
                 }
             }
@@ -57,13 +73,13 @@ public class AnimatorStateBehavior : StateMachineBehaviour
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-        foreach (AnimatorAction animatorAction in actions)
-        {
-            animatorAction.ExitAction(ai, animator);
-        }
-    }
+    //override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    //{
+    //    foreach (AnimatorAction animatorAction in actions)
+    //    {
+    //        animatorAction.ExitAction(ai, animator);
+    //    }
+    //}
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
     //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

@@ -17,7 +17,9 @@ public class AnimChaseBiteAction : AnimatorAction
 
         ai.DetectionSphere.radius = ai.Stats.detectionRadius * ai.Stats.chaseDetectionMultiplier;
         anim.ResetTrigger("Chase");
-        ai.Agent.autoTraverseOffMeshLink = false;
+        //ai.Agent.autoTraverseOffMeshLink = false;
+        ai.Agent.SetDestination(ai.Player.transform.position);
+        Debug.Log("Enter ChaseBite");
     }
 
     public override void ExitAction(AI ai, Animator anim)
@@ -25,13 +27,14 @@ public class AnimChaseBiteAction : AnimatorAction
         ai.IsAttacking = false;
         ai.DetectionSphere.radius = ai.Stats.detectionRadius;
         anim.ResetTrigger("Chase");
-        ai.Agent.autoTraverseOffMeshLink = true;
+        //ai.Agent.autoTraverseOffMeshLink = true;
+        Debug.Log("Exit ChaseBite");
     }
 
     public override void UpdateAction(AI ai, Animator anim)
     {
         // isAttacking is changed in the animation clip for the bite attack.
-        if(ai.IsAttacking)
+        if (ai.IsAttacking)
         {
             return;
         }
@@ -45,10 +48,10 @@ public class AnimChaseBiteAction : AnimatorAction
             ai.Agent.enabled = true;
         }
 
-        if (ai.Agent.isOnOffMeshLink && !ai.MoveAcrossNavMeshesStarted)
-        {
-            ai.MoveAcrossNavMeshLinkStart();
-        }
+        //if (ai.Agent.isOnOffMeshLink && !ai.MoveAcrossNavMeshesStarted)
+        //{
+        //    ai.MoveAcrossNavMeshLinkStart();
+        //}
 
         ai.Agent.SetDestination(ai.Player.transform.position);
 
@@ -76,14 +79,14 @@ public class AnimChaseBiteAction : AnimatorAction
         }
 
 
-        //if (ai.Agent.isOnOffMeshLink)
-        //{
-        //    ai.Agent.speed = ai.Stats.chaseSpeed / 4;
-        //}
-        //else
-        //{
-        //    ai.Agent.speed = ai.Stats.chaseSpeed;
-        //}
+        if (ai.Agent.isOnOffMeshLink)
+        {
+            ai.Agent.speed = ai.Stats.chaseSpeed / 3;
+        }
+        else
+        {
+            ai.Agent.speed = ai.Stats.chaseSpeed;
+        }
 
     }
 }

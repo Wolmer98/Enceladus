@@ -10,27 +10,34 @@ public class AnimChargeAction : AnimatorAction
     {
         ai.ChasingPlayer = true;
         ai.Agent.updatePosition = false;
-        FMODUnity.RuntimeManager.PlayOneShot(ai.aggroSound, ai.transform.position);
         ai.Agent.updateRotation = false;
+        FMODUnity.RuntimeManager.PlayOneShot(ai.aggroSound, ai.transform.position);
         ai.HasCharged = true;
         ai.Agent.autoTraverseOffMeshLink = false;
+        Debug.Log("Charge: " + ai.Agent.autoTraverseOffMeshLink);
         ai.ChargeCooldown = 0.0f;
-        ai.Agent.enabled = false;
+        //ai.Agent.enabled = false;
+        anim.ResetTrigger("Chase");
+        anim.ResetTrigger("Charge");
+        Debug.Log("Enter Charge");
     }
 
     public override void ExitAction(AI ai, Animator anim)
     {
+        Debug.Log("Exit Charge");
         anim.ResetTrigger("Charge");
         ai.SetATimer = false;
         ai.Agent.updateRotation = true;
         ai.Agent.autoTraverseOffMeshLink = true;
         ai.Agent.updatePosition = true;
         ai.Agent.nextPosition = ai.transform.position;
-        ai.Agent.enabled = true;
+        ai.Animator.SetBool("Charging", false);
+        //ai.Agent.enabled = true;
     }
 
     public override void UpdateAction(AI ai, Animator anim)
     {
+        //ai.Agent.destination = ai.transform.position;
         //Windup before charge.
         if (!ai.SetATimer)
         {
@@ -67,6 +74,7 @@ public class AnimChargeAction : AnimatorAction
         ai.Rigidbody.MovePosition(ai.Rigidbody.position + ai.ChargeDirection * Time.deltaTime * speed);
         ai.Agent.nextPosition = ai.Rigidbody.position;
         ai.Animator.SetBool("Charging", true);
+        ai.IsAttacking = true;
     }
 
     private void LookInDirection(AI ai)

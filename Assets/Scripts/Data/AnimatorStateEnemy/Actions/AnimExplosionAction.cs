@@ -42,7 +42,7 @@ public class AnimExplosionAction : AnimatorAction
             {
                 if (target.gameObject != ai.gameObject)
                 {
-                    Debug.Log(target.gameObject.name);
+                    //Debug.Log(target.gameObject.name);
                     Destructible destructible = target.gameObject.GetComponent<Destructible>();
                     if (destructible != null)
                     {

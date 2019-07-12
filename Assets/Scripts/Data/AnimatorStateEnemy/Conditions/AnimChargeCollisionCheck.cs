@@ -25,16 +25,20 @@ public class AnimChargeCollisionCheck : AI_Condition
             }
             if (hit.transform.tag == "Player")
             {
-                DealDamage(ai, hit);
-                FMODUnity.RuntimeManager.PlayOneShot(ai.attackSound, ai.transform.position);
-                //ai.Animator.SetTrigger("HitPlayer");
-
-                CameraShake cameraShake = ai.Player.MainCamera.gameObject.GetComponent<CameraShake>();
-                if (cameraShake)
+                if (ai.IsAttacking)
                 {
-                    cameraShake.InitCameraShake();
+                    DealDamage(ai, hit);
+                    FMODUnity.RuntimeManager.PlayOneShot(ai.attackSound, ai.transform.position);
+                    //ai.Animator.SetTrigger("HitPlayer");
+
+                    CameraShake cameraShake = ai.Player.MainCamera.gameObject.GetComponent<CameraShake>();
+                    if (cameraShake)
+                    {
+                        cameraShake.InitCameraShake();
+                    }
+                    ai.StateMachine.SetTrigger("Chase");
                 }
-                ai.StateMachine.Play("Chase");
+                ai.IsAttacking = false;
             }
         }
         

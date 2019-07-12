@@ -220,6 +220,9 @@ public class AI : MonoBehaviour
             pc = value;
         }
     }
+
+    public bool ExitRun { get; set; }
+    public AnimatorAction animatorAction { get; set; }
     #endregion
 
     #region Swarm
@@ -290,7 +293,7 @@ public class AI : MonoBehaviour
             AttackCooldown = stats.attackSpeed;
             ChargeCooldown = stats.chargeCooldown / 2;
             //skinnedmeshRenderEmissionOriginalColor = skinnedMeshRenderer.materials[0].GetColor("_EmissionColor"); Not used for now.
-            skinnedMeshRenderer.materials[0].SetColor("_EmissionColor", Color.white);
+            //skinnedMeshRenderer.materials[0].SetColor("_EmissionColor", Color.white);
         }
         detectionSphere.radius = stats.detectionRadius;
 
@@ -464,22 +467,24 @@ public class AI : MonoBehaviour
         }
 
         //Debug.Log("AI heard sound");
-        if(!StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Chase") 
-            || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Charge") 
-            || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Stunned")
-            || !StateMachine.GetCurrentAnimatorStateInfo(0).IsName("SpawnSwarm")
-            || !StateMachine.IsInTransition(0))
+        if(!(StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Chase") 
+            || StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Charge") 
+            || StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Stunned")
+            || StateMachine.GetCurrentAnimatorStateInfo(0).IsName("SpawnSwarm")
+            || StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Search")
+            || StateMachine.IsInTransition(0)))
         {
             if(!ChasingPlayer && !FleeingFromPlayer && !IsStunned && !MoveAcrossNavMeshesStarted)
             {
-                StateMachine.Play("Chase");
+                //Debug.Log("Changed to chase");
+                StateMachine.SetTrigger("Chase");
                 PlayAggroSound();
             }
         }
-        else if (!StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Search") || TypeOfEnemy != enemyType.hiveMother)
-        {
-            conditionTimer = 0f;
-        }
+        //else if (!StateMachine.GetCurrentAnimatorStateInfo(0).IsName("Search") && TypeOfEnemy != enemyType.hiveMother)
+        //{
+        //    conditionTimer = 0f;
+        //}
     }
 
     /// <summary>
@@ -684,7 +689,7 @@ public class AI : MonoBehaviour
         agent.updateRotation = true;
         agent.CompleteOffMeshLink();
         MoveAcrossNavMeshesStarted = false;
-
+        Debug.Log("MoveAcrossEnd");
     }
 
     public void SwarmDied(SwarmAI swarmAI)

@@ -26,4 +26,16 @@ public abstract class AnimatorAction : ScriptableObject
             Debug.Log("AI was not on a mesh");
         }
     }
+
+    protected void ExitStateUpdate(AI ai)
+    {
+        ai.ExitRun = true;
+    }
+
+    protected void EnterStateUpdate(AI ai, AnimatorAction animatorAction)
+    {
+        ai.ExitRun = false;
+        ai.animatorAction = animatorAction;
+    }
+
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-[CreateAssetMenu(fileName = "AnimChaseBiteAction", menuName = "AI/AnimAction/ChaseBite")]
+[CreateAssetMenu(fileName = "AnimChaseBite1Action", menuName = "AI/AnimAction/ChaseBite")]
 public class AnimChaseBiteAction1 : AnimatorAction
 {
     public override void EnterActions(AI ai, Animator anim)
@@ -23,6 +23,7 @@ public class AnimChaseBiteAction1 : AnimatorAction
         ai.DetectionSphere.radius = ai.Stats.detectionRadius * ai.Stats.chaseDetectionMultiplier;
         anim.ResetTrigger("Chase");
         ai.Agent.autoTraverseOffMeshLink = false;
+        Debug.Log("Enter ChaseBite1");
     }
 
     public override void ExitAction(AI ai, Animator anim)
@@ -31,6 +32,7 @@ public class AnimChaseBiteAction1 : AnimatorAction
         ai.DetectionSphere.radius = ai.Stats.detectionRadius;
         anim.ResetTrigger("Chase");
         ai.Agent.autoTraverseOffMeshLink = true;
+        Debug.Log("Exit ChaseBite1");
     }
 
     public override void UpdateAction(AI ai, Animator anim)
@@ -40,7 +42,6 @@ public class AnimChaseBiteAction1 : AnimatorAction
         if (ai.Agent.isOnOffMeshLink && !ai.MoveAcrossNavMeshesStarted)
         {
             ai.MoveAcrossNavMeshLinkStart();
-           
         }
         else if(ai.MoveAcrossNavMeshesStarted)
         {
@@ -63,23 +64,8 @@ public class AnimChaseBiteAction1 : AnimatorAction
         //        ai.Agent.enabled = true;
         //    }
         //}
-        if(!ai.Agent.isOnNavMesh)
-        {   
-            NavMeshHit hit;
-            if (NavMesh.FindClosestEdge(ai.transform.position, out hit, NavMesh.AllAreas))
-            {
-                Debug.Log("Found closest edge");
-                ai.transform.position = hit.position;
-                ai.Agent.nextPosition = hit.position;
-            }
-            ai.Agent.isStopped = false;
-            Debug.Log("AI wasn't active");
-            ai.Agent.SetDestination(ai.Player.transform.position);
-        }
-        else
-        {
-            ai.Agent.SetDestination(ai.Player.transform.position);
-        }
+
+        //FindEdge(ai);
 
         float dist = Vector3.Distance(ai.transform.position, ai.Player.transform.position);
 
@@ -118,5 +104,26 @@ public class AnimChaseBiteAction1 : AnimatorAction
     private void LookAtPlayer(AI ai)
     {
         ai.transform.LookAt(new Vector3(ai.Player.transform.position.x, ai.transform.position.y, ai.Player.transform.position.z));
+    }
+
+    private void FindEdge(AI ai)
+    {
+        if (!ai.Agent.isOnNavMesh)
+        {
+            NavMeshHit hit;
+            if (NavMesh.FindClosestEdge(ai.transform.position, out hit, NavMesh.AllAreas))
+            {
+                Debug.Log("Found closest edge");
+                ai.transform.position = hit.position;
+                ai.Agent.nextPosition = hit.position;
+            }
+            ai.Agent.isStopped = false;
+            Debug.Log("AI wasn't active");
+            ai.Agent.SetDestination(ai.Player.transform.position);
+        }
+        else
+        {
+            ai.Agent.SetDestination(ai.Player.transform.position);
+        }
     }
 }

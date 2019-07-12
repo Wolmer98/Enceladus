@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114868251030367766}
-  - {fileID: 114254055095683402}
+  - {fileID: 114584514334164566}
+  - {fileID: 114283826733273072}
   EditorEvents:
   - {fileID: 114534797432440750}
   - {fileID: 114692885670826464}
@@ -153,14 +153,14 @@ MonoBehaviour:
   - {fileID: 114909662118684142}
   - {fileID: 114114616061688946}
   EditorParameters:
-  - {fileID: 114202052492037990}
-  - {fileID: 114640399781110318}
-  - {fileID: 114493154156518326}
+  - {fileID: 114296044418844286}
+  - {fileID: 114290239637189512}
+  - {fileID: 114413578993995164}
   MasterBanks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   StringsBanks:
-  - {fileID: 114868251030367766}
-  stringsBankWriteTime: 636960292747482384
+  - {fileID: 114584514334164566}
+  stringsBankWriteTime: 636969088553898861
   cacheVersion: 3
 --- !u!114 &114000909012490444
 MonoBehaviour:
@@ -281,6 +281,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114008994749549006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Weight
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114009210893175458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,7 +330,7 @@ MonoBehaviour:
   Path: event:/UI/Menu/Hover Tab
   guid: 02628e3fc51d7047b7b5550b50214b61
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -520,6 +537,23 @@ MonoBehaviour:
   Max: 10
   Default: 1
   Exists: 0
+--- !u!114 &114015323852359042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114016565217664170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -719,6 +753,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &114023117393655426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Scared
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
 --- !u!114 &114023677688022350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -873,12 +924,12 @@ MonoBehaviour:
   Path: event:/Events/WaterRise
   guid: c6b60ecb1670fc4787921d117e50751c
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114181028595864114}
+  - {fileID: 114113230877032312}
   MinDistance: 1
   MaxDistance: 20
   Length: 38000
@@ -1009,12 +1060,12 @@ MonoBehaviour:
   Path: event:/Player/Player_Suppression
   guid: d2a285e5bd677949abcaf42931ccc6ea
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114227726555432782}
+  - {fileID: 114223613339302582}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -1085,6 +1136,23 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 2
+  Exists: 0
+--- !u!114 &114036865294362622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Mouth
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &114038802675855594
 MonoBehaviour:
@@ -1594,12 +1662,12 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_VO_Small/Crab_Small_Attack
   guid: 2246212e70f7e744a8dfc8bd3ee1d23e
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114059172432780644}
+  - {fileID: 114396933373025082}
   MinDistance: 1
   MaxDistance: 20
   Length: 1500
@@ -1641,7 +1709,7 @@ MonoBehaviour:
   Path: event:/Objects/BreakCrate
   guid: 27a0527ab45f1947bc4190b94ffbd17a
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1732,7 +1800,7 @@ MonoBehaviour:
   Path: event:/Weapons/Mechanic/Mech_Release
   guid: a78024afe89e7d4985edafa7501fa199
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1857,7 +1925,7 @@ MonoBehaviour:
   Path: event:/Objects/ModCenter/Laser/Fluxicator
   guid: 96cc559f8ab6a84ab518ed3376c37421
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1898,6 +1966,23 @@ MonoBehaviour:
   Min: 0
   Max: 5
   Default: 1
+  Exists: 0
+--- !u!114 &114064680088158474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: TouchingWater
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &114064947460687980
 MonoBehaviour:
@@ -1985,13 +2070,13 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_SFX/Crab_Mouth
   guid: f22d5696fbbc9944b43def2eaf9e7497
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114566993985034110}
-  - {fileID: 114491058320206512}
+  - {fileID: 114036865294362622}
+  - {fileID: 114305457107874184}
   MinDistance: 1
   MaxDistance: 10
   Length: 6500
@@ -2157,7 +2242,7 @@ MonoBehaviour:
   Path: event:/Objects/Door/Door_1_fast
   guid: a61802d7e7bca847a4925d80738c6add
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2180,7 +2265,7 @@ MonoBehaviour:
   Path: event:/Objects/ModCenter/Plasma/Scorcher
   guid: c98b1f541fb19e4ebf3ec01b5dd2b52b
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2189,6 +2274,23 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 3436
 --- !u!114 &114071134984753954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114071410292207616
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2339,13 +2441,13 @@ MonoBehaviour:
   Path: event:/Music/Water Music Dynamisk
   guid: 3c405fdf93e51e47bdd2ff336b677e43
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114351346738621368}
-  - {fileID: 114143501298079578}
+  - {fileID: 114720427179480008}
+  - {fileID: 114023117393655426}
   MinDistance: 0
   MaxDistance: 0
   Length: 50666
@@ -2582,7 +2684,7 @@ MonoBehaviour:
   Path: event:/Weapons/Melee/Wrench_swing
   guid: 78745c1158680d43b88d55c098b8784e
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2605,12 +2707,12 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_VO_Big/Crab_Big_Attack
   guid: 0547ab4694ba2a47a6352ae3fb2175b3
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114144000745685118}
+  - {fileID: 114180767211219278}
   MinDistance: 0
   MaxDistance: 0
   Length: 1311
@@ -2629,7 +2731,7 @@ MonoBehaviour:
   Path: event:/Objects/Alarm
   guid: 6b22179a128ba543b5095af2e5016033
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -2703,7 +2805,7 @@ MonoBehaviour:
   Path: event:/Enemy/MonsterFish/MonsterFish_VO/MonsterFish_die
   guid: c2bf099aaceb8f44b2a4aec1a59b521e
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2909,7 +3011,7 @@ MonoBehaviour:
   Path: event:/Objects/Pick Ups/Consumables/MedPack
   guid: e67ec1d6f2ee42448ddb46ee76eea2dc
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2985,6 +3087,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114107323916463336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Loop
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114107962820836574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3053,6 +3172,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114113230877032312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: WaterLvl
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
 --- !u!114 &114113562470631018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3102,7 +3238,7 @@ MonoBehaviour:
   Path: snapshot:/Death
   guid: 995d8e6824076847a58de7235a476d6f
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -3176,7 +3312,7 @@ MonoBehaviour:
   Path: event:/Objects/Lamp/Lamp_Switch
   guid: 949bb4a3f7b66446a8f6dfd70fdd1c0d
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3256,6 +3392,23 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 0
+--- !u!114 &114121715120453634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Music
+  Min: 0
+  Max: 10
+  Default: 1
   Exists: 0
 --- !u!114 &114121840275451400
 MonoBehaviour:
@@ -3495,7 +3648,7 @@ MonoBehaviour:
   Path: event:/Ambiance/Room Tones/Room_XXL
   guid: 8ebdb74388969745bcbeb2189468e485
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -3552,7 +3705,7 @@ MonoBehaviour:
   Path: event:/Weapons/Plasma/Plasma_SemiAuto
   guid: 537c824b9c974f4da324b6997c5d5fda
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3575,7 +3728,7 @@ MonoBehaviour:
   Path: event:/Weapons/Weapon_Empty_Trigger
   guid: a016f5a6808c084abe7095bf4f886c74
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3617,6 +3770,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114136514877552948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114137267156209944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3632,7 +3802,7 @@ MonoBehaviour:
   Path: event:/Weapons/Laser/Laser_Release
   guid: e9120e6733d69843a6780464b12bb800
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3752,7 +3922,7 @@ MonoBehaviour:
   Path: event:/Objects/Pick Ups/Consumables/Syringe
   guid: d5c85cbce9fd3b479af3364e572bfa81
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3896,6 +4066,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114147663914842336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Trigger
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
 --- !u!114 &114147997110342392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3962,7 +4149,7 @@ MonoBehaviour:
   Path: event:/Player/Characters/Female/Female_Freighted
   guid: c343b1fb352f3c4dbce751a9f2db853a
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4115,12 +4302,12 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_VO_Small/Crab_Small_Aggro
   guid: 35ea78b83129584eb047b0ae118fad9f
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114600322911059980}
+  - {fileID: 114837260277530626}
   MinDistance: 0
   MaxDistance: 17
   Length: 3500
@@ -4640,6 +4827,23 @@ MonoBehaviour:
   Max: 2
   Default: 1
   Exists: 0
+--- !u!114 &114174648015262168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114174657927050446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4655,7 +4859,7 @@ MonoBehaviour:
   Path: snapshot:/Room_S
   guid: 3d6c545012daba4fa33b9b669bfbe52b
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -4695,7 +4899,7 @@ MonoBehaviour:
   Path: event:/Enemy/MonsterFish/MonsterFish_VO/MonsterFish_spawn
   guid: cb52fc12f737a34cbdf777da08fd9875
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4769,7 +4973,7 @@ MonoBehaviour:
   Path: event:/UI/Menu/Hover Text
   guid: ee5bc9153880054fa91ecfc8044e7ce5
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4844,6 +5048,23 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 2
+  Exists: 0
+--- !u!114 &114180767211219278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &114181028595864114
 MonoBehaviour:
@@ -5002,12 +5223,12 @@ MonoBehaviour:
   Path: event:/Objects/Elevator
   guid: 75e0a3296e2c014cbe551bd15b13b295
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114297207194065658}
+  - {fileID: 114732886979054312}
   MinDistance: 1
   MaxDistance: 20
   Length: 9003
@@ -5189,7 +5410,7 @@ MonoBehaviour:
   Path: snapshot:/Underwater
   guid: f5bd755917bbeb42b097870ac918a93a
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -5610,6 +5831,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114204084774134534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: TouchingWater
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114204580407037692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5909,6 +6147,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114217438379078384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Damaged
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114217719654329190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5992,7 +6247,7 @@ MonoBehaviour:
   Path: snapshot:/Suppression
   guid: a866592882227845a8e9eab5a9279e64
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -6085,6 +6340,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &114223613339302582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Suppression
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114224848428772222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6123,14 +6395,14 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_SFX/Crab_Big_Movement
   guid: 0e1da4fba00b214f9a424211ddf314cc
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114493051358955200}
-  - {fileID: 114024781139100076}
-  - {fileID: 114500454389757880}
+  - {fileID: 114941844056094058}
+  - {fileID: 114015323852359042}
+  - {fileID: 114236065243490262}
   MinDistance: 0
   MaxDistance: 0
   Length: 350
@@ -6355,6 +6627,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114236065243490262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: TouchingWater
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114236944779561702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6370,7 +6659,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Gore_Death
   guid: eb1a8d13335ff340bf32974a27dcab6c
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -6378,6 +6667,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 5546
+--- !u!114 &114237480356946194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: TouchingWater
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114237614834752672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6723,6 +7029,23 @@ MonoBehaviour:
   Max: 1
   Default: 1
   Exists: 0
+--- !u!114 &114250296324327854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Step
+  Min: 0
+  Max: 5
+  Default: 1
+  Exists: 0
 --- !u!114 &114251516205488486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6738,12 +7061,12 @@ MonoBehaviour:
   Path: event:/Objects/Elevator inside
   guid: 772a90ca243d62419ab078df2536865c
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114648060796158896}
+  - {fileID: 114339555989995174}
   MinDistance: 1
   MaxDistance: 20
   Length: 11000
@@ -6963,7 +7286,7 @@ MonoBehaviour:
   Path: event:/Events/WaterRise_Timeline
   guid: 6f107e11620da3479aba70536955825d
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -7003,7 +7326,7 @@ MonoBehaviour:
   Path: event:/Objects/Pick Ups/Consumables/SuitMod
   guid: f93f1e22b33dc347827fccd9e635a756
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -7043,6 +7366,23 @@ MonoBehaviour:
   Name: Material
   Min: 0
   Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &114262825183286286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Switch
+  Min: 0
+  Max: 1
   Default: 0
   Exists: 0
 --- !u!114 &114263798361249782
@@ -7292,7 +7632,7 @@ MonoBehaviour:
   Path: event:/UI/Menu/Select
   guid: ba9bf3b0f71fa6459435447d918d34fc
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -7518,6 +7858,26 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114283826733273072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Jespe\Documents\GitHub\Enceladus\Assets\Sounds\Build\Desktop\Master.bank
+  SubDir: 
+  lastModified: 636969088553858974
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 49592992
+  Exists: 1
 --- !u!114 &114284596516371108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7630,16 +7990,33 @@ MonoBehaviour:
   Path: event:/Player/Characters/Male/Male_Breathing
   guid: cb3608e7680fd34aba7033a55d7a9b01
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114239142336412530}
-  - {fileID: 114580461421010584}
+  - {fileID: 114783860141976346}
+  - {fileID: 114250296324327854}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114290239637189512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: Character
+  m_EditorClassIdentifier: 
+  Name: Character
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 1
 --- !u!114 &114290300500592340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7775,6 +8152,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114296044418844286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: Material
+  m_EditorClassIdentifier: 
+  Name: Material
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 1
 --- !u!114 &114296117275553602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7959,7 +8353,7 @@ MonoBehaviour:
   Path: event:/Weapons/Plasma/Plasma_FullAuto
   guid: 8aa9af8ef6d76f4592b705416cc55df5
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -7967,6 +8361,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
+--- !u!114 &114299967615290142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Scared
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
 --- !u!114 &114301117814149564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8016,7 +8427,7 @@ MonoBehaviour:
   Path: event:/Player/Hitmark/Hitmark (2)
   guid: 2563373b8c8b1e46b7fa055afe2a4d2d
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -8094,6 +8505,23 @@ MonoBehaviour:
   Min: 0
   Max: 5
   Default: 1
+  Exists: 0
+--- !u!114 &114305457107874184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &114305653237769956
 MonoBehaviour:
@@ -8405,7 +8833,7 @@ MonoBehaviour:
   Path: event:/Objects/Door/Door_Locked
   guid: 9aff80a53adb294e80165502395dfd45
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -8849,6 +9277,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &114335500735480336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Ecolocate
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114335566495511060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8896,6 +9341,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114339555989995174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Elevator Control
   Min: 0
   Max: 1
   Default: 0
@@ -8966,7 +9428,7 @@ MonoBehaviour:
   Path: event:/Objects/ModCenter/Plasma/Corruptor
   guid: 2bcaf3196aad8f4a90a1e4b13398758e
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -9182,6 +9644,23 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 1
+  Exists: 0
+--- !u!114 &114351854180930262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: ChargeValue
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &114353410218602972
 MonoBehaviour:
@@ -9549,6 +10028,23 @@ MonoBehaviour:
   Max: 1
   Default: 1
   Exists: 0
+--- !u!114 &114371020704218774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Damaged
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114371820398521388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9632,7 +10128,7 @@ MonoBehaviour:
   Path: event:/Weapons/Weapon_Foley
   guid: c3c710ba162d1a42b4c450051febb790
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -9836,6 +10332,23 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
+  Exists: 0
+--- !u!114 &114380409084994862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Ventilation
+  Min: 0
+  Max: 2
+  Default: 2
   Exists: 0
 --- !u!114 &114380588575451304
 MonoBehaviour:
@@ -10085,7 +10598,7 @@ MonoBehaviour:
   Path: event:/UI/WorldGenerator/RoomGenerate_Success
   guid: 35767277a0a176499243d24a1a29f9bd
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -10322,6 +10835,23 @@ MonoBehaviour:
   Max: 5
   Default: 0
   Exists: 0
+--- !u!114 &114392148420078442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Geyser
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
 --- !u!114 &114392954911503946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10337,13 +10867,13 @@ MonoBehaviour:
   Path: event:/Weapons/Plasma/Plasma_Charge
   guid: e55b90ddf0d264429468b343fe22e5ab
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114318053381119466}
-  - {fileID: 114559600335886870}
+  - {fileID: 114964114234650738}
+  - {fileID: 114351854180930262}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -10397,6 +10927,23 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
+  Exists: 0
+--- !u!114 &114396933373025082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &114400028721605184
 MonoBehaviour:
@@ -10537,7 +11084,7 @@ MonoBehaviour:
   Path: event:/Weapons/Mechanic/Mech_FullAuto
   guid: 47a878840e45ca409ca6eb652c5d1ae4
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -10628,7 +11175,7 @@ MonoBehaviour:
   Path: event:/Objects/Pick Ups/Hammer
   guid: 7c290d2e42f2ac409d1048af6b3d8c45
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -10800,6 +11347,23 @@ MonoBehaviour:
   Max: 3
   Default: 0
   Exists: 0
+--- !u!114 &114413578993995164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: Mental State
+  m_EditorClassIdentifier: 
+  Name: Mental State
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &114414001564055030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10815,12 +11379,12 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_VO_Small/Crab_Small_Spawn
   guid: 76c869dfd79bed4bafa0c8ee56968c31
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114540836475796358}
+  - {fileID: 114675233827536236}
   MinDistance: 2.8
   MaxDistance: 8.2
   Length: 1750
@@ -11027,6 +11591,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Weight
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114420000749919508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Switch
   Min: 0
   Max: 1
   Default: 0
@@ -11265,7 +11846,7 @@ MonoBehaviour:
   Path: event:/Objects/Sparks
   guid: 7eb502d0868c6347b118bb6cb68b1b8f
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -11345,12 +11926,12 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_VO_Small/Crab_Small_Hurt
   guid: a069c3921d382847956b0508bbc26721
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114402083983349492}
+  - {fileID: 114262825183286286}
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
@@ -11393,6 +11974,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2242
+--- !u!114 &114431649050067454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114431904732951358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11519,6 +12117,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 22000
+--- !u!114 &114434443163984678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Event
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &114436270270621010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11568,7 +12183,7 @@ MonoBehaviour:
   Path: event:/Enemy/MonsterFish/MonsterFish_VO/MonsterFish_attack
   guid: 1b1d027faef4ba43a019e024ea43c7dd
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -11693,13 +12308,13 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_SFX/Crab_Echolocate_Close
   guid: 561476f8d6cc2149aee4628136c5bc20
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114775564456407672}
-  - {fileID: 114780332709181396}
+  - {fileID: 114335500735480336}
+  - {fileID: 114984147121636364}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -11735,7 +12350,7 @@ MonoBehaviour:
   Path: event:/Objects/ModCenter/Bullet/Suppresser
   guid: 732a0e050b65864bb36080b9cdaeb004
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -11758,7 +12373,7 @@ MonoBehaviour:
   Path: event:/Weapons/Melee/Wrench_hit_metal
   guid: 66e9a218b24c7842b55933e1263e7e79
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -11832,13 +12447,13 @@ MonoBehaviour:
   Path: event:/Weapons/Mechanic/Mech_Charge
   guid: f1cb174c3cf2924f9654d58e60efdf54
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114577912161666910}
-  - {fileID: 114418027711011278}
+  - {fileID: 114147663914842336}
+  - {fileID: 114841703284334152}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -11978,6 +12593,23 @@ MonoBehaviour:
   Max: 3
   Default: 0
   Exists: 0
+--- !u!114 &114449661769132154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Geyser Distance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114451683441552134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12095,7 +12727,7 @@ MonoBehaviour:
   Path: event:/Objects/ModCenter/Laser/Zapper
   guid: c98118a9b52fcd41860c4699d9feb50d
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -12152,13 +12784,13 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_SFX/Crab_Small_Movement
   guid: 1193b92c0b40db4b8b3219806723ac7d
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114954962332188024}
-  - {fileID: 114802251461084574}
+  - {fileID: 114204084774134534}
+  - {fileID: 114691019823021010}
   MinDistance: 0
   MaxDistance: 0
   Length: 204
@@ -12262,7 +12894,7 @@ MonoBehaviour:
   Path: event:/Ambiance/Levels/Zone 2
   guid: c56275f3cd1c8745bfaf9ba33d82e622
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -12285,12 +12917,12 @@ MonoBehaviour:
   Path: event:/Ambiance/Room Tones/Room_Manager
   guid: 8bd63adba57379439af7399d76787351
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114491263185787996}
+  - {fileID: 114926357551234568}
   MinDistance: 0
   MaxDistance: 0
   Length: 2800
@@ -12428,13 +13060,13 @@ MonoBehaviour:
   Path: event:/Events/Event_Geyser
   guid: da4e9c4abad88e488afb595b773e3a9a
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114661983513056946}
-  - {fileID: 114265476598321704}
+  - {fileID: 114449661769132154}
+  - {fileID: 114392148420078442}
   MinDistance: 0
   MaxDistance: 0
   Length: 12000
@@ -12470,7 +13102,7 @@ MonoBehaviour:
   Path: event:/UI/Menu/Open
   guid: 8176a86db61978489bd362640c69d2a5
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -12544,15 +13176,32 @@ MonoBehaviour:
   Path: event:/Music/LoadingScreen_Music
   guid: 57afe0835512b148ae0d774b8b211496
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114167844510784348}
+  - {fileID: 114845775771857138}
   MinDistance: 0
   MaxDistance: 0
   Length: 126000
+--- !u!114 &114468129970042466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Step
+  Min: 0
+  Max: 5
+  Default: 1
+  Exists: 0
 --- !u!114 &114468208668094836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12653,7 +13302,7 @@ MonoBehaviour:
   Path: event:/Weapons/Melee/Hammer_Swing
   guid: 66de2de8dad5da4599d85be148c3def7
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -12710,15 +13359,15 @@ MonoBehaviour:
   Path: event:/Music/Music_Manager
   guid: 2cf4d94adb13d543885ed2b28432ca00
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114847902919973968}
-  - {fileID: 114581505698232958}
-  - {fileID: 114179454066169298}
-  - {fileID: 114727391617914248}
+  - {fileID: 114749089009205690}
+  - {fileID: 114299967615290142}
+  - {fileID: 114371020704218774}
+  - {fileID: 114434443163984678}
   MinDistance: 0
   MaxDistance: 0
   Length: 44000
@@ -13050,6 +13699,23 @@ MonoBehaviour:
   Max: 5
   Default: 0
   Exists: 1
+--- !u!114 &114492047176607374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Trigger
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
 --- !u!114 &114493051358955200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13133,7 +13799,7 @@ MonoBehaviour:
   Path: event:/Objects/Lamp/Lamp_Flicker
   guid: 477419a94d96df4fb115d894f968b4b1
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -13246,6 +13912,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: TouchingWater
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114506638679659582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
   Min: 0
   Max: 1
   Default: 0
@@ -13380,6 +14063,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114510464548480846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114510580933890912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13537,7 +14237,7 @@ MonoBehaviour:
   Path: event:/Objects/ModCenter/Laser/Stinger
   guid: 4edf63063d3bee4780c98cba5c1d83ba
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -13561,6 +14261,23 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 0
+--- !u!114 &114515901502078392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Music
+  Min: 0
+  Max: 10
+  Default: 1
   Exists: 0
 --- !u!114 &114516453839094352
 MonoBehaviour:
@@ -13632,12 +14349,12 @@ MonoBehaviour:
   Path: event:/Objects/Lamp/Lamp_Bulb
   guid: 548624caab7b544ebc19af1b9dd8d413
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114535664701450332}
+  - {fileID: 114420000749919508}
   MinDistance: 4
   MaxDistance: 8
   Length: 6600
@@ -13839,15 +14556,32 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_VO_Big/Crab_Big_Moan
   guid: 359f5ebe62b67946b0b6b5a62ad874e0
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114909760849838036}
+  - {fileID: 114690599611023910}
   MinDistance: 0
   MaxDistance: 0
   Length: 1350
+--- !u!114 &114527792571021200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Ammo
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
 --- !u!114 &114530040549147398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13948,7 +14682,7 @@ MonoBehaviour:
   Path: event:/Events/Construction
   guid: 45d97999d259404eb9c75b03bf241fd3
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -13971,7 +14705,7 @@ MonoBehaviour:
   Path: event:/Weapons/Plasma/Plasma_Release
   guid: 659406e3127f6e4b8014857a60c23d43
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -13994,7 +14728,7 @@ MonoBehaviour:
   Path: event:/Player/Player_MentalState
   guid: 89734e5242005b46b22b0f34698e9dce
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -14076,6 +14810,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114537072505371348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Trigger
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
 --- !u!114 &114538087830714032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14091,7 +14842,7 @@ MonoBehaviour:
   Path: event:/Objects/ModCenter/Plasma/Scrambler
   guid: 7ce95cd521347a41963846ef62d37ad3
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -14250,7 +15001,7 @@ MonoBehaviour:
   Path: event:/Objects/Door/Door_2_fast
   guid: 5e479c8028faea44bbf6b828144a33ad
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -14273,12 +15024,12 @@ MonoBehaviour:
   Path: event:/Objects/Pick Ups/Ammo/AmmoType
   guid: 8b4fd649a35ded4daa211510b0cdad94
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114727094636461056}
+  - {fileID: 114527792571021200}
   MinDistance: 0
   MaxDistance: 0
   Length: 866
@@ -14297,7 +15048,7 @@ MonoBehaviour:
   Path: event:/Player/Characters/Male/Male_Hurt
   guid: e5de2903e41c214ab3ef7adc35fd1876
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -14394,7 +15145,7 @@ MonoBehaviour:
   Path: event:/Weapons/Reload/Reload_Temp
   guid: 9b6c1fb2f7da18469efef040d6856b28
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -14519,13 +15270,13 @@ MonoBehaviour:
   Path: event:/Weapons/Laser/Laser_Charge
   guid: 1f4e31166dcf8740b88c54873c7da46a
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114104982742738028}
-  - {fileID: 114449256464889778}
+  - {fileID: 114713128312051240}
+  - {fileID: 114537072505371348}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -14578,6 +15329,23 @@ MonoBehaviour:
   Name: Snapshot
   Min: 0
   Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114557307339688066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Ammo
+  Min: 0
+  Max: 10
   Default: 0
   Exists: 0
 --- !u!114 &114557362799138740
@@ -14867,7 +15635,7 @@ MonoBehaviour:
   Path: snapshot:/Room_L
   guid: af2a9b6dabacb64485adf715506f2d5c
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -15161,7 +15929,7 @@ MonoBehaviour:
   Path: event:/Weapons/Weapon_Pre
   guid: b48ca4b747f44e4f8ca2d32ffc684caa
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -15382,7 +16150,7 @@ MonoBehaviour:
   Path: event:/Player/Hitmark/Hitmark
   guid: 131fe4be64d518429746c71b88e174fd
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -15390,6 +16158,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 488
+--- !u!114 &114584514334164566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Jespe\Documents\GitHub\Enceladus\Assets\Sounds\Build\Desktop\Master.strings.bank
+  SubDir: 
+  lastModified: 636969088553898861
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 9864
+  Exists: 1
 --- !u!114 &114584774561162746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15403,6 +16191,23 @@ MonoBehaviour:
   m_Name: Mental State
   m_EditorClassIdentifier: 
   Name: Mental State
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114585288892608500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
   Min: 0
   Max: 1
   Default: 0
@@ -15473,7 +16278,7 @@ MonoBehaviour:
   Path: event:/Player/Characters/Female/Female_Death
   guid: 1d1d2ad979f38f47abf6abd527f83ff5
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -15550,12 +16355,12 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_VO_Big/Crab_Big_Spawn
   guid: c30b7d5fbbac5944a01563ed1099ec68
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114006152401113064}
+  - {fileID: 114431649050067454}
   MinDistance: 0
   MaxDistance: 0
   Length: 1100
@@ -15642,12 +16447,12 @@ MonoBehaviour:
   Path: event:/Music/Main Menu
   guid: bb38bb105d1ec842b63962a7d153167b
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114431015255443438}
+  - {fileID: 114682543883493714}
   MinDistance: 0
   MaxDistance: 0
   Length: 123000
@@ -15790,6 +16595,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114597949375975052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Shutdown
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114598511864923716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15895,12 +16717,12 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_VO_Small/Crab_Small_Death_Manager
   guid: 5b7241a1b44f47459f9540e2519fa6a6
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114641423388414902}
+  - {fileID: 114510464548480846}
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
@@ -16062,6 +16884,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114606012145087294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Underwater
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114606086247358200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16179,7 +17018,7 @@ MonoBehaviour:
   Path: event:/Objects/Pick Ups/Consumables/MiniMod_down
   guid: 7266c8206b72be449c4c6b173734d40a
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -16588,7 +17427,7 @@ MonoBehaviour:
   Path: event:/Player/Characters/Male/Male_Death
   guid: 0332df183d2cb44090fde0229791e618
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -16781,12 +17620,12 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_VO_Small/Crab_Small_Death
   guid: f229bce7df070d4ba82be22b98ab332b
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114247708995312754}
+  - {fileID: 114506638679659582}
   MinDistance: 1
   MaxDistance: 20
   Length: 1403
@@ -16839,7 +17678,7 @@ MonoBehaviour:
   Path: event:/Events/Alice_TTS
   guid: 5c786d4ba7d6c3409a2566da6638a9bb
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -17723,16 +18562,33 @@ MonoBehaviour:
   Path: event:/Player/Characters/Female/Female_Breathing
   guid: 96edd43e4d16824f82b69af7b1f80e92
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114991874601773532}
-  - {fileID: 114241772544419174}
+  - {fileID: 114928039306384638}
+  - {fileID: 114468129970042466}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114675233827536236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114675578180895080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17869,6 +18725,23 @@ MonoBehaviour:
   Max: 2
   Default: 2
   Exists: 0
+--- !u!114 &114682543883493714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Loop
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114682673046335064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17921,7 +18794,7 @@ MonoBehaviour:
   Path: event:/Objects/ModCenter/Bullet/Sweeper
   guid: 5fd05de2a0058f44ac3eb4df63d0fb6c
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -17961,7 +18834,7 @@ MonoBehaviour:
   Path: event:/UI/Menu/Close
   guid: 17a4d1181b53eb468c6827b6fd9d3851
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -18035,7 +18908,7 @@ MonoBehaviour:
   Path: event:/Events/Stingers/Stinger_Mild
   guid: 094d14683c3f5d40b82444daac7fc671
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -18043,6 +18916,40 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 5500
+--- !u!114 &114690599611023910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114691019823021010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114691140952357978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18092,13 +18999,13 @@ MonoBehaviour:
   Path: event:/Player/Player_Footsteps
   guid: aabbb6e9cc579542bb316dcf98072e40
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114782592086426476}
-  - {fileID: 114608789500162810}
+  - {fileID: 114237480356946194}
+  - {fileID: 114008994749549006}
   MinDistance: 0
   MaxDistance: 0
   Length: 800
@@ -18228,6 +19135,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114697683074749420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Music
+  Min: 0
+  Max: 10
+  Default: 1
+  Exists: 0
 --- !u!114 &114700013098779642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18306,7 +19230,7 @@ MonoBehaviour:
   Path: snapshot:/Room_XL
   guid: 23d15961f9e49647b29d114ca9a35150
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -18554,6 +19478,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114713128312051240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: ChargeValue
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114715050675248892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18685,6 +19626,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114720427179480008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Music
+  Min: 0
+  Max: 10
+  Default: 1
+  Exists: 0
 --- !u!114 &114720537533952124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18700,7 +19658,7 @@ MonoBehaviour:
   Path: event:/Objects/ModCenter/Bullet/Reaper
   guid: 3b942ef904050d4981210e783588d531
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -18808,12 +19766,12 @@ MonoBehaviour:
   Path: event:/Enemy/MonsterFish/MonsterFish_VO/MonsterFish_moan
   guid: 69ada266b1d8f14f836dd4436ba4e042
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114813204236676104}
+  - {fileID: 114174648015262168}
   MinDistance: 1
   MaxDistance: 20
   Length: 1350
@@ -18840,6 +19798,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114724761559768612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114725222105329408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18999,6 +19974,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114732886979054312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Elevator Control
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114733442487517252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19032,6 +20024,23 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 0
+--- !u!114 &114733735280833908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Generator
+  Min: 0
+  Max: 2
+  Default: 2
   Exists: 0
 --- !u!114 &114734149709328848
 MonoBehaviour:
@@ -19169,13 +20178,13 @@ MonoBehaviour:
   Path: event:/Music/Fight
   guid: dee749d49ebfaf439832132b03b7badd
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114631766492025368}
-  - {fileID: 114120822440814664}
+  - {fileID: 114107323916463336}
+  - {fileID: 114515901502078392}
   MinDistance: 0
   MaxDistance: 0
   Length: 156909
@@ -19359,6 +20368,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &114749089009205690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Music
+  Min: 0
+  Max: 10
+  Default: 1
+  Exists: 0
 --- !u!114 &114749547838719028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19566,15 +20592,32 @@ MonoBehaviour:
   Path: event:/Player/Player_Landing
   guid: 0c3100a6f0cd3147b4d89dc3373dee73
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114998043343090114}
+  - {fileID: 114791406315157746}
   MinDistance: 0
   MaxDistance: 0
   Length: 800
+--- !u!114 &114758217717060112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Loop
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114759827130397116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19692,7 +20735,7 @@ MonoBehaviour:
   Path: event:/Objects/ModCenter/Plasma/Eradicator
   guid: b1560c976fe3ce40ac905a379ff1942f
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -19732,7 +20775,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Gore
   guid: 6d9ad62cdc3d344abc866f9985cd108e
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -20038,12 +21081,12 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_VO_Big/Crab_Big_Die
   guid: e16369afc5cd244488e764dce7e6bbbb
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114378083037371914}
+  - {fileID: 114071410292207616}
   MinDistance: 0
   MaxDistance: 0
   Length: 2352
@@ -20251,6 +21294,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114783860141976346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Stamina
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
 --- !u!114 &114785777976839174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20334,7 +21394,7 @@ MonoBehaviour:
   Path: event:/Events/FakeEnemy/Event_FakeEnemy
   guid: 8c2cbc8e8611b84a9b934ca1e3617151
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -20391,7 +21451,7 @@ MonoBehaviour:
   Path: event:/Player/Characters/Female/Female_Hurt
   guid: 46550b4fbf74a644b09595d6d2a5d6ee
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -20451,6 +21511,23 @@ MonoBehaviour:
   Name: Room
   Min: 0
   Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &114791406315157746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Weight
+  Min: 0
+  Max: 1
   Default: 0
   Exists: 0
 --- !u!114 &114791561708085544
@@ -20728,7 +21805,7 @@ MonoBehaviour:
   Path: event:/Objects/Pick Ups/Consumables/MiniMod_up
   guid: 0f4ae8a03291b24abae1d8578afc6e9e
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -21058,12 +22135,12 @@ MonoBehaviour:
   Path: event:/Weapons/Shutdown
   guid: 7636a8b57538894b84c7b3869f3a5e9f
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114350086360497678}
+  - {fileID: 114597949375975052}
   MinDistance: 0
   MaxDistance: 0
   Length: 2875
@@ -21082,13 +22159,13 @@ MonoBehaviour:
   Path: event:/Music/Small Fight
   guid: 541216a60bb32d4f944553f4265d01dc
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114195138465513132}
-  - {fileID: 114860661159545732}
+  - {fileID: 114121715120453634}
+  - {fileID: 114758217717060112}
   MinDistance: 0
   MaxDistance: 0
   Length: 45000
@@ -21169,7 +22246,7 @@ MonoBehaviour:
   Path: event:/Objects/ModCenter/Laser/Pulsar
   guid: 82c1b582a630a642a6456b91504a16f4
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -21192,12 +22269,12 @@ MonoBehaviour:
   Path: event:/Enemy/MonsterFish/MonsterFish_VO/MonsterFish_aggro
   guid: 9ab60bb96df0f0499eb4981478a4364a
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114116617768687124}
+  - {fileID: 114724761559768612}
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
@@ -21291,12 +22368,12 @@ MonoBehaviour:
   Path: event:/Weapons/Laser/Laser_Beam (Auto)
   guid: d9ea0630becdc247b524c95df1fed51b
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114162073380206418}
+  - {fileID: 114492047176607374}
   MinDistance: 0
   MaxDistance: 0
   Length: 4559
@@ -21372,7 +22449,7 @@ MonoBehaviour:
   Path: snapshot:/WaterMusic Snapshot
   guid: f56d3dd5af122243a342bd1047947378
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -21465,6 +22542,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114837260277530626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114837485877994742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21480,6 +22574,23 @@ MonoBehaviour:
   Name: Room
   Min: 0
   Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &114841703284334152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: ChargeValue
+  Min: 0
+  Max: 1
   Default: 0
   Exists: 0
 --- !u!114 &114842932732957598
@@ -21570,15 +22681,32 @@ MonoBehaviour:
   Path: event:/Objects/Door/Door_Manager
   guid: 80343396a90fee4aba7ffdc6a76d486d
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114498111490982434}
+  - {fileID: 114064680088158474}
   MinDistance: 0
   MaxDistance: 0
   Length: 2100
+--- !u!114 &114845775771857138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Music
+  Min: 0
+  Max: 10
+  Default: 1
+  Exists: 0
 --- !u!114 &114846613436491720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21650,7 +22778,7 @@ MonoBehaviour:
   Path: event:/Weapons/Mechanic/Mech_SemiAuto
   guid: ecd0367fce9fba4ca9eb1e610050fc41
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -21775,7 +22903,7 @@ MonoBehaviour:
   Path: event:/Objects/ModCenter/Bullet/Sharpshooter
   guid: fce8c3ed6fad4a4699d090f27447e3aa
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -22007,7 +23135,7 @@ MonoBehaviour:
   Path: event:/Player/Hitmark/Hitmark (3)
   guid: 542d4be95f4f944091d313f4b69e1838
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -22081,7 +23209,7 @@ MonoBehaviour:
   Path: snapshot:/Room_XXL
   guid: e5f5e9e71690034fae1e6e0f342b5637
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -22155,12 +23283,12 @@ MonoBehaviour:
   Path: event:/Events/Underwater
   guid: 3276f95f269933429e58748d1e660b77
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114008289871585356}
+  - {fileID: 114606012145087294}
   MinDistance: 0
   MaxDistance: 0
   Length: 7924
@@ -22343,7 +23471,7 @@ MonoBehaviour:
   Path: event:/Events/Stingers/Stinger_Intense
   guid: 5cb9f3575107fa4486efc26c36cd4ac9
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -22407,6 +23535,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 980
+--- !u!114 &114874168625486416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Scared
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
 --- !u!114 &114876195584119054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22480,12 +23625,12 @@ MonoBehaviour:
   Path: event:/Music/Water Music
   guid: 88a18736f9d43148b1ab9b8928de664e
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114772878864263486}
+  - {fileID: 114697683074749420}
   MinDistance: 0
   MaxDistance: 0
   Length: 50666
@@ -22504,7 +23649,7 @@ MonoBehaviour:
   Path: snapshot:/Room_M
   guid: 3291619b84f77247b9986e66c2e86d8e
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -22680,12 +23825,12 @@ MonoBehaviour:
   Path: event:/Objects/Ventilation
   guid: 2f206569b751f14ba7ccb7d849df3815
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114608879002034366}
+  - {fileID: 114380409084994862}
   MinDistance: 1
   MaxDistance: 20
   Length: 6500
@@ -23237,12 +24382,12 @@ MonoBehaviour:
   Path: event:/Objects/Pick Ups/Ammo/Pickup
   guid: 3145bccad9e97c47936e237c13425c40
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114255932987351144}
+  - {fileID: 114557307339688066}
   MinDistance: 0
   MaxDistance: 0
   Length: 770
@@ -23322,7 +24467,7 @@ MonoBehaviour:
   Path: event:/Player/Characters/Female/Female_CatchBreath
   guid: 194b00e5d054f948af093ecfa5a0f838
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -23362,13 +24507,13 @@ MonoBehaviour:
   Path: event:/Music/Area 2
   guid: 7b355ccc87fcd540b74ddb2aad1cf064
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114812355021897066}
-  - {fileID: 114722434794052788}
+  - {fileID: 114874168625486416}
+  - {fileID: 114217438379078384}
   MinDistance: 0
   MaxDistance: 0
   Length: 101052
@@ -23506,7 +24651,7 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_SFX/Crab_Die_SFX
   guid: 0d415bae48e33a44a2d4f9cddb323edd
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -23580,7 +24725,7 @@ MonoBehaviour:
   Path: snapshot:/Charging Weapon
   guid: cb7c404f62095c4f88ae25c208f575bd
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -23638,6 +24783,40 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 0
+--- !u!114 &114926357551234568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Room
+  Min: 0
+  Max: 5
+  Default: 0
+  Exists: 0
+--- !u!114 &114928039306384638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Stamina
+  Min: 0
+  Max: 1
+  Default: 1
   Exists: 0
 --- !u!114 &114931270509005534
 MonoBehaviour:
@@ -23739,7 +24918,7 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_SFX/Crab_hit_wall
   guid: e87fc46eca08c2499ff883d10cd4b0e5
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -23860,13 +25039,13 @@ MonoBehaviour:
   Path: event:/Objects/Generator
   guid: 0300ca7af690374a96f84f41e3634b33
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114308376503554426}
-  - {fileID: 114357093027467660}
+  - {fileID: 114733735280833908}
+  - {fileID: 114585288892608500}
   MinDistance: 0
   MaxDistance: 0
   Length: 20000
@@ -23902,7 +25081,7 @@ MonoBehaviour:
   Path: event:/UI/WorldGenerator/RoomGenerate_Test
   guid: b47869824858b640aa9bd9b0a345ee9e
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -23963,6 +25142,23 @@ MonoBehaviour:
   FileSizes:
   - Name: 
     Value: 49592992
+  Exists: 0
+--- !u!114 &114941844056094058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Weight
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &114942343644846876
 MonoBehaviour:
@@ -24349,7 +25545,7 @@ MonoBehaviour:
   Path: event:/Objects/Pick Ups/Wrench
   guid: a54c498404e32b4a83978c10778227e6
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -24512,6 +25708,23 @@ MonoBehaviour:
   Max: 1
   Default: 1
   Exists: 0
+--- !u!114 &114964114234650738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Trigger
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 0
 --- !u!114 &114965277432194176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24578,7 +25791,7 @@ MonoBehaviour:
   Path: event:/Weapons/Melee/Hammer_hit_metal
   guid: 2a0d9825b982b84195562a0e97f6b874
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -24691,7 +25904,7 @@ MonoBehaviour:
   Path: event:/Objects/Pick Ups/Consumables/Log
   guid: 705558cc9fe5d9419848aa64e5b4fbcf
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -24737,7 +25950,7 @@ MonoBehaviour:
   Path: event:/Music/Small Fight 2
   guid: e8cb8f4b9315724e9dd6e708ed54ed5b
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -24777,7 +25990,7 @@ MonoBehaviour:
   Path: event:/Ambiance/Levels/Zone 1 (Fixed)
   guid: c2f669c590383a45a72ee1d84b7cd532
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -25025,6 +26238,23 @@ MonoBehaviour:
   Max: 5
   Default: 0
   Exists: 0
+--- !u!114 &114984147121636364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Snapshot
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114985002683541820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25057,12 +26287,12 @@ MonoBehaviour:
   Path: event:/Enemy/Crab/Crab_VO_Big/Crab_Big_Aggro
   guid: 7bc2ecf6fbf6c944b556f1b7463295c3
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114447910185479108}
+  - {fileID: 114136514877552948}
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
@@ -25132,7 +26362,7 @@ MonoBehaviour:
   Path: event:/Weapons/Laser/Laser_SemiAuto
   guid: 1df953a71b215d45a0d76dad578f09b5
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -25322,7 +26552,7 @@ MonoBehaviour:
   Path: event:/Objects/Pick Ups/Consumables/Syringe_down
   guid: f1c735bde2072049ba24cff6285fc0ef
   Banks:
-  - {fileID: 114254055095683402}
+  - {fileID: 114283826733273072}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
