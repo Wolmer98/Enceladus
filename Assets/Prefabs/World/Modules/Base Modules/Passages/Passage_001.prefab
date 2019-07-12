@@ -181,7 +181,7 @@ MonoBehaviour:
   m_EndPoint: {x: 0, y: -1.25, z: 1}
   m_Width: 0.2
   m_CostModifier: -1
-  m_Bidirectional: 1
+  m_Bidirectional: 0
   m_AutoUpdatePosition: 0
   m_Area: 0
 --- !u!1 &7363573813632691513
@@ -1115,6 +1115,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270246342546974009, guid: 72141265db784054586e63ee5c2cc05a,
+        type: 3}
+      propertyPath: m_Bidirectional
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8002302427633573380, guid: 72141265db784054586e63ee5c2cc05a,
         type: 3}

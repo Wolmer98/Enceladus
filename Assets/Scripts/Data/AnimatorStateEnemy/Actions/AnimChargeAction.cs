@@ -9,14 +9,14 @@ public class AnimChargeAction : AnimatorAction
     public override void EnterActions(AI ai, Animator anim)
     {
         ai.ChasingPlayer = true;
+        ai.Agent.isStopped = true;
         ai.Agent.updatePosition = false;
         ai.Agent.updateRotation = false;
         FMODUnity.RuntimeManager.PlayOneShot(ai.aggroSound, ai.transform.position);
         ai.HasCharged = true;
         ai.Agent.autoTraverseOffMeshLink = false;
-        Debug.Log("Charge: " + ai.Agent.autoTraverseOffMeshLink);
         ai.ChargeCooldown = 0.0f;
-        //ai.Agent.enabled = false;
+        ai.Agent.enabled = false;
         anim.ResetTrigger("Chase");
         anim.ResetTrigger("Charge");
         Debug.Log("Enter Charge");
@@ -32,7 +32,8 @@ public class AnimChargeAction : AnimatorAction
         ai.Agent.updatePosition = true;
         ai.Agent.nextPosition = ai.transform.position;
         ai.Animator.SetBool("Charging", false);
-        //ai.Agent.enabled = true;
+        ai.Agent.enabled = true;
+        ai.Agent.isStopped = false;
     }
 
     public override void UpdateAction(AI ai, Animator anim)
