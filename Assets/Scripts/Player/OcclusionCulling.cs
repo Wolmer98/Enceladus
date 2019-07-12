@@ -130,9 +130,28 @@ public class OcclusionCulling : MonoBehaviour
 
         foreach (Renderer r in renderers)
         {
-            if (r.gameObject.layer != LayerMask.NameToLayer("Interaction")
-                && r.gameObject.layer != LayerMask.NameToLayer("Interaction"))
+            Transform parent = r.transform.parent;
+            bool skip = false;
+            while (parent != null && parent.gameObject != room)
+            {
+                if (parent.gameObject.layer == LayerMask.NameToLayer("Interaction"))
+                {
+                    skip = true;
+                    Debug.Log("SKIP");
+                    break;
+                }
+                else
+                    parent = parent.parent;
+            }
+
+            if (skip)
+                continue;
+
+            if (r.gameObject.layer != LayerMask.NameToLayer("Interaction"))
+            {
                 r.gameObject.layer = LayerMask.NameToLayer(fogOfWarLayerName);
+                Debug.Log("SWITCHED LAYER " + r.name);
+            }
         }
     }
 

@@ -129,6 +129,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4870545054903125945, guid: 1a888b6782da4444084a27d2b41ee566,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 5558641108720066366, guid: 1a888b6782da4444084a27d2b41ee566,
         type: 3}
       propertyPath: health
@@ -168,6 +173,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 94e068ddff6a32c4b869ca98b81bda8b, type: 3}
       propertyPath: m_Name
       value: Syringe
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 94e068ddff6a32c4b869ca98b81bda8b, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94e068ddff6a32c4b869ca98b81bda8b, type: 3}
       propertyPath: m_LocalPosition.x

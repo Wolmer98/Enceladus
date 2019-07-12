@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8559133801239649227}
   - component: {fileID: 8559133801239649226}
   - component: {fileID: 6864085666646238304}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,6 +221,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 92b8e3dd7ca1d8943b94e2c9d8074073, type: 3}
       propertyPath: m_Name
       value: STATION
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 92b8e3dd7ca1d8943b94e2c9d8074073, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 92b8e3dd7ca1d8943b94e2c9d8074073, type: 3}
       propertyPath: m_LocalPosition.x

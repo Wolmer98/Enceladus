@@ -134,6 +134,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4870545054903125945, guid: 1a888b6782da4444084a27d2b41ee566,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a888b6782da4444084a27d2b41ee566, type: 3}
 --- !u!1 &6571623785686749559 stripped
@@ -158,6 +163,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 310f7106249ea1b40acb13bd295a86df, type: 3}
       propertyPath: m_Name
       value: Ammo Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 310f7106249ea1b40acb13bd295a86df, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 310f7106249ea1b40acb13bd295a86df, type: 3}
       propertyPath: m_LocalPosition.x
