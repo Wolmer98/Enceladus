@@ -37,7 +37,7 @@ public class EnemySpawnPoint : MonoBehaviour
         EnemySpawnPack pack = enemySpawnPointPacks[Random.Range(0, enemySpawnPointPacks.Length)];
         if (pack != null)
         {
-            if (pack.minLevel >= enemySpawnManager.CurrentLevel)
+            if (pack.minLevel <= enemySpawnManager.CurrentLevel)
             {
                 return pack;
             }
@@ -46,7 +46,7 @@ public class EnemySpawnPoint : MonoBehaviour
                 for (int i = 0; i < enemySpawnPointPacks.Length; i++)
                 {
                     pack = enemySpawnPointPacks[i];
-                    if (pack.minLevel >= enemySpawnManager.CurrentLevel)
+                    if (pack.minLevel <= enemySpawnManager.CurrentLevel)
                     {
                         return pack;
                     }
