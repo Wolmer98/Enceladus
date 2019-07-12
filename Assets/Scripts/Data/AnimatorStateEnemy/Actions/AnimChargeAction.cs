@@ -19,12 +19,12 @@ public class AnimChargeAction : AnimatorAction
         ai.Agent.enabled = false;
         anim.ResetTrigger("Chase");
         anim.ResetTrigger("Charge");
-        Debug.Log("Enter Charge");
+        //Debug.Log("Enter Charge");
     }
 
     public override void ExitAction(AI ai, Animator anim)
     {
-        Debug.Log("Exit Charge");
+        //Debug.Log("Exit Charge");
         anim.ResetTrigger("Charge");
         ai.SetATimer = false;
         ai.Agent.updateRotation = true;
@@ -80,9 +80,14 @@ public class AnimChargeAction : AnimatorAction
 
     private void LookInDirection(AI ai)
     {
-        float step = ai.Stats.rotationSpeed * Time.fixedDeltaTime;
 
-        Vector3 newDir = Vector3.RotateTowards(ai.transform.forward, ai.ChargeDirection, step, 0.0f);
-        ai.transform.rotation = Quaternion.LookRotation(newDir);
+        ai.ChargeDirection = (ai.Player.transform.position - ai.transform.position).normalized;
+
+        ai.transform.LookAt(new Vector3(ai.Player.transform.position.x, ai.transform.position.y, ai.Player.transform.position.z));
+
+        //float step = ai.Stats.rotationSpeed * Time.fixedDeltaTime;
+
+        //Vector3 newDir = Vector3.RotateTowards(ai.transform.forward, ai.ChargeDirection, step, 0.0f);
+        //ai.transform.rotation = Quaternion.LookRotation(newDir);
     }
 }

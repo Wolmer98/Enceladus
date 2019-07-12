@@ -22,12 +22,12 @@ public class AnimSearchAction : AnimatorAction
         ai.SetATimer = false;
         anim.ResetTrigger("Search");
 
-        Debug.Log("Enter Search");
+        //Debug.Log("Enter Search");
     }
 
     public override void ExitAction(AI ai, Animator anim)
     {
-        Debug.Log("Exit Search");
+        //Debug.Log("Exit Search");
         ai.FoundSearchPoints = false;
         ai.ConditionTime = 0f;
         anim.ResetTrigger("Search");

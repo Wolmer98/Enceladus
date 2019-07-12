@@ -16,7 +16,7 @@ public class AnimStunnedAction : AnimatorAction
         ai.IsStunned = true;
         ai.ActionTime = 0.0f;
         ai.Rigidbody.velocity = Vector3.zero;
-        ai.Rigidbody.isKinematic = true;
+        //ai.Rigidbody.isKinematic = true;
         ai.IsMoving = false;
         anim.ResetTrigger("Stunned");
         Debug.Log("Enter Stunned");
@@ -31,7 +31,7 @@ public class AnimStunnedAction : AnimatorAction
         ai.Agent.isStopped = false;
         ai.IsStunned = false;
         anim.ResetTrigger("Stunned");
-        ai.Rigidbody.isKinematic = false;
+        //ai.Rigidbody.isKinematic = false;
         Debug.Log("Exit Stunned");
     }
 

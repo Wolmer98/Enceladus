@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30348307a339f144a81b18bb1d647f8c, type: 3}
   m_Name: SpawnPack_HiveMother_1
   m_EditorClassIdentifier: 
-  minLevel: 2
+  minLevel: 0
   enemies:
   - {fileID: 8275400314718403886, guid: 844621f86f67d114486c01c3b7dc567e, type: 3}

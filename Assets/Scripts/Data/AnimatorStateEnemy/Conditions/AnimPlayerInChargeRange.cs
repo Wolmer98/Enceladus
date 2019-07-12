@@ -17,7 +17,12 @@ public class AnimPlayerInChargeRange : AI_Condition
             if (dist >= ai.Stats.chargeRangeInterval.x && dist <= ai.Stats.chargeRangeInterval.y && !ai.MoveAcrossNavMeshesStarted)
             {
                 ai.ChargeDirection = (ai.Player.transform.position - ai.transform.position).normalized;
-                return RaycastTest(ai);
+                float angle = Vector3.Dot(ai.transform.forward, ai.ChargeDirection);
+                //Debug.Log(angle);
+                if (angle > 0.7)
+                {
+                    return RaycastTest(ai);
+                }
             }
         }
 

@@ -19,7 +19,7 @@ public class AnimChaseBiteAction : AnimatorAction
         anim.ResetTrigger("Chase");
         //ai.Agent.autoTraverseOffMeshLink = false;
         ai.Agent.SetDestination(ai.Player.transform.position);
-        Debug.Log("Enter ChaseBite");
+        //Debug.Log("Enter ChaseBite");
     }
 
     public override void ExitAction(AI ai, Animator anim)
@@ -28,7 +28,7 @@ public class AnimChaseBiteAction : AnimatorAction
         ai.DetectionSphere.radius = ai.Stats.detectionRadius;
         anim.ResetTrigger("Chase");
         //ai.Agent.autoTraverseOffMeshLink = true;
-        Debug.Log("Exit ChaseBite");
+        //Debug.Log("Exit ChaseBite");
     }
 
     public override void UpdateAction(AI ai, Animator anim)
@@ -71,11 +71,16 @@ public class AnimChaseBiteAction : AnimatorAction
 
         if (ai.AttackTimer(ai.Stats.attackSpeed) && dist < ai.Stats.attackRange && ai.typeOfEnemy != enemyType.carrier)
         {
-            ai.IsAttacking = true;
-            AIStoppedMoving(ai);
-            ai.AttackCooldown = 0;
-            ai.Animator.Play("BiteAttack");
-            FMODUnity.RuntimeManager.PlayOneShot(ai.attackSound, ai.transform.position);
+            Vector3 toPlayer = (ai.Player.transform.position - ai.transform.position).normalized;
+            float angle = Vector3.Dot(ai.transform.forward, toPlayer);
+            if (angle > 0.7)
+            {
+                ai.IsAttacking = true;
+                AIStoppedMoving(ai);
+                ai.AttackCooldown = 0;
+                ai.Animator.Play("BiteAttack");
+                FMODUnity.RuntimeManager.PlayOneShot(ai.attackSound, ai.transform.position);
+            }
         }
 
 

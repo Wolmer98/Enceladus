@@ -19,7 +19,7 @@ MonoBehaviour:
   ShowCharge: 1
   chargeCooldown: 20
   chargeRangeInterval: {x: 4, y: 7}
-  chargeWindupTime: 1
+  chargeWindupTime: 0.25
   ShowDetection: 1
   targetsLayerMask:
     serializedVersion: 2
