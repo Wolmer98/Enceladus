@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30348307a339f144a81b18bb1d647f8c, type: 3}
   m_Name: SpawnPack_Big_1
   m_EditorClassIdentifier: 
+  minLevel: 1
   enemies:
   - {fileID: 8275400314718403886, guid: e83445adeba25504995ca2ee2220067a, type: 3}

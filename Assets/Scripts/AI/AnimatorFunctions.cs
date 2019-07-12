@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class AnimatorFunctions : MonoBehaviour
 {
     [SerializeField] AI ai;
+    public UnityEvent explodeEvent;
+    [SerializeField] LayerMask explosionLayer;
+
     public void JumpAttack()
     {
         PlayerController pc = FindObjectOfType<PlayerController>();
@@ -51,7 +55,32 @@ public class AnimatorFunctions : MonoBehaviour
 
     public void Explode()
     {
+        explodeEvent.Invoke();
+        Collider[] colliders = new Collider[15];
+        Physics.OverlapSphereNonAlloc(ai.transform.position, ai.Stats.attackRange, colliders, explosionLayer);
 
+        foreach (Collider target in colliders)
+        {
+            if (target != null)
+            {
+                if (target.gameObject != ai.gameObject)
+                {
+                    //Debug.Log(target.gameObject.name);
+                    Destructible destructible = target.gameObject.GetComponent<Destructible>();
+                    if (destructible != null)
+                    {
+                        destructible.Hurt(CalculateDamage(target.transform, ai));
+                    }
+                }
+            }
+        }
+        ai.Destructible.Hurt(1000f);
+    }
+
+    private float CalculateDamage(Transform transform, AI ai)
+    {
+        float damageFallOff = 1 / Vector3.Distance(transform.position, ai.transform.position);
+        return ai.Stats.damage * ai.DifficultyMod * damageFallOff;
     }
 
     public void SpawnEnemies()
