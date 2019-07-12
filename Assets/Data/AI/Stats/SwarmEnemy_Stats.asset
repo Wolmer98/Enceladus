@@ -27,7 +27,7 @@ MonoBehaviour:
   detectionRadius: 5
   chaseDetectionMultiplier: 1.5
   timeBetweenAggroSound: 30
-  distanceToMoveTowardsSound: 10
+  distanceToMoveTowardsSound: 20
   moveSpeed: 3
   chaseSpeed: 3
   rotationDuration: 2
@@ -38,11 +38,11 @@ MonoBehaviour:
   nbrSearchPos: 10
   chanceOfNearRadius: 0.2
   nearRadiusLerpSpeed: 2
-  echoDetectionMultiplier: 0.2
+  echoDetectionMultiplier: 0.7
   nearRadiusDuration: 3
   chanceOfFarRadius: 0.3
   farRadiusLerpSpeed: 2
-  echoDetectionFarMultiplier: 0.4
+  echoDetectionFarMultiplier: 1
   farRadiusDuration: 2
   awareOfFriendRadius: 5
   healthThresholdForReaction: 0.3

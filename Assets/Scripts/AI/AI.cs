@@ -295,6 +295,10 @@ public class AI : MonoBehaviour
             //skinnedmeshRenderEmissionOriginalColor = skinnedMeshRenderer.materials[0].GetColor("_EmissionColor"); Not used for now.
             //skinnedMeshRenderer.materials[0].SetColor("_EmissionColor", Color.white);
         }
+        if(typeOfEnemy == enemyType.swarm)
+        {
+            agent = SwarmAgent;
+        }
         detectionSphere.radius = stats.detectionRadius;
 
         HasRunStart = true;

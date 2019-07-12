@@ -16,13 +16,25 @@ public static class DetectableSound
             if (colliders[i] != null)
             {
                 AI ai = colliders[i].gameObject.GetComponentInParent<AI>();
-                if(ai != null)
+                if(ai != null && ai.Agent.isOnNavMesh)
                 {
-                    if (NavMesh.CalculatePath(ai.transform.position, position, NavMesh.GetAreaFromName("walkable"), path))
+                    //Debug.Log("AI: " + ai.name);
+                    if (ai.Agent.CalculatePath(position, path))
                     {
-                        if (GetPathLength(path) < radius)
+                        //Debug.Log("AI calc path");
+                        if (path.status != NavMeshPathStatus.PathPartial)
                         {
-                            ai.DetectedSound(position, false);
+                            //Debug.Log("Path exsists");
+                            NavMesh.CalculatePath(ai.transform.position, position, NavMesh.GetAreaFromName("walkable"), path);
+                            if (GetPathLength(path) < radius + radius / 2)
+                            {
+                                ai.DetectedSound(position, false);
+                                //Debug.Log("AI was in range");
+                            }
+                        }
+                        else
+                        {
+                            //Debug.Log("Path doesn't excists");
                         }
                     }
                 }
@@ -41,13 +53,20 @@ public static class DetectableSound
             if (colliders[i] != null)
             {
                 AI ai = colliders[i].gameObject.GetComponentInParent<AI>();
-                if (ai != null)
+                if (ai != null &&  ai.Agent.isOnNavMesh)
                 {
-                    if (NavMesh.CalculatePath(ai.transform.position, position, NavMesh.GetAreaFromName("walkable"), path))
+                    if (ai.Agent.CalculatePath(position, path))
                     {
-                        if (GetPathLength(path) < radius)
+                        if (path.status != NavMeshPathStatus.PathPartial)
                         {
-                            ai.DetectedSound(position, knowExactLocation);
+                            if (GetPathLength(path) < radius)
+                            {
+                                NavMesh.CalculatePath(ai.transform.position, position, NavMesh.GetAreaFromName("walkable"), path);
+                                if (GetPathLength(path) < radius + radius / 2)
+                                {
+                                    ai.DetectedSound(position, knowExactLocation);
+                                }
+                            }
                         }
                     }
                 }

@@ -53,7 +53,7 @@ public class SwarmAI : MonoBehaviour
                 CheckOverlapSphere();
             }
             
-            if(GroundCheck() && rb.velocity.y <= 0.3)
+            if(GroundCheck() && rb.velocity.y <= 0)
             {
                 JumpAttackDone();
             }
@@ -71,6 +71,15 @@ public class SwarmAI : MonoBehaviour
         if (transform.position.y <= -100f)
         {
             GetComponent<Destructible>().Hurt(10000f);
+        }
+
+        if (Agent.isOnOffMeshLink)
+        {
+            Agent.speed = swarmController.Stats.chaseSpeed / 3;
+        }
+        else
+        {
+            Agent.speed = swarmController.Stats.chaseSpeed;
         }
 
         LookAtPlayer();
