@@ -13,8 +13,26 @@ MonoBehaviour:
   m_Name: WeaponMod_Fail_Down
   m_EditorClassIdentifier: 
   weaponModName: Decreased Failure Rate
+  weaponPickupText: Default
   weaponModDescription: Updates the gun with decreased failure rate.
   emissionColor: {r: 1, g: 1, b: 1, a: 1}
+  screenBlurSize:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  screenBlurSizeIncrement: 0
+  screenBlurCap: 0.01
+  screenBlurTime: 0.3
+  suppression:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  suppressionIncrement: 0
+  suppressionRecoveryDelay: 1
   fireBehavior: {fileID: 0}
   weaponStats:
     damage: 0

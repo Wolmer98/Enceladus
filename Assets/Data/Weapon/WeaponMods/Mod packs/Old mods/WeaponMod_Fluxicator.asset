@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75d890c4ea415974eaec8d70f6554c64, type: 3}
-  m_Name: WeaponMod_Sharpshooter
+  m_Name: WeaponMod_Fluxicator
   m_EditorClassIdentifier: 
-  weaponModName: Sharpshooter
-  weaponModDescription: This setting fires powerful shots to hit the opposition at
-    long range.
-  emissionColor: {r: 1, g: 0.9073709, b: 0, a: 1}
+  weaponModName: Fluxicator
+  weaponPickupText: Default
+  weaponModDescription: This setting fires a continous laser beam to quickly electrify
+    the opposition.
+  emissionColor: {r: 0, g: 0.9623866, b: 1, a: 1}
   screenBlurSize:
     serializedVersion: 2
     m_Curve:
@@ -29,20 +30,20 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 2
-      outSlope: 2
+      time: 0.9894842
+      value: 0.20957349
+      inSlope: 0.16134289
+      outSlope: 0.16134289
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
+      inWeight: 0.15367863
       outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  screenBlurSizeIncrement: 0.005
+  screenBlurSizeIncrement: 0.0001
   screenBlurCap: 0.01
-  screenBlurTime: 1
+  screenBlurTime: 0.5
   suppression:
     serializedVersion: 2
     m_Curve:
@@ -67,25 +68,25 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  suppressionIncrement: 0.6
+  suppressionIncrement: 0.18
   suppressionRecoveryDelay: 1
-  fireBehavior: {fileID: 11400000, guid: 841e470cb0d4d1f469e0f88b4b69a2b4, type: 2}
+  fireBehavior: {fileID: 11400000, guid: 269de7646fbf9a3419c4f52327f9a30f, type: 2}
   weaponStats:
-    damage: 30
+    damage: 10
     accuracy: 0.8
     penetration: 10
     projectileAmount: 1
-    projectileSpeed: 920
-    fireRange: 30
-    areaOfEffect: 0.1
-    roundsPerMinute: 150
-    reloadSpeed: 3
+    projectileSpeed: 310
+    fireRange: 25
+    areaOfEffect: 0
+    roundsPerMinute: 400
+    reloadSpeed: 4
     fireDelay: 0
     failureRate: 0
     restartTime: 2
-    magSize: 10
-    chargeUp: 1
-    chargeUpTime: 2
+    magSize: 25
+    chargeUp: 0
+    chargeUpTime: 0
     minimumChargeUp: 0
     hardCaps: {fileID: 0}
-  installationSound: event:/Objects/ModCenter/Bullet/Sharpshooter
+  installationSound: event:/Objects/ModCenter/Laser/Fluxicator

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75d890c4ea415974eaec8d70f6554c64, type: 3}
   m_Name: WeaponMod_Scorcher
   m_EditorClassIdentifier: 
-  weaponModName: Scorcher
+  weaponModName: Scrambler
   weaponPickupText: Default
-  weaponModDescription: This setting fires a large plasma ball to melt the opposition.
-  emissionColor: {r: 0.7607843, g: 0.67058825, b: 0.21568628, a: 1}
+  weaponModDescription: This setting fires plasma projectiles to melt the opposition.
+  emissionColor: {r: 0, g: 1, b: 0.105882354, a: 1}
   screenBlurSize:
     serializedVersion: 2
     m_Curve:
@@ -40,17 +40,17 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  screenBlurSizeIncrement: 0.006
+  screenBlurSizeIncrement: 0.003
   screenBlurCap: 0.01
-  screenBlurTime: 1
+  screenBlurTime: 0.5
   suppression:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 2
-      outSlope: 2
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
@@ -58,8 +58,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
@@ -67,25 +67,25 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  suppressionIncrement: 0.5
+  suppressionIncrement: 0.1
   suppressionRecoveryDelay: 1
-  fireBehavior: {fileID: 11400000, guid: a53828fd3630c3344b86e584ba2deec9, type: 2}
+  fireBehavior: {fileID: 11400000, guid: e336f2f0f741120469a97c7b2ed07091, type: 2}
   weaponStats:
-    damage: 35
-    accuracy: 0.9
+    damage: 25
+    accuracy: 0.75
     penetration: 5
     projectileAmount: 1
-    projectileSpeed: 540
-    fireRange: 25
+    projectileSpeed: 570
+    fireRange: 20
     areaOfEffect: 0.4
-    roundsPerMinute: 75
-    reloadSpeed: 1
+    roundsPerMinute: 250
+    reloadSpeed: 2
     fireDelay: 0
     failureRate: 0
     restartTime: 2
-    magSize: 8
-    chargeUp: 1
-    chargeUpTime: 0.5
-    minimumChargeUp: 1
+    magSize: 15
+    chargeUp: 0
+    chargeUpTime: 0
+    minimumChargeUp: 0
     hardCaps: {fileID: 0}
-  installationSound: event:/Objects/ModCenter/Plasma/Scorcher
+  installationSound: event:/Objects/ModCenter/Plasma/Scrambler

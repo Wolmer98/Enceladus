@@ -10,47 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75d890c4ea415974eaec8d70f6554c64, type: 3}
-  m_Name: WeaponMod_Fluxicator
+  m_Name: WeaponMod_Scorcher
   m_EditorClassIdentifier: 
-  weaponModName: Fluxicator
-  weaponModDescription: This setting fires a continous laser beam to quickly electrify
-    the opposition.
-  emissionColor: {r: 0, g: 0.9623866, b: 1, a: 1}
+  weaponModName: Scorcher
+  weaponPickupText: Default
+  weaponModDescription: This setting fires a large plasma ball to melt the opposition.
+  emissionColor: {r: 0.7607843, g: 0.67058825, b: 0.21568628, a: 1}
   screenBlurSize:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.9894842
-      value: 0.20957349
-      inSlope: 0.16134289
-      outSlope: 0.16134289
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.15367863
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  screenBlurSizeIncrement: 0.0001
-  screenBlurCap: 0.01
-  screenBlurTime: 0.5
-  suppression:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
@@ -58,8 +31,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 2
-      outSlope: 2
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
@@ -67,25 +40,52 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  suppressionIncrement: 0.18
+  screenBlurSizeIncrement: 0.006
+  screenBlurCap: 0.01
+  screenBlurTime: 1
+  suppression:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  suppressionIncrement: 0.5
   suppressionRecoveryDelay: 1
-  fireBehavior: {fileID: 11400000, guid: 269de7646fbf9a3419c4f52327f9a30f, type: 2}
+  fireBehavior: {fileID: 11400000, guid: a53828fd3630c3344b86e584ba2deec9, type: 2}
   weaponStats:
-    damage: 10
-    accuracy: 0.8
-    penetration: 10
+    damage: 35
+    accuracy: 0.9
+    penetration: 5
     projectileAmount: 1
-    projectileSpeed: 310
+    projectileSpeed: 540
     fireRange: 25
-    areaOfEffect: 0
-    roundsPerMinute: 400
-    reloadSpeed: 4
+    areaOfEffect: 0.4
+    roundsPerMinute: 75
+    reloadSpeed: 1
     fireDelay: 0
     failureRate: 0
     restartTime: 2
-    magSize: 25
-    chargeUp: 0
-    chargeUpTime: 0
-    minimumChargeUp: 0
+    magSize: 8
+    chargeUp: 1
+    chargeUpTime: 0.5
+    minimumChargeUp: 1
     hardCaps: {fileID: 0}
-  installationSound: event:/Objects/ModCenter/Laser/Fluxicator
+  installationSound: event:/Objects/ModCenter/Plasma/Scorcher

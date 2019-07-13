@@ -10,11 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75d890c4ea415974eaec8d70f6554c64, type: 3}
-  m_Name: WeaponMod_Range_Down
+  m_Name: WeaponMod_Restart_Down
   m_EditorClassIdentifier: 
-  weaponModName: Decreased Fire Range
-  weaponModDescription: Updates the gun with decreased fire range.
+  weaponModName: Decreased Restart Time
+  weaponPickupText: Default
+  weaponModDescription: Updates the gun with decreased time to restart the weapon.
   emissionColor: {r: 1, g: 1, b: 1, a: 1}
+  screenBlurSize:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  screenBlurSizeIncrement: 0
+  screenBlurCap: 0.01
+  screenBlurTime: 0.3
+  suppression:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  suppressionIncrement: 0
+  suppressionRecoveryDelay: 1
   fireBehavior: {fileID: 0}
   weaponStats:
     damage: 0
@@ -22,13 +40,13 @@ MonoBehaviour:
     penetration: 0
     projectileAmount: 0
     projectileSpeed: 0
-    fireRange: -5
+    fireRange: 0
     areaOfEffect: 0
     roundsPerMinute: 0
     reloadSpeed: 0
     fireDelay: 0
     failureRate: 0
-    restartTime: 0
+    restartTime: -0.5
     magSize: 0
     chargeUp: 0
     chargeUpTime: 0

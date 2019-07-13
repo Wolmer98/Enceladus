@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: WeaponMod_Suppresser
   m_EditorClassIdentifier: 
   weaponModName: Suppresser
+  weaponPickupText: Default
   weaponModDescription: This setting fires bullets in automatic fashion to suppress
     the opposition.
-  emissionColor: {r: 1, g: 0.61538076, b: 0, a: 1}
+  emissionColor: {r: 0.94509804, g: 0.105882354, b: 0, a: 1}
   screenBlurSize:
     serializedVersion: 2
     m_Curve:
@@ -74,16 +75,16 @@ MonoBehaviour:
     damage: 15
     accuracy: 0.6
     penetration: 5
-    projectileAmount: 2
+    projectileAmount: 1
     projectileSpeed: 460
     fireRange: 20
     areaOfEffect: 0
-    roundsPerMinute: 600
-    reloadSpeed: 5
+    roundsPerMinute: 750
+    reloadSpeed: 2
     fireDelay: 0
     failureRate: 0
     restartTime: 2
-    magSize: 50
+    magSize: 30
     chargeUp: 0
     chargeUpTime: 0
     minimumChargeUp: 0

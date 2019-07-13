@@ -13,6 +13,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ai: {fileID: 0}
+  explodeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  explosionLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &8275400314718403886
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +186,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.1
-  m_Speed: 3.5
+  m_Speed: 4.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 2000
@@ -405,12 +413,12 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 696472774682301955, guid: 601fd486d622d9d459a7b215c7e47c3c,
+    - target: {fileID: 3299835106504546655, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 3299835106504546655, guid: 601fd486d622d9d459a7b215c7e47c3c,
+    - target: {fileID: 696472774682301955, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
       propertyPath: m_Layer
       value: 11
@@ -425,22 +433,22 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 2153239888904658151, guid: 601fd486d622d9d459a7b215c7e47c3c,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2562504904614797101, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6920652486101461267, guid: 601fd486d622d9d459a7b215c7e47c3c,
+    - target: {fileID: 2153239888904658151, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7556462981294206028, guid: 601fd486d622d9d459a7b215c7e47c3c,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920652486101461267, guid: 601fd486d622d9d459a7b215c7e47c3c,
         type: 3}
       propertyPath: playOnAwake
       value: 0
@@ -472,10 +480,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2560041065408471634}
     m_Modifications:
-    - target: {fileID: 100000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
-      propertyPath: m_Name
-      value: crabSwarm
-      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 35c2b38225082ff4eb45dbc577950f8d, type: 2}
+    - target: {fileID: 13700000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9ea961b7025b5354cb126a13b5ecac6c, type: 2}
     - target: {fileID: 400000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -520,14 +532,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 35c2b38225082ff4eb45dbc577950f8d, type: 2}
-    - target: {fileID: 13700000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9ea961b7025b5354cb126a13b5ecac6c, type: 2}
+    - target: {fileID: 100000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
+      propertyPath: m_Name
+      value: crabSwarm
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b323cd8dc76dc68479e255641b599dc8, type: 3}
 --- !u!1 &5170189091635835532 stripped

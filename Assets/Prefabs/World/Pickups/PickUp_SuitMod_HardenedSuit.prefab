@@ -27,12 +27,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupSound: event:/Objects/Pick Ups/Consumables/SuitMod
   pickupName: Equip suitmod
-  pickupText: Hardened suit equipped.
+  pickupText: Armor plate equipped.
   isSuitMod: 1
   suitModOption:
-    optionText: Hardened suit
+    optionText: Armor plate
     optionHeader: 
-    optionInfo: Heavy duty suit designed to take a punch.
+    optionInfo: An armor plate inlay designed to take a punch.
   enableFlashlight: 0
   keycards: 0
   ammo: 0

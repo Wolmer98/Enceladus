@@ -13,6 +13,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ai: {fileID: 8275400314718403887}
+  explodeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  explosionLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!95 &2802530477148600262
 Animator:
   serializedVersion: 3
@@ -39,6 +47,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2560041065408471634}
     m_Modifications:
+    - target: {fileID: 9500000, guid: d4f65387ba47ae34a934962156b1ea92, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d67266f6d059b4b49986ee88d858ee9a, type: 2}
     - target: {fileID: 100060, guid: d4f65387ba47ae34a934962156b1ea92, type: 3}
       propertyPath: m_Name
       value: medium_crab
@@ -87,10 +99,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: d4f65387ba47ae34a934962156b1ea92, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: d67266f6d059b4b49986ee88d858ee9a, type: 2}
     - target: {fileID: 13700000, guid: d4f65387ba47ae34a934962156b1ea92, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -252,6 +260,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Height
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5320105365859915355, guid: bab8984ab4a35594088fa91ea51e833f,
+        type: 3}
+      propertyPath: m_Speed
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5320105365859915344, guid: bab8984ab4a35594088fa91ea51e833f,
         type: 3}

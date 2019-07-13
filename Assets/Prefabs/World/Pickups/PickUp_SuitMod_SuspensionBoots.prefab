@@ -32,7 +32,8 @@ MonoBehaviour:
   suitModOption:
     optionText: Suspension boots
     optionHeader: 
-    optionInfo: Boots designed for high gravity areas.
+    optionInfo: Boots designed for high gravity areas. Can be used for speed in normal
+      gravity.
   enableFlashlight: 0
   keycards: 0
   ammo: 0

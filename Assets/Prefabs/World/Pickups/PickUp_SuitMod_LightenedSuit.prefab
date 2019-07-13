@@ -32,7 +32,7 @@ MonoBehaviour:
   suitModOption:
     optionText: Lightened suit
     optionHeader: 
-    optionInfo: A lightweight suit designed for agile tasks.
+    optionInfo: A suit with less unnecessary gadgets.
   enableFlashlight: 0
   keycards: 0
   ammo: 0

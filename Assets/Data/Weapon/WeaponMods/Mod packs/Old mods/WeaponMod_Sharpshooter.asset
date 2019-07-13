@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75d890c4ea415974eaec8d70f6554c64, type: 3}
-  m_Name: WeaponMod_Stinger
+  m_Name: WeaponMod_Sharpshooter
   m_EditorClassIdentifier: 
-  weaponModName: Stinger
+  weaponModName: Sharpshooter
   weaponPickupText: Default
-  weaponModDescription: This setting fires a powerful lightning strike with great
-    accuracy to hit the opposition with ease.
-  emissionColor: {r: 0.8862745, g: 0, b: 1, a: 1}
+  weaponModDescription: This setting fires powerful shots to hit the opposition at
+    long range.
+  emissionColor: {r: 1, g: 0.9073709, b: 0, a: 1}
   screenBlurSize:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 1
-      outSlope: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
@@ -32,8 +32,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 1
-      outSlope: 1
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
@@ -50,8 +50,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 1
-      outSlope: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
@@ -59,8 +59,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 1
-      outSlope: 1
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
@@ -70,23 +70,23 @@ MonoBehaviour:
     m_RotationOrder: 4
   suppressionIncrement: 0.6
   suppressionRecoveryDelay: 1
-  fireBehavior: {fileID: 11400000, guid: 0248718ff4a88e94f9f52fb17e7d3b81, type: 2}
+  fireBehavior: {fileID: 11400000, guid: 841e470cb0d4d1f469e0f88b4b69a2b4, type: 2}
   weaponStats:
     damage: 30
-    accuracy: 0.9
-    penetration: 15
+    accuracy: 0.8
+    penetration: 10
     projectileAmount: 1
-    projectileSpeed: 610
-    fireRange: 35
-    areaOfEffect: 0.2
-    roundsPerMinute: 100
-    reloadSpeed: 2
-    fireDelay: 0.1
+    projectileSpeed: 920
+    fireRange: 30
+    areaOfEffect: 0.1
+    roundsPerMinute: 150
+    reloadSpeed: 3
+    fireDelay: 0
     failureRate: 0
     restartTime: 2
-    magSize: 5
+    magSize: 10
     chargeUp: 1
-    chargeUpTime: 0.5
-    minimumChargeUp: 0.5
+    chargeUpTime: 2
+    minimumChargeUp: 0
     hardCaps: {fileID: 0}
-  installationSound: event:/Objects/ModCenter/Laser/Stinger
+  installationSound: event:/Objects/ModCenter/Bullet/Sharpshooter
