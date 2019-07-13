@@ -201,16 +201,9 @@ public class SwarmAI : MonoBehaviour
 
     private void StuckCheck()
     {
-        Debug.Log("StuckCheck");
-
-        if(!Agent.isOnNavMesh)
-        {
-            Debug.Log("Not on mesh: " + AttackCooldown);
-        }
-
         if (AttackCooldown <= -2 && !Agent.isOnNavMesh)
         {
-            Debug.Log("Stuck moving");
+            Debug.Log("AI got stuck and teleportet, probably after a jump and landing outside navmesh");
             Vector3 warpPosition = swarmController.SwarmAgent.transform.position; 
             Agent.transform.position = warpPosition;
             Agent.enabled = false;
