@@ -188,10 +188,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2755809954540721667}
     m_Modifications:
-    - target: {fileID: 100000, guid: 860004d8f09566e4b90d49a804146d23, type: 3}
-      propertyPath: m_Name
-      value: Arc
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 860004d8f09566e4b90d49a804146d23, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -256,6 +252,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 860004d8f09566e4b90d49a804146d23, type: 3}
+      propertyPath: m_Name
+      value: Arc
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 860004d8f09566e4b90d49a804146d23, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: eae7e3bc436da174d897839419aafe4f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 860004d8f09566e4b90d49a804146d23, type: 3}
 --- !u!1001 &826421240976786483
