@@ -33,11 +33,13 @@ public class SwarmAI : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         swarmController = ai;
         AttackCooldown = 0;
-        Agent.speed = swarmController.Stats.moveSpeed;
+        Agent.speed = swarmController.Stats.chaseSpeed;
     }
 
     public void UpdateChaseSwarm()
     {
+        StuckCheck();
+
         if (AttackCooldown <= 0)
         {
             Vector3 playerPos = new Vector3(swarmController.Player.transform.position.x, transform.position.y, swarmController.Player.transform.position.z);
@@ -52,21 +54,37 @@ public class SwarmAI : MonoBehaviour
         {
             if (isAttacking)
             {
+                LookAtPlayer();
                 CheckOverlapSphere();
             }
             
-            if(GroundCheck() && rb.velocity.y <= 0 || AttackCooldown <= 0)
+            if(GroundCheck() && rb.velocity.y <= 0)
             {
                 JumpAttackDone();
             }
+
         }
-        if(AttackCooldown >= 0)
+        if(AttackCooldown >= -10)
         {
             AttackCooldown -= Time.deltaTime;
         }
-        if(!Agent.isStopped)
+
+        if(Agent.enabled && Agent.isOnNavMesh && !Jumping)
         {
             Agent.SetDestination(swarmController.Player.transform.position);
+
+            Vector3 playerPos = new Vector3(swarmController.Player.transform.position.x, transform.position.y, swarmController.Player.transform.position.z);
+            float dist = Vector3.Distance(playerPos, transform.position);
+
+            if (dist > Agent.stoppingDistance)
+            {
+                animator.Play("Walking");
+            }
+            else if (!Jumping)
+            {
+                animator.Play("Idle");
+                LookAtPlayer();
+            }
         }
 
 
@@ -77,7 +95,6 @@ public class SwarmAI : MonoBehaviour
 
         OffMeshTest();
 
-        LookAtPlayer();
     }
 
     public void OnHurt()
@@ -93,9 +110,13 @@ public class SwarmAI : MonoBehaviour
     private void JumpAttack()
     {
         animator.Play("JumpAttack");
-        Agent.isStopped = true;
+        if(Agent.enabled)
+        {
+            Agent.isStopped = true;
+        }
         Agent.updatePosition = false;
         Agent.updateRotation = false;
+        Agent.enabled = false;
         Jumping = true;
         isAttacking = true;
         AttackCooldown = swarmController.Stats.attackSpeed;
@@ -115,9 +136,10 @@ public class SwarmAI : MonoBehaviour
 
     private void JumpAttackDone()
     {
-        Agent.isStopped = false;
         Agent.updatePosition = true;
         Agent.updateRotation = true;
+        Agent.enabled = true;
+        Agent.isStopped = false;
         Jumping = false;
         isAttacking = false;
         animator.Play("JumpAttackLand");
@@ -153,21 +175,7 @@ public class SwarmAI : MonoBehaviour
 
     private void LookAtPlayer()
     {
-
-        Vector3 playerPos = new Vector3(swarmController.Player.transform.position.x, transform.position.y, swarmController.Player.transform.position.z);
-        float dist = Vector3.Distance(playerPos, transform.position);
-        if(Agent.isStopped || Agent.stoppingDistance <= dist)
-        {
-            transform.LookAt(new Vector3(swarmController.Player.transform.position.x, transform.position.y, swarmController.Player.transform.position.z));
-        }
-        if (dist > Agent.stoppingDistance)
-        {
-            animator.Play("Walking");
-        }
-        else if (!Jumping)
-        {
-            animator.Play("Idle");
-        }
+        transform.LookAt(new Vector3(swarmController.Player.transform.position.x, transform.position.y, swarmController.Player.transform.position.z));
     }
 
     private void OnDrawGizmos()
@@ -189,5 +197,25 @@ public class SwarmAI : MonoBehaviour
         {
             Agent.speed = swarmController.Stats.chaseSpeed;
         }
+    }
+
+    private void StuckCheck()
+    {
+        Debug.Log("StuckCheck");
+
+        if(!Agent.isOnNavMesh)
+        {
+            Debug.Log("Not on mesh: " + AttackCooldown);
+        }
+
+        if (AttackCooldown <= -2 && !Agent.isOnNavMesh)
+        {
+            Debug.Log("Stuck moving");
+            Vector3 warpPosition = swarmController.SwarmAgent.transform.position; 
+            Agent.transform.position = warpPosition;
+            Agent.enabled = false;
+            Agent.enabled = true;
+        }
+
     }
 }

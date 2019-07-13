@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30348307a339f144a81b18bb1d647f8c, type: 3}
   m_Name: SpawnPack_Carrier_2
   m_EditorClassIdentifier: 
-  minLevel: 2
+  minLevel: 1
   enemies:
   - {fileID: 8275400314718403886, guid: 5aca6742f208ac54ea7a1541673863cf, type: 3}
   - {fileID: 8275400314718403886, guid: 5aca6742f208ac54ea7a1541673863cf, type: 3}

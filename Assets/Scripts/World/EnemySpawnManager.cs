@@ -431,16 +431,22 @@ public class EnemySpawnManager : MonoBehaviour
             {
                 continue;
             }
-            if(Vector3.Distance(enemiesAlive[i].transform.position, player.transform.position) > rangeToDisableAI && !enemiesAlive[i].ChasingPlayer)
+
+            if (enemiesAlive[i].typeOfEnemy == global::enemyType.swarm)
             {
-                if (enemiesAlive[i].gameObject.activeSelf)
+                //Debug.Log("Disable swarm enemy based on range doesn't work currently, will check on sunday");
+                continue;
+            }
+            if(Vector3.Distance(enemiesAlive[i].transform.position, player.transform.position) > rangeToDisableAI && !enemiesAlive[i].ChasingPlayer )
+            {
+                if (enemiesAlive[i].gameObject.activeSelf && enemiesAlive[i].gameObject != null)
                 {
                     enemiesAlive[i].gameObject.SetActive(false);
                     enemiesAlive[i].Rigidbody.velocity = new Vector3(0, 0, 0);
                     enemiesAlive[i].StopSounds();
                 }
             }
-            else if (!enemiesAlive[i].gameObject.activeSelf)
+            else if (!enemiesAlive[i].gameObject.activeSelf && enemiesAlive[i].gameObject != null)
             {
                 enemiesAlive[i].gameObject.SetActive(true);
             }

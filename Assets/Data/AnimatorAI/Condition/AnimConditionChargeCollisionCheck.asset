@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b01f9bceea2b25e43a2921422a49a2ae, type: 3}
   m_Name: AnimConditionChargeCollisionCheck
   m_EditorClassIdentifier: 
-  raycastRange: 1.5
+  raycastRange: 2
   raycastRadius: 0.5
   collisionMask:
     serializedVersion: 2

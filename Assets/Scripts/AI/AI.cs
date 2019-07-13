@@ -223,6 +223,8 @@ public class AI : MonoBehaviour
 
     public bool ExitRun { get; set; }
     public AnimatorAction animatorAction { get; set; }
+
+    public bool HasRunInit { get; set; }
     #endregion
 
     #region Swarm

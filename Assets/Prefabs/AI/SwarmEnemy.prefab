@@ -81,7 +81,7 @@ MonoBehaviour:
   jumpCheckRange: 0.1
   jumpLayer:
     serializedVersion: 2
-    m_Bits: 589825
+    m_Bits: 721409
   skinnedMeshRenderer: {fileID: 5170189091632660364}
 --- !u!114 &925664655501428959
 MonoBehaviour:
