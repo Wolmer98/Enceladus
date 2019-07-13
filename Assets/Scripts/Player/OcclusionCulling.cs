@@ -137,7 +137,6 @@ public class OcclusionCulling : MonoBehaviour
                 if (parent.gameObject.layer == LayerMask.NameToLayer("Interaction"))
                 {
                     skip = true;
-                    Debug.Log("SKIP");
                     break;
                 }
                 else
@@ -150,7 +149,6 @@ public class OcclusionCulling : MonoBehaviour
             if (r.gameObject.layer != LayerMask.NameToLayer("Interaction"))
             {
                 r.gameObject.layer = LayerMask.NameToLayer(fogOfWarLayerName);
-                Debug.Log("SWITCHED LAYER " + r.name);
             }
         }
     }
