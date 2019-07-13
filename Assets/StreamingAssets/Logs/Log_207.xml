@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<LogData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <logName>SA-M4300 SYSTEM REPORT</logName>
+  <header>SA-M4300</header>
+  <id>207</id>
+  <text>Emergency ejection
+Analyzing components
+Unable to estimate damages
+Reconfiguring …
+Orders received: Evacuate Etna S
+Pinging comms: No crewmembers detected
+SA-M4300 evacuating towards emergency shuttles</text>
+</LogData>

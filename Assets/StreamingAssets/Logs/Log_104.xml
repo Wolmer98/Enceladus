@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<LogData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <logName>SYSTEM FAILURE</logName>
+  <header>SYSTEM</header>
+  <id>104</id>
+  <text>ERROR
+CRITICAL SYSTEM FAILURE
+
+CENTRAL HEATING has encountered an error and has shut down.</text>
+</LogData>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<LogData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <logName>We need more power</logName>
+  <header>Max</header>
+  <id>150</id>
+  <text>We’re optimizing the experiment but we’re still not getting much D77 for every run. We can’t do it too often either as it drains our power supply. I might ask Omar to turn off the heating again to save energy. I have an idea of how we could scale up the experiment and get higher yields but that would require much more electricity than we have and creating new power supplies would take too much time. I’ll look into ways that could make it doable still.</text>
+</LogData>
