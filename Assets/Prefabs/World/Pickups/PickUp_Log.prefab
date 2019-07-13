@@ -27,7 +27,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupSound: event:/Objects/Pick Ups/Consumables/Log
   pickupName: Pick up log
-  pickupText: ' to read log.'
+  pickupText: New log aquired.
   logID: 0
 --- !u!1001 &3082002506178619707
 PrefabInstance:

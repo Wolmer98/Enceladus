@@ -83,8 +83,8 @@ MonoBehaviour:
     reloadSpeed: 2
     fireDelay: 0.1
     failureRate: 0
-    restartTime: 2
-    magSize: 5
+    restartTime: 0
+    magSize: 10
     chargeUp: 1
     chargeUpTime: 0.5
     minimumChargeUp: 0.5

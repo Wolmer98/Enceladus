@@ -31,18 +31,9 @@ MonoBehaviour:
   randomStats: 1
   RNG_startWeaponMod:
   - {fileID: 11400000, guid: f2141161896d7ee4887a9049c75255aa, type: 2}
-  - {fileID: 11400000, guid: fc63da66fc94ca54a9f28bef58cc8caf, type: 2}
-  - {fileID: 11400000, guid: 592c678e5e663de468cb237529d7b56f, type: 2}
-  - {fileID: 11400000, guid: 0b26883b367437849bb467660daf7de0, type: 2}
-  - {fileID: 11400000, guid: 174d6f7101dc3e44aa56888df112fae4, type: 2}
-  - {fileID: 11400000, guid: 3b0c4fed50ef84648aeaf17f7d7e5f92, type: 2}
-  - {fileID: 11400000, guid: afa5150e3fd74194ca26fa7baf5fa089, type: 2}
-  - {fileID: 11400000, guid: 742ca4cf32195194aa631d0eadd7ca59, type: 2}
-  - {fileID: 11400000, guid: b47c7bfc29d895c42b0d8b041e9c040d, type: 2}
-  - {fileID: 11400000, guid: ecc27d695b20b8e49ac27547d48d7297, type: 2}
-  - {fileID: 11400000, guid: 07bf410195366be48962e113327dd34d, type: 2}
-  - {fileID: 11400000, guid: 27c06b188cee19a46861b44677f67aba, type: 2}
-  - {fileID: 11400000, guid: bc6dced1ebaf5a34a842bd895c568bbd, type: 2}
+  - {fileID: 11400000, guid: fd421e42d827f3e4b9fc644e5e7d493e, type: 2}
+  - {fileID: 11400000, guid: f89543e0b19b7f644948900a71c98f4e, type: 2}
+  - {fileID: 11400000, guid: b7742990c157769438fe82856d9e705d, type: 2}
   RNG_ammunition: {x: 60, y: 140}
   RNG_maxStorageAmmo: {x: 120, y: 280}
   RNG_startMeleeWeapon: []

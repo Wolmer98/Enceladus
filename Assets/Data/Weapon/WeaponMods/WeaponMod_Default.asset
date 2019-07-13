@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: WeaponMod_Default
   m_EditorClassIdentifier: 
   weaponModName: Factory standard
+  weaponPickupText: Default
   weaponModDescription: This weapon has currently the factory standard setting.
   emissionColor: {r: 1, g: 1, b: 1, a: 1}
   screenBlurSize:
@@ -82,7 +83,7 @@ MonoBehaviour:
     fireDelay: 0
     failureRate: 0
     restartTime: 3
-    magSize: 10
+    magSize: 15
     chargeUp: 0
     chargeUpTime: 2
     minimumChargeUp: 0.5

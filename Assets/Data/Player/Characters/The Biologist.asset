@@ -18,7 +18,7 @@ MonoBehaviour:
   characterColor: {r: 0.5549128, g: 0.8113208, b: 0.625338, a: 1}
   portrait: {fileID: 21300000, guid: 6648d502d01720541a20c4c399aed9cf, type: 3}
   description: 
-  startWeaponMod: {fileID: 11400000, guid: b47c7bfc29d895c42b0d8b041e9c040d, type: 2}
+  startWeaponMod: {fileID: 11400000, guid: f89543e0b19b7f644948900a71c98f4e, type: 2}
   ammunition: 100
   maxStorageAmmo: 200
   startMeleeWeapon: {fileID: 0}

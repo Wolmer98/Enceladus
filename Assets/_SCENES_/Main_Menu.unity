@@ -465,7 +465,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -2831}
+  m_AnchoredPosition: {x: 0, y: -3281}
   m_SizeDelta: {x: 1442, y: 123}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &115571238
@@ -883,7 +883,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 561274941}
   m_HandleRect: {fileID: 561274940}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -4273,7 +4273,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1884727169}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4579,8 +4579,8 @@ RectTransform:
   m_Father: {fileID: 1909009002}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 402.5, y: 0}
   m_SizeDelta: {x: 805, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4756,7 +4756,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -541}
-  m_SizeDelta: {x: 1800, y: 6000}
+  m_SizeDelta: {x: 1800, y: 6450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1319418284
 MonoBehaviour:
@@ -4791,8 +4791,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<color=orange>-DESIGN-</color>\nJohan Synnergren\n<size=50>Project Lead
-    / Design</size>\n\n\nVanessa Malmbergh\n<size=50>Design Lead</size>\n\n\n<color=orange>-PROGRAMMING-</color>\nMarcus
+  m_Text: "\n\n<color=orange>-DESIGN-</color>\nJohan Synnergren\n<size=50>Project
+    Lead / Design</size>\n\n\nVanessa Malmbergh\n<size=50>Design Lead</size>\n\n\n<color=orange>-PROGRAMMING-</color>\nMarcus
     Kar\xE5ker\n<size=50>Programming Lead</size>\n\n\nArvid Enochsson\n<size=50>Programming</size>\n\n\nJesper
     Kanewoff\n<size=50>Programming</size>\n\n\n<color=orange>-Narrative-</color>\nEdvin
     Enkvist\n<size=50>Writing</size>\n\n\nSara Jonasson\n<size=50>Writing</size>\n\n\n<color=orange>-Audio-</color>\nFredrik
@@ -4801,7 +4801,8 @@ MonoBehaviour:
     Melvin Nyman\n<size=50>Graphics Lead [2D]</size>\n\n\nOlivia Johannesson\n<size=50>Graphics
     [2D]</size>\n\n\nBenjamin Persson\n<size=50>Graphics [3D]</size>\n\n\nEgl\xE9
     Petrulyte\n<size=50>Graphics [3D]</size>\n\n\nFredrik Johansson\n<size=50>Graphics
-    [Animation]</size>\n\n\nJesper Nor\xE9n\n<size=50>Graphics [Animation]</size>\n\n\n\n\n\n\n\n\n\n<size=40>Copyright
+    [Animation]</size>\n\n\nJesper Nor\xE9n\n<size=50>Graphics [Animation]</size>\n\n\nJohannes
+    Ruha\n<size=50>Graphics [Animation]</size>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<size=40>Copyright
     \xA9 2019 I Scream Studios, All Rights Reserved.</size>\n"
 --- !u!222 &1319418285
 CanvasRenderer:
@@ -6686,7 +6687,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000003526282}
+  m_AnchoredPosition: {x: 0, y: 0.00006205867}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1748604065
@@ -7557,7 +7558,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000048557915}
+  m_AnchoredPosition: {x: 0, y: 0.00003876456}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1909009003
@@ -9446,7 +9447,7 @@ PrefabInstance:
     - target: {fileID: 1332834313321905338, guid: 6790f9c44565a4745ad20eae03eef321,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000006569615
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1332834313321905338, guid: 6790f9c44565a4745ad20eae03eef321,
         type: 3}
@@ -11587,57 +11588,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1133344156}
     m_Modifications:
-    - target: {fileID: 2586791589924750122, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: m_Name
-      value: Room_Deadend_005_34_1x
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: roomName
-      value: Deadend_005
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 5362072376259136409, guid: 5401f01183fd01a46ba1910dc4db2a7c,
-        type: 3}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[3]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: volume
-      value: 34
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: connectionPoints.Array.data[4]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
-        type: 3}
-      propertyPath: rarity
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7752847439047634419, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11692,6 +11642,57 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2586791589924750122, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: m_Name
+      value: Room_Deadend_005_34_1x
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: roomName
+      value: Deadend_005
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 5362072376259136409, guid: 5401f01183fd01a46ba1910dc4db2a7c,
+        type: 3}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: volume
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: connectionPoints.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090188258059150826, guid: 359e9ac54880e2243a5acb441c825369,
+        type: 3}
+      propertyPath: rarity
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1351241087929720140, guid: 359e9ac54880e2243a5acb441c825369,
         type: 3}

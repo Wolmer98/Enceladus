@@ -12,7 +12,7 @@ public class WeaponStats
     [Header("Damage")]
     public float damage;
     [Tooltip("Accuracy is a float value between 0 and 1.")]
-    [Range(0, 1)]
+    [Range(-1, 1)]
     public float accuracy;
     public float penetration;
 

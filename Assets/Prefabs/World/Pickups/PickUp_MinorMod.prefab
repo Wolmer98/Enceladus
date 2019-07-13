@@ -27,28 +27,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyOnActivation: 1
   weaponMods:
-  - {fileID: 11400000, guid: 2a10c78a784b3814c892412a9a5456dc, type: 2}
-  - {fileID: 11400000, guid: d59b4fecc6035b646af5146913e451f9, type: 2}
-  - {fileID: 11400000, guid: 8f92c91e3ed6ff64a98c16ce397a9e66, type: 2}
-  - {fileID: 11400000, guid: 0bd5b9fd8ad27c841b23f353af9fd529, type: 2}
-  - {fileID: 11400000, guid: decf62238bcd8d64db4f29f3068465d0, type: 2}
-  - {fileID: 11400000, guid: 9e266bcc1cbeb904aac3d6d3e636bdb3, type: 2}
-  - {fileID: 11400000, guid: aafaa4fd783e73740b78f65fe19b9c10, type: 2}
-  - {fileID: 11400000, guid: 6127ae65983116b44ab79627070427a0, type: 2}
-  - {fileID: 11400000, guid: b638731058c72fc4cbee9ca3032dabe2, type: 2}
-  - {fileID: 11400000, guid: 49b7a03fd27a1464a8a445633ceedf89, type: 2}
-  - {fileID: 11400000, guid: c33a05674270b61429846804c1881338, type: 2}
-  - {fileID: 11400000, guid: b720019d32e9715479bdfdd67fa3a94d, type: 2}
-  - {fileID: 11400000, guid: 8aa6f324cbe5ef341b9e7cf8aee9e83b, type: 2}
-  - {fileID: 11400000, guid: ef5786fbeea7a544192a37011c26e3bb, type: 2}
-  - {fileID: 11400000, guid: cf7042f163fff9d4a848aae79ea6845f, type: 2}
-  - {fileID: 11400000, guid: 0e70f4611ffd4814990b61517249765c, type: 2}
-  - {fileID: 11400000, guid: 36090b6dbaf7f1c4b97513d579837f45, type: 2}
-  - {fileID: 11400000, guid: e48534866d781244d9dd4e3ddbd306e5, type: 2}
-  - {fileID: 11400000, guid: 60c2d10346edfc24f8863ad78d743371, type: 2}
-  - {fileID: 11400000, guid: f83495a1ab8c77c4ca68b4731d480d3a, type: 2}
-  - {fileID: 11400000, guid: da9df1aa4f7b69e4daede479b78460e2, type: 2}
-  - {fileID: 11400000, guid: 89992602d22a06f4f8194abb1c79a8f2, type: 2}
+  - {fileID: 11400000, guid: c21bc1e5a1529ac4caa7f8cbf32cf5f0, type: 2}
+  - {fileID: 11400000, guid: abe39127f0cc2c4498cc6e9318c9cb29, type: 2}
+  - {fileID: 11400000, guid: d51db702f70aab846a116ae466e0c60c, type: 2}
+  - {fileID: 11400000, guid: 8d956c71b0faf1c4fafd7543f0130dd5, type: 2}
+  - {fileID: 11400000, guid: dd0d14bec37d4c044b482bc8432bd5b6, type: 2}
+  - {fileID: 11400000, guid: aa87c49782f370c458e2e1ea440769cd, type: 2}
+  - {fileID: 11400000, guid: d1a0c2074a09a1c4d9b4c651cf173e18, type: 2}
+  - {fileID: 11400000, guid: d70a014fee8b3a44dbf78c6a2275be32, type: 2}
+  - {fileID: 11400000, guid: e8e56defe9072674aa013ee67e8b6453, type: 2}
+  - {fileID: 11400000, guid: fa3fe2412d2fd88408cfffd74ab366c7, type: 2}
+  - {fileID: 11400000, guid: b510b732db2bf3e40baa662360fa3e41, type: 2}
+  - {fileID: 11400000, guid: a0120a5510c65004998852e9d180cc7e, type: 2}
   installModSound: event:/Objects/Pick Ups/Consumables/WeaponMod
 --- !u!1001 &1430603091766349672
 PrefabInstance:

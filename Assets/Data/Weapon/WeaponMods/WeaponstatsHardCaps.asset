@@ -25,7 +25,7 @@ MonoBehaviour:
     fireDelay: 0
     failureRate: 0
     restartTime: 0
-    magSize: 1
+    magSize: 5
     chargeUp: 0
     chargeUpTime: 0
     minimumChargeUp: 0

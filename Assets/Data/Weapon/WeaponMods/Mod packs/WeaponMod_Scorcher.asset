@@ -82,7 +82,7 @@ MonoBehaviour:
     reloadSpeed: 2
     fireDelay: 0
     failureRate: 0
-    restartTime: 2
+    restartTime: 0
     magSize: 15
     chargeUp: 0
     chargeUpTime: 0
